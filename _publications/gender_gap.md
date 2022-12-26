@@ -10,6 +10,6 @@ citation: 'Bhatta, Aman, et al. "The Gender Gap in Face Recognition Accuracy Is 
 ---
 [Download paper here](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XZkvOTEAAAAJ&sortby=pubdate&citation_for_view=XZkvOTEAAAAJ:mJbmKSuM8toC)
 
-Recommended citation: Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).
+Recommended citation: Aman Bhatta, Vıtor Albiero, Kevin W Bowyer, and Michael C King. “The Gender Gap in Face Recognition Accuracy Is a Hairy Problem”. In: Winter Conference on Applications of Computer Vision(WACV) Workshops. 2022.
 
 
