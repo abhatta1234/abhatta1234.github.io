@@ -8,13 +8,13 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Aman Bhatta"
-title_separator          : " -- "
+title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
 url                      : https://abhatta1234.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "abhatta1234/abhatta1234.github.io"
-teaser                   : #
+teaser                   : "/images/profile.jpg"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Aman Bhatta"
-  avatar           : "images/profile.jpg"
+  avatar           : "/images/profile.jpg"
   bio              : "Computer Science and Engineering PhD Student"
   location         : "SouthBend, IN"
   employer         : "University of Notre Dame"
