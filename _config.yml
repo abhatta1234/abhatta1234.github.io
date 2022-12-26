@@ -14,7 +14,7 @@ description              : &description "personal description"
 url                      : https://abhatta1234.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "abhatta1234/abhatta1234.github.io"
-teaser                   : # "/images/profile.jpg"
+teaser                   : "assets/favicon.ico"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
