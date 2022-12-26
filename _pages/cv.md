@@ -11,7 +11,7 @@ redirect_from:
 {% include base_path %}
 {% capture written_label %}'None'{% endcapture %}
 
-If the embedded PDF below does not load, you can <u><a href="https://stuartgeiger.com/geiger-cv.pdf">download it here.</a></u>
+The embedded PDF of CV should load below. If it fails for some reason, it can be <u><a href="https://stuartgeiger.com/geiger-cv.pdf">downloaded from here.</a></u>
 <br/>
 
 <embed src="https://stuartgeiger.com/geiger-cv.pdf" type="application/pdf" width="100%" />
