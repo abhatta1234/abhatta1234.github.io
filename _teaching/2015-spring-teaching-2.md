@@ -1,20 +1,8 @@
 ---
-title: "Teaching experience 2"
+title: "CSE "
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+type: "Graduate Teaching Assistant"
+venue: "Department of Computer Science, University of Notre Dame"
+date: 2020-08-15
+location: "Oxford,MS"
 ---
-
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
