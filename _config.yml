@@ -172,12 +172,10 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Collections
 collections:
   teaching:
     output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
