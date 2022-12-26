@@ -1,12 +1,13 @@
 ---
-title: "Logical Consistency Paper"
+title: "The Gender Gap in Face Recognition is a Hairy Problem"
 collection: publications
-permalink: /publication/4_logical_consistency.md
-excerpt: 'This paper proposes logically consistent prediction loss to aid learning of logical consistency across attributes'
-venue: '(In-Review)'
-authors: 'Haiyu Wu, Grace Bezold, **Aman Bhatta**, and Kevin W Bowyer. 'Logical Consistency and Greater Descriptive Power for Facial Hair Attribute
-Learning'
+permalink: /publication/1_gender_gap
+excerpt: 'This paper analyzes that the gender gap in face recognition accuracy is mostly due varying dimensions of hairstyles that exists for men and is absent for female'
+venue: 'Winter Conference on Applications of Computer Vision Workshops'
+authors: '**Aman Bhatta**, Vıtor Albiero, Kevin W Bowyer, and Michael C King. “The Gender Gap in Face Recognition Accuracy Is a Hairy Problem”. In: Winter Conference on Applications of Computer Vision(WACV) Workshops. 2022.'
+citation: 'Bhatta, Aman, et al. "The Gender Gap in Face Recognition Accuracy Is a Hairy Problem." arXiv preprint arXiv:2206.04867 (2022).'
 ---
+
 [Download paper here]()
 
 # Abstract
