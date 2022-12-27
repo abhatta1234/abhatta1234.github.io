@@ -2,11 +2,11 @@
 title: "The Gender Gap in Face Recognition is a Hairy Problem"
 collection: publications
 permalink: /publication/1_gender_gap
-excerpt: ' On the test mode <br><br> This paper analyzes that the gender gap in face recognition accuracy is mostly due varying dimensions of hairstyles that exists for men and is absent for female'
+excerpt: '**Aman Bhatta**, Vítor Albiero, Kevin W. Bowyer, and Micheal C. King <br><br> This paper analyzes that the gender gap in face recognition accuracy is mostly due varying dimensions of hairstyles that exists for men and is absent for female'
 venue: 'Winter Conference on Applications of Computer Vision(WACV) Workshops'
 date: 2022-01-01
 ---
-[Download paper here](/files/papers/gender_gap.pdf)
+[Download paper here!](https://github.com/abhatta1234/abhatta1234.github.io/blob/8588d9b084ea95daaf7f24e9ba1cc5dfe5de547d/files/papers/gender_gap.pdf)
 
 # Abstract
 It is broadly accepted that there is a “gender gap” in face recognition accuracy, with females having lower accuracy. However, relatively little is known about the cause(s)of this gender gap. We first demonstrate that female and male hairstyles have important differences that impact facerecognition accuracy. In particular, variation in male facial hair contributes to a greater average difference in appearance between different male faces. We then demonstrate
