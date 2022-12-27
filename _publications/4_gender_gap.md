@@ -1,10 +1,10 @@
 ---
 title: "The Gender Gap in Face Recognition is a Hairy Problem"
 collection: publications
-permalink: /publication/1_gender_gap
+permalink: /publication/4_gender_gap
 excerpt: '**Aman Bhatta**, Vítor Albiero, Kevin W. Bowyer, and Micheal C. King <br><br> This paper analyzes that the gender gap in face recognition accuracy is mostly due varying dimensions of hairstyles that exists for men and is absent for female'
 venue: 'Winter Conference on Applications of Computer Vision(WACV) Workshops'
-date: 2022-01-01
+date: 2022-11-14
 ---
 [Download paper here!](https://github.com/abhatta1234/abhatta1234.github.io/blob/8588d9b084ea95daaf7f24e9ba1cc5dfe5de547d/files/papers/gender_gap.pdf)
 
