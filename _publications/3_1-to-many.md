@@ -7,7 +7,7 @@ venue: '(STILL IN REVIEW)'
 date: 2022-10-25
 ---
 
-[Download Paper Here!](https://github.com/abhatta1234/abhatta1234.github.io/blob/3fbef27dfaee2e817a65677f8eee229edbb3761c/files/papers/1_to_many.pdf)
+[Download Paper Here!](/files/papers/1_to_many.pdf)
 
 # Abstract
 
