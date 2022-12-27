@@ -5,7 +5,7 @@ permalink: /publication/1_gender_gap
 excerpt: 'This paper analyzes that the gender gap in face recognition accuracy is mostly due varying dimensions of hairstyles that exists for men and is absent for female'
 venue: 'Winter Conference on Applications of Computer Vision(WACV) Workshops'
 authors: '**Aman Bhatta**, Vıtor Albiero, Kevin W Bowyer, and Michael C King.
-date: 2022
+date: 2022-01-01
 ---
 [Download paper here](paperurl: 'http://academicpages.github.io/files/gender_gap.pdf')
 
