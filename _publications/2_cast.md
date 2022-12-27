@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2_cast
 excerpt: 'This paper proposes a new toolkit that efficiently filters data given an arbitrary number of conditions for metadata attributes. The purpose of the toolkit is to allow researchers to easily to evaluate models on targeted test distributions.'
 venue: 'Winter Conference on Applications of Computer Vision Workshops(WACV)'
-date: 2022-12-05
+date: 2022-10-10
 ---
 [Download paper here](https://github.com/abhatta1234/abhatta1234.github.io/blob/57d4c9b7c9f9dbb2aa9462afe3b27c05787a8c9f/files/papers/CAST.pdf)
 
