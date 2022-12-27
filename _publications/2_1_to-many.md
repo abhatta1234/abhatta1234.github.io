@@ -2,9 +2,8 @@
 title: "Demographic Disparities in 1-to-Many Facial Identification"
 collection: publications
 permalink: /publication/2_1-to-many.md
-excerpt: 'This paper analyzes the disparities across several demographic groups for 1-to-many search'
-venue: 'In-Review'
-date: 2022-12-15
+excerpt: '**Aman Bhatta**, Gabriella Pangelinan, Michael C. King, and Kevin W. Bowyer. <br><br> This paper analyzes the disparities across several demographic groups for 1-to-many search'
+date: 2022-10-27
 ---
 
 [Download Paper Here!](https://github.com/abhatta1234/abhatta1234.github.io/blob/3fbef27dfaee2e817a65677f8eee229edbb3761c/files/papers/1_to_many.pdf)
