@@ -1,7 +1,7 @@
 ---
 title: "Demographic Disparities in 1-to-Many Facial Identification (In Review)"
 collection: publications
-permalink: /publication/3_1-to-many.md
+permalink: /publication/3_1-to-many
 excerpt: '**Aman Bhatta**, Gabriella Pangelinan, Michael C. King, and Kevin W. Bowyer <br><br> This paper analyzes the disparities across several demographic groups for 1-to-many search'
 ---
 
