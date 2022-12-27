@@ -15,7 +15,7 @@ I received my Bachelor's Degree with Honors in Mechanical Engineering from the U
 
 Research Interests
 ======
-My primary research interest is in the broader field of explainable/responsible AI, where the main goal is to understand why deep-learning networks behave the way they do and how to mitigate their adversarial outcomes. Currently, My research work is focused on face recognition where I try to understand the causes behind the accuracy differentials across different demographic groups and try to mitigate them.
+My primary research interest is in the broader field of explainable/responsible AI, where the main goal is to understand why deep-learning networks behave the way they do and how to mitigate their adversarial outcomes. Currently, my graduate research work is focused on face recognition where I try to understand the causes behind the accuracy differentials across different demographic groups and try to mitigate them.
 
 Services
 ======
