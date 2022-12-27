@@ -14,5 +14,5 @@ redirect_from:
 The embedded PDF of CV should load below. If it fails for some reason, it can be <u><a href="https://stuartgeiger.com/geiger-cv.pdf">downloaded from here.</a></u>
 <br/>
 
-<embed src="https://stuartgeiger.com/geiger-cv.pdf" type="application/pdf" width="100%" />
+<embed src="/files/CV.pdf" type="application/pdf" width="100%" />
 
