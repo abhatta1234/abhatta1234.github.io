@@ -8,7 +8,7 @@ venue: '(STILL IN REVIEW)'
 date: 2022-10-01
 ---
 
-[Download paper here!](https://github.com/abhatta1234/abhatta1234.github.io/blob/a3af8327463bdbff26968f00814b537e67eaec9a/files/papers/logical.pdf)
+[Download paper here!](/files/papers/logical.pdf)
 
 # Abstract
 
