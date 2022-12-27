@@ -6,7 +6,7 @@ excerpt: 'Wes Robbins , Steven Zhou, **Aman Bhatta**, Chad Mello, Vitor Albiero,
 venue: 'Winter Conference on Applications of Computer Vision Workshops(WACV)'
 date: 2022-10-10
 ---
-[Download paper here!](https://github.com/abhatta1234/abhatta1234.github.io/blob/57d4c9b7c9f9dbb2aa9462afe3b27c05787a8c9f/files/papers/CAST.pdf)
+[Download paper here!](/files/papers/CAST.pdf)
 
 # Abstract
 
