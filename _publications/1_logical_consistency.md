@@ -1,9 +1,11 @@
 ---
-title: "Logical Consistency and Greater Descriptive Power for Facial Hair Attribute Learning (In-Review) " 
+title: "Logical Consistency and Greater Descriptive Power for Facial Hair Attribute Learning" 
 collection: publications
 permalink: /publication/1_logical_consistency
 excerpt: 'Haiyu Wu, Grace Bezold, **Aman Bhatta**, and Kevin W. Bowyer. <br><br>
 This paper proposes a logically consistent prediction loss to aid learning of logical consistency across attributes'
+venue: 'IN REVIEW'
+date: 2022-10-01
 ---
 
 [Download paper here!](https://github.com/abhatta1234/abhatta1234.github.io/blob/a3af8327463bdbff26968f00814b537e67eaec9a/files/papers/logical.pdf)
