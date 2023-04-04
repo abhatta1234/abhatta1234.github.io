@@ -3,7 +3,7 @@ title: "CAST: Conditional Attribute Subsampling Toolkit for Fine-grained Evaluat
 collection: publications
 permalink: /publication/2_cast
 excerpt: 'Wes Robbins , Steven Zhou, **Aman Bhatta**, Chad Mello, Vitor Albiero,  Kevin W. Bowyer, and Terrence E. Boult <br><br>This paper proposes a new toolkit that efficiently filters data given an arbitrary number of conditions for metadata attributes. The purpose of the toolkit is to allow researchers to easily to evaluate models on targeted test distributions.'
-venue: 'Winter Conference on Applications of Computer Vision Workshops(WACV), 2023'
+venue: 'Winter Conference on Applications of Computer Vision Workshops(WACV)'
 date: 2023-01-03
 ---
 [Download paper here!](/files/papers/CAST.pdf)
