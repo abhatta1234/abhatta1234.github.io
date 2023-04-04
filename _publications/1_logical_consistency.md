@@ -4,8 +4,8 @@ collection: publications
 permalink: /publication/1_logical_consistency
 excerpt: 'Haiyu Wu, Grace Bezold, **Aman Bhatta**, and Kevin W. Bowyer. <br><br>
 This paper proposes a logically consistent prediction loss to aid learning of logical consistency across attributes'
-venue: 'Published in Computer Vision and Pattern Recognition(CVPR), 2023'
-date: 2022-10-01
+venue: 'Published in Computer Vision and Pattern Recognition(CVPR)'
+date: 2023-06-20
 ---
 
 [Download paper here!](/files/papers/logical.pdf)
