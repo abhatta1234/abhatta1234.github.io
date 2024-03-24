@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/3_1-to-many
 excerpt: '**Aman Bhatta**, Gabriella Pangelinan, Michael C. King, and Kevin W. Bowyer <br><br> This paper analyzes the disparities across several demographic groups for 1-to-many search'
 venue: 'WVAQ @ Winter Conference on Applications of Computer Vision (WACV). 2024'
-date: 2022-10-25
+date: 2024-01-03
 ---
 
 [Download Paper Here!](/files/papers/1_to_many.pdf)
