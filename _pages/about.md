@@ -9,9 +9,8 @@ redirect_from:
 ---
 
 Hello and Welcome to my webpage. I hope you are doing well!! 😀😀 <br><br>
-I am a second year Computer Science and Engineering PhD student at the University of Notre Dame. I am a member of Computer Vision Research Laboratory([CVRL](https://cvrl.nd.edu/)). I am very blessed and fortunate to be advised by [Dr. Kevin W. Bowyer](https://scholar.google.com/citations?user=XZkvOTEAAAAJ&hl=en). 
-
-I received my Bachelor's Degree with Honors in Mechanical Engineering from the University of Mississippi. I was very fortunate to have worked across different domains and mentored by wonderful researchers throughout my undegraduate studies. I have worked on projects in studying evolution of fungal-algal mutualism working with [Dr. Erik F.Y. Hom](https://scholar.google.com/citations?user=EQpJP8cAAAAJ&hl=en), designing efficient heat transfer systems using piezoelectric agitators and micro pin fin arrays working with [Dr. Taiho Yeom](https://scholar.google.com/citations?hl=en&user=2wq2ly4AAAAJ&view_op=list_works&sortby=pubdate) and studying economics and impacts of solar energy working with [Dr. Tejas Pandya](https://scholar.google.com/citations?hl=en&user=qAz_-1wAAAAJ&view_op=list_works&sortby=pubdate).
+I am a third year Computer Science and Engineering PhD student at the University of Notre Dame. I am a member of Computer Vision Research Laboratory([CVRL](https://cvrl.nd.edu/)). I am very blessed and fortunate to be a part of Notre Dame Computer Vision and Research Lab Group. 
+I received my Bachelor's Degree with Honors in Mechanical Engineering from the University of Mississippi. 
 
 Research Interests
 ======
@@ -19,5 +18,5 @@ My research focuses on deep-learning, computer vision, biometrics, and explainab
 
 Services
 ======
-Reviewer - ICPR 2022, WACV 2022
+Reviewer - ICPR 2022, WACV 2022, WACV 2023, WACV 2024, TIP 2023, IJCB 2023, CVPR 2024
 
