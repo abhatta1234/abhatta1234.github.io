@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Hello and Welcome to my webpage. I hope you are doing well!! 😀😀 <br><br>
-I am a third year Computer Science and Engineering PhD student at the University of Notre Dame. I am a member of Computer Vision Research Laboratory([CVRL](https://cvrl.nd.edu/)). I received my Bachelor's Degree with Honors in Mechanical Engineering from the University of Mississippi. 
+I am a third year Computer Science and Engineering PhD student at the University of Notre Dame. I am advised by Dr. Kevin Bowyer and a member of Computer Vision Research Laboratory([CVRL](https://cvrl.nd.edu/)). I received my Bachelor's Degree with Honors in Mechanical Engineering from the University of Mississippi. 
 
 Research Interests
 ======
