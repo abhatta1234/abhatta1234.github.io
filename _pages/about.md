@@ -13,7 +13,7 @@ I am a third year Computer Science and Engineering PhD student at the University
 
 Research Interests
 ======
-My research focuses on deep-learning, computer vision, biometrics, and explainable/responsible AI. Specifically, I explore various computer vision challenges such as recognition, detection/segmentation, and developing efficient deep-learning models and training pipelines. Additionally, I am interested in understanding the behavior of deep-learning networks and mitigating adversarial outcomes before deployment. Currently, my research centers on face recognition, aiming to uncover and address accuracy differentials among demographic groups to promote fairness in AI systems.
+I have a broad interest in research topics related to deep learning and computer vision. Specifically, in the long run, I aim to pursue a research career focused on {\bf long-range video understanding and generation}. I believe this is only possible using multi-modality by harnessing the features from text, videos, and audios combined. My current PhD research projects primarily concentrate on face recognition, with a particular emphasis on uncovering and addressing accuracy differentials among demographic groups to promote fairness in AI systems.
 
 Services
 ======
