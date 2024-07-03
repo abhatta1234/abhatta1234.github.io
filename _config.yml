@@ -179,13 +179,13 @@ collections:
     output: true
   publications:
     output: false
-    permalink: /:collection/:path/
+    #permalink: /:collection/:path/
   portfolio:
     output: false
-    permalink: /:collection/:path/
+    #permalink: /:collection/:path/
   talks:
     output: false
-    permalink: /:collection/:path/
+    #permalink: /:collection/:path/
 
 
 # Defaults
