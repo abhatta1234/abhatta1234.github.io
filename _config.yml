@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Aman Bhatta"
   avatar           : "ab.jpeg"
-  bio              : "CSE PhD Student | From Nepal🇳🇵"
+  bio              : "CSE PhD Student"
   location         : "SouthBend, IN"
   employer         : "University of Notre Dame"
   pubmed           : 
@@ -97,17 +97,17 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "abhatta1234"
+  github           :
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : 
   lastfm           :
   linkedin         : "amanbhatta"
   orcid            : 
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : 
   steam            :
   tumblr           :
   twitter          : 
@@ -214,7 +214,7 @@ defaults:
       type: teaching
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       comments: true
   # _publications
@@ -232,7 +232,7 @@ defaults:
       type: portfolio
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
       comment: true
   # _talks
@@ -241,7 +241,7 @@ defaults:
       type: talks
     values:
       layout: talk
-      author_profile: true
+      author_profile: false
       share: true
 
 # Sass/SCSS
