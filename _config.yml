@@ -50,6 +50,11 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0" # Using remote theme
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: False # Enable search
 
+# Disable masthead (navigation at top)
+masthead_title: " " # Empty masthead title
+header:
+  overlay_color: "#fff" # White background (effectively no overlay)
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show per page

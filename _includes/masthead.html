@@ -1,0 +1,21 @@
+<!-- Empty masthead to remove navigation -->
+{% if site.logo contains "://" %}
+  {% capture logo_path %}{{ site.logo }}{% endcapture %}
+{% else %}
+  {% capture logo_path %}{{ site.logo }}{% endcapture %}
+{% endif %}
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="{{ '/' | relative_url }}">
+          {{ site.title }}
+        </a>
+        <div class="hidden links-menu">
+          <!-- Empty navigation - no links -->
+        </div>
+      </nav>
+    </div>
+  </div>
+</div> 
