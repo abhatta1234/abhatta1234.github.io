@@ -48,7 +48,10 @@ I have a broad interest in research topics related to deep learning and computer
 ---
 <section id="services">
   ## Services
-  Reviewer - ICPR 2022, WACV 2022, WACV 2023, WACV 2024, TIP 2023, IJCB 2023, CVPR 2024
-  <!-- Add other services here -->
+  <ul>
+    <li>Reviewer - ICPR 2022, WACV 2022, WACV 2023, WACV 2024, TIP 2023, IJCB 2023, CVPR 2024</li>
+    <!-- Add other services here as <li> elements -->
+    <!-- Example: <li><i class="fas fa-chalkboard-teacher"></i> Mentored students for X program (2023)</li> -->
+  </ul>
 </section>
 

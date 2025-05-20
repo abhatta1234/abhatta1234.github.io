@@ -15,9 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Aman Bhatta
 description: >-
-  Personal webpage of Aman Bhatta. CSE PhD Student at the University of Notre Dame. 
-  Research interests in deep learning, computer vision, long-range video understanding 
-  and generation, and fairness in AI.
+  Academic webpage of Aman Bhatta.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://abhatta1234.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "abhatta1234/abhatta1234.github.io"

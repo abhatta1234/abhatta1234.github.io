@@ -1,0 +1,122 @@
+/* Custom CSS for Aman Bhatta's personal page */
+
+/* General section styling */
+section {
+  margin-bottom: 3em; /* Add some space between sections */
+  padding-top: 2em; /* Add padding for when navigating via anchor links */
+  border-top: 1px solid #eee; /* A light separator line */
+}
+
+section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+section h2 {
+  margin-bottom: 1em;
+  font-size: 1.8em; /* Make section titles a bit more prominent */
+  color: #333;
+}
+
+/* --- Publications Section --- */
+#publications .entries-grid .archive__item {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-bottom: 1.5em; /* Space between cards */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#publications .entries-grid .archive__item:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#publications .archive__item-title a {
+  color: #0056b3; /* A nice blue for links */
+  text-decoration: none;
+}
+
+#publications .archive__item-title a:hover {
+  text-decoration: underline;
+}
+
+#publications .archive__item-excerpt,
+#publications .archive__item-meta {
+  font-size: 0.9em;
+  color: #555;
+}
+
+#publications .archive__item-meta {
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+#publications .btn {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white !important; /* Important to override theme link color */
+    text-decoration: none !important;
+}
+
+#publications .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* --- News Section --- */
+#news .entries-list .archive__item {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px dashed #ddd;
+}
+
+#news .entries-list .archive__item:last-child {
+  border-bottom: none;
+}
+
+#news .archive__item-title a {
+  color: #28a745; /* A green for news titles */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#news .archive__item-title a:hover {
+  text-decoration: underline;
+}
+
+#news .archive__item-meta {
+  font-size: 0.85em;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+/* --- Services Section --- */
+#services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#services li {
+  background-color: #f8f9fa;
+  border-left: 4px solid #17a2b8; /* An info blue accent */
+  margin-bottom: 0.75em;
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+/* If you add Font Awesome icons later, you can style them here */
+#services li .fas, /* Font Awesome Solid */
+#services li .far, /* Font Awesome Regular */
+#services li .fab  /* Font Awesome Brands */
+{
+  margin-right: 0.5em;
+  color: #17a2b8;
+} 
