@@ -15,7 +15,7 @@
   display: flex;
 }
 
-/* Page width adjustments - Set to 75% screen width */
+/* Page width adjustments - Set to 75% screen width for homepage and 90% for publications */
 /* Homepage and About page width */
 body.page-/about/ .page,
 body.page-/ .page {
@@ -24,11 +24,19 @@ body.page-/ .page {
   margin: 0 auto !important;
 }
 
-/* Publications page width */
+/* Publications page width - EXTRA WIDE */
 body.page-/publications/ .page {
-  width: 75% !important;
-  max-width: 75% !important;
+  width: 90% !important;
+  max-width: 90% !important;
   margin: 0 auto !important;
+}
+
+/* Make publication page content use full width */
+body.page-/publications/ .page__content,
+body.page-/publications/ .page__inner-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-right: 2% !important;
 }
 
 /* Ensure all page content fits properly */
@@ -46,6 +54,18 @@ body.page-/publications/ .page {
 }
 
 /* Custom CSS for Aman Bhatta's personal page */
+
+/* Publications page specific styling */
+body.page-/publications/ p {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-right: 0 !important;
+}
+
+body.page-/publications/ h2 {
+  max-width: 100% !important;
+  width: 100% !important;
+}
 
 /* General section styling */
 section {
