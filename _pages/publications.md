@@ -5,8 +5,6 @@ author_profile: true
 classes: wide
 ---
 
-I've reformatted your publication list with **<u>A. Bhatta</u>** in bold and underlined, and numbered in reverse chronological order (most recent with highest numbers):
-
 ## 2025
 [16] **<u>A. Bhatta</u>**, M. Dhakal, M. C. King, and K. W. Bowyer. Are you In or Out (of gallery)? Wisdom from the Same-Identity Crowd. 2025. In Review @ ICCV 25
 
