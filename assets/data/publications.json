@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Placeholder Paper 1: The Future of AI",
+    "authors": "Aman Bhatta, Placeholder Author",
+    "venue": "International Conference on Placeholders (ICP '24)",
+    "year": 2024,
+    "url": "#",
+    "abstract": "This is a brief abstract for the first placeholder paper. It discusses important things about AI."
+  },
+  {
+    "title": "Placeholder Paper 2: Deep Learning Adventures",
+    "authors": "Aman Bhatta, Another Placeholder",
+    "venue": "Workshop on Dummy Data (WDD '23)",
+    "year": 2023,
+    "url": "#",
+    "abstract": "An exciting exploration of deep learning concepts using placeholder data. Results are astonishingly average.",
+    "preprint_url": "#",
+    "code_url": "#"
+  }
+] 
