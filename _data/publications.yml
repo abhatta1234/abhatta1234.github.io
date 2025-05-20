@@ -1,0 +1,35 @@
+# Example structure for a publication:
+# - title: "My Awesome Research Paper Title"
+#   authors: "Aman Bhatta, Co Author One, Co Author Two"
+#   venue: "Conference on Cool Research (CCR '23)"
+#   year: 2023
+#   url: "http://link.to/your/paper.pdf"
+#   abstract: "A brief summary of this paper..."
+#   # Optional fields:
+#   # preprint_url: "http://link.to/preprint.pdf"
+#   # code_url: "http://github.com/your/code"
+#   # slides_url: "http://link.to/slides.pdf"
+#   # bibtex_citation: | 
+#   #   @inproceedings{bhatta2023awesome,
+#   #     title={My Awesome Research Paper Title},
+#   #     author={Bhatta, Aman and One, Co Author and Two, Co Author},
+#   #     booktitle={Conference on Cool Research (CCR '23)},
+#   #     year={2023}
+#   #   }
+
+# Add your publications below, following the structure above:
+- title: "Placeholder Paper 1: The Future of AI"
+  authors: "Aman Bhatta, Placeholder Author"
+  venue: "International Conference on Placeholders (ICP '24)"
+  year: 2024
+  url: "#"
+  abstract: "This is a brief abstract for the first placeholder paper. It discusses important things about AI."
+
+- title: "Placeholder Paper 2: Deep Learning Adventures"
+  authors: "Aman Bhatta, Another Placeholder"
+  venue: "Workshop on Dummy Data (WDD '23)"
+  year: 2023
+  url: "#"
+  abstract: "An exciting exploration of deep learning concepts using placeholder data. Results are astonishingly average."
+  preprint_url: "#"
+  code_url: "#" 

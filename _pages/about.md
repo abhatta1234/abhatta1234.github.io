@@ -18,15 +18,11 @@ I have a broad interest in research topics related to deep learning and computer
 ---
 <section id="publications">
   ## Publications
-  {% assign publications_sorted = site.publications | sort: 'date' | reverse %}
-  <div class="entries-grid">
-    {% for pub in publications_sorted %}
-      {% include archive-single.html type="grid" %}
-    {% else %}
-      <p>No publications found yet. Please add some to the <code>_publications</code> folder.</p>
-    {% endfor %}
+  <div id="publications-container" class="entries-grid">
+    <!-- Publications will be loaded here by JavaScript -->
+    <p><em>Loading publications...</em></p>
   </div>
-  <p><em>For a sleek, movable block, we might need custom HTML/CSS or a simple JavaScript solution later.</em></p>
+  <p><em>For a sleek, movable block, JavaScript is used. Further enhancements for drag/drop or carousels can be added later.</em></p>
 </section>
 
 ---
