@@ -15,6 +15,25 @@
   display: flex;
 }
 
+/* Page width adjustments */
+.wide .page__content .archive, 
+.wide .page__content p,
+.wide .page__content .publication-entry,
+.wide .page__content h2 {
+  width: 95%;
+  max-width: 95%;
+}
+
+@media (min-width: 80em) {
+  .wide .page__content .archive,
+  .wide .page__content p,
+  .wide .page__content .publication-entry,
+  .wide .page__content h2 {
+    width: 75%;
+    max-width: 75%;
+  }
+}
+
 /* Custom CSS for Aman Bhatta's personal page */
 
 /* General section styling */
