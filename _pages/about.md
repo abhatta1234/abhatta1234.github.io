@@ -1,9 +1,9 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
+title: "About Me"
+excerpt: "General introduction and research interests."
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
