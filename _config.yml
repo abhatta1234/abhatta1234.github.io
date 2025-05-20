@@ -1,4 +1,3 @@
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
@@ -9,44 +8,17 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Aman Bhatta"
-title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://abhatta1234.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+name                     : "Aman Bhatta"
+description              : "Personal webpage of Aman Bhatta, CSE PhD Student at the University of Notre Dame. Research interests in deep learning, computer vision, long-range video understanding and generation, and fairness in AI."
+url                      : https://abhatta1234.github.io
+baseurl                  : ""
 repository               : "abhatta1234/abhatta1234.github.io"
-teaser                   : "assets/favicon.ico"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  provider               : false
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
@@ -82,9 +54,9 @@ analytics:
 # Site Author
 author:
   name             : "Aman Bhatta"
-  avatar           : "ab.jpeg"
-  bio              : "CSE PhD Student"
-  location         : "SouthBend, IN"
+  avatar           : "ab.jpeg" # Ensure this image is in your images/ directory or root
+  bio              : "CSE PhD Student, University of Notre Dame"
+  location         : "South Bend, IN"
   employer         : "University of Notre Dame"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=kNwnZwsAAAAJ&hl=en"
@@ -97,7 +69,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "abhatta1234"
   google_plus      :
   keybase          :
   instagram        :
@@ -122,34 +94,25 @@ author:
 include:
   - .htaccess
   - _pages
-  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
-  - .sass-cache
-  - CHANGELOG
-  - Capfile
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - config
-  - gulpfile.js
-  - log
-  - node_modules
-  - package.json
+  - .sass-cache/
+  - node_modules/
   - tmp
-  - vendor
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 keep_files:
   - .git
-  - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
@@ -158,7 +121,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 markdown: kramdown
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: "\\n\\n"
 incremental: false
 
 
@@ -172,88 +135,100 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-# Collections
-collections:
-  teaching:
-    output: true
-
-# Defaults
-defaults:
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-
-
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  syntax_highlighter: rouge
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
 timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
+  - jekyll-redirect-from
   - jemoji
 
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
 # HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+# Minify HTML output by default
+# HTML_COMPRESSION:
+#   enabled: true
+#   ignore:
+#     envs: ['development'] # don't minfy during development build
+
+# Default Front Matter
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: default # A default layout, assuming you might create one later
+      author_profile: true
+  # _publications
+  - scope:
+      path: "_publications"
+      type: publications
+    values:
+      layout: archive # Or a specific layout for publications
+      author_profile: true
+
+# Footer Links
+footer_links:
+  - title: GitHub
+    url: https://github.com/abhatta1234
+    icon: fab fa-github-square
+
+# Mastodon instances
+# mastodon:
+# - username: "jekyll"
+#   instance: "example.com"
+# - username: "jekyll2"
+#   instance: "example.com"
+
+# Skin selection
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Optional features
+search                   : false # true, false (default)
+search_full_content      : false # true, false (default)
+search_provider          : # "lunr", "google", "custom" (default)
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+
+# Hire me button
+# hire_me_button: true
+
+# Lazy Loading
+# lazy_load_images: true
+
+# Table of contents
+# toc_levels: 1..6
+
+#lunr
+# lunr:
+#  stopwords: # /assets/js/lunr/stopwords_en.js # true, false (default)
+#  tokenizer_separator: /[\s\-/]+/ # /[\s\-/]+/ (default)
+
+# Localization
+# translations:
+#  button:
+#    follow: "Follow"
+#    preview: "Preview"
+#    edit: "Edit on GitHub"
+#    buy: "Buy for $ VERSION"
+#    share: "Share"
+#    read_more: "Read More"
+
+#lunr
+lunr:
+ stopwords: /assets/js/lunr/stopwords_en.js
+ tokenizer_separator: /[\s\-/]+/
