@@ -1,53 +1,68 @@
 ---
 permalink: /
-title: "Aman Bhatta - Personal Page"
-excerpt: "General introduction, research interests, publications, news, and services of Aman Bhatta."
-layout: single # Minimal Mistakes single layout is flexible
+title: "Hello!"
+excerpt: "About me"
 author_profile: true
-redirect_from:
+redirect_from: 
   - /about/
   - /about.html
 ---
 
-## About Me & Research Interests
-Hello and Welcome to my webpage. I hope you are doing well!! 😀😀 <br><br>
-I am a third year Computer Science and Engineering PhD student at the University of Notre Dame. I am advised by Dr. Kevin Bowyer and a member of Computer Vision Research Laboratory([CVRL](https://cvrl.nd.edu/)). I received my Bachelor's Degree with Honors in Mechanical Engineering from the University of Mississippi. 
 
-I have a broad interest in research topics related to deep learning and computer vision. Specifically, in the long run, I aim to pursue a research career focused on **long-range video understanding and generation**. I believe this is only possible using multi-modality by harnessing the features from text, videos, and audios combined. My current PhD research projects primarily concentrate on face recognition, with a particular emphasis on uncovering and addressing accuracy differentials among demographic groups to promote fairness in AI systems.
+My name is Aman Bhatta and I am currently a **third year Ph.D. student** at the University of Notre Dame in the Computer Science and Engineering department. My research focuses on developing new deep-learning-based **computer vision approaches** with a particular emphasis on face recognition and addressing accuracy differentials among demographic groups to promote fairness in AI systems. My doctoral advisor is [Dr. Kevin Bowyer](https://cvrl.nd.edu/) and I am a member of Computer Vision Research Laboratory ([CVRL](https://cvrl.nd.edu/)).
 
----
-<section id="publications">
-  ## Publications
-  <div id="publications-container" class="entries-grid">
-    <!-- Publications will be loaded here by JavaScript -->
-    <p><em>Loading publications...</em></p>
+Previously, I received a Bachelor's Degree with Honors in Mechanical Engineering from the University of Mississippi. I have broad interests in research topics related to deep learning and computer vision, specifically long-range video understanding and generation using multi-modality by harnessing features from text, videos, and audios combined.
+
+
+News
+------
+* 2024/XX: 📚 [Your recent achievement/news]
+* 2024/XX: 💼 [Your recent professional update]
+* 2023/XX: 📚 [An achievement from 2023]
+* 2023/XX: 🎉 [An event from 2023]
+* [Add more news items in reverse chronological order]
+
+
+Selected Publications
+------
+
+<div style="display:flex;align-items:flex-start;" class="publication-entry">
+  <img src="/images/your_publication_image1.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
+  <div>
+    <strong>[Your Publication Title 1]</strong><br>
+    <u>Aman Bhatta</u>, [Co-author 1], [Co-author 2], [Co-author 3]<br>
+    <em>[Conference/Journal Name]</em> ([Abbreviation]), [Year].<br>
+    <a href="[Link to paper]" target="_blank">Paper</a> | <a href="[Link to code]" target="_blank">Code</a>
   </div>
-  <p><em>For a sleek, movable block, JavaScript is used. Further enhancements for drag/drop or carousels can be added later.</em></p>
-</section>
-
+</div>
 ---
-<section id="news">
-  ## News
-  {% assign posts_sorted = site.posts | sort: 'date' | reverse %}
-  <div class="entries-list">
-    {% for post in posts_sorted limit:5 %}
-      {% include archive-single.html type="list" %}
-    {% else %}
-      <p>No news items found yet. Please add some to the <code>_posts</code> folder.</p>
-    {% endfor %}
+
+<div style="display:flex;align-items:flex-start;" class="publication-entry">
+  <img src="/images/your_publication_image2.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
+  <div>
+    <strong>[Your Publication Title 2]</strong><br>
+    <u>Aman Bhatta</u>, [Co-author 1], [Co-author 2]<br>
+    <em>[Conference/Journal Name]</em> ([Abbreviation]), [Year].<br>
+    <a href="[Link to paper]" target="_blank">Paper</a> | <a href="[Link to code]" target="_blank">Code</a>
   </div>
-  {% if site.posts.size > 5 %}
-    <p><a href="/year-archive/">View all news...</a></p> {# Assumes you might want a year archive page later #}
-  {% endif %}
-</section>
-
+</div>
 ---
-<section id="services">
-  ## Services
-  <ul>
-    <li>Reviewer - ICPR 2022, WACV 2022, WACV 2023, WACV 2024, TIP 2023, IJCB 2023, CVPR 2024</li>
-    <!-- Add other services here as <li> elements -->
-    <!-- Example: <li><i class="fas fa-chalkboard-teacher"></i> Mentored students for X program (2023)</li> -->
-  </ul>
-</section>
+
+<div style="display:flex;align-items:flex-start;" class="publication-entry">
+  <img src="/images/your_publication_image3.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
+  <div>
+    <strong>[Your Publication Title 3]</strong><br>
+    [First Author], <u>Aman Bhatta</u>, [Other Co-authors]<br>
+    <em>[Conference/Journal Name]</em> ([Abbreviation]), [Year].<br>
+    <a href="[Link to paper]" target="_blank">Paper</a>
+  </div>
+</div>
+---
+
+<!-- You can add more publication entries following the same format -->
+
+Services
+------
+* Reviewer - ICPR 2022, WACV 2022, WACV 2023, WACV 2024, TIP 2023, IJCB 2023, CVPR 2024
+* [Add other services or professional activities]
 

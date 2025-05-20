@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Exciting New Research Grant!",
+    "date": "2024-04-15",
+    "summary": "Our lab has received funding for a new project on fairness in facial recognition systems.",
+    "url": "#"
+  },
+  {
+    "title": "Paper Accepted at Major Conference",
+    "date": "2024-03-27",
+    "summary": "Our latest work on demographic bias in AI has been accepted to a top-tier conference.",
+    "url": "#"
+  },
+  {
+    "title": "New Collaboration with Industry Partner",
+    "date": "2024-02-18",
+    "summary": "Starting a new collaboration with Tech Corp to apply our research in real-world scenarios.",
+    "url": "#"
+  },
+  {
+    "title": "Guest Lecture at University of Technology",
+    "date": "2024-01-30",
+    "summary": "Presented our latest findings on face recognition algorithms at University of Technology.",
+    "url": "#"
+  },
+  {
+    "title": "Paper Selected as Editor's Choice",
+    "date": "2023-12-15",
+    "summary": "Our recent paper on multi-modal learning has been selected as an Editor's Choice article.",
+    "url": "#"
+  },
+  {
+    "title": "Invited to Program Committee",
+    "date": "2023-11-05",
+    "summary": "Honored to join the program committee for the 2024 International Conference on Computer Vision.",
+    "url": "#"
+  },
+  {
+    "title": "Workshop Presentation",
+    "date": "2023-10-12",
+    "summary": "Presented our work on fairness metrics at the AI Ethics Workshop.",
+    "url": "#"
+  },
+  {
+    "title": "New Lab Equipment",
+    "date": "2023-09-20",
+    "summary": "Our lab received new GPU equipment to accelerate our research.",
+    "url": "#"
+  },
+  {
+    "title": "Summer Internship Complete",
+    "date": "2023-08-15",
+    "summary": "Successfully completed a summer internship at Research Lab X, where I focused on video understanding.",
+    "url": "#"
+  },
+  {
+    "title": "Research Featured in Tech Magazine",
+    "date": "2023-07-22",
+    "summary": "Our research on demographic fairness was featured in a popular tech magazine this month.",
+    "url": "#"
+  }
+] 
