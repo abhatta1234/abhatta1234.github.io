@@ -15,18 +15,25 @@
   display: flex;
 }
 
-/* Page width adjustments */
-/* About page - moderately wider */
+/* Page width adjustments - Set to 75% screen width */
+/* Homepage and About page width */
 body.page-/about/ .page,
 body.page-/ .page {
-  max-width: 1200px !important;
+  width: 75% !important;
+  max-width: 75% !important;
   margin: 0 auto !important;
 }
 
-/* Publications page - super wide */
+/* Publications page width */
 body.page-/publications/ .page {
-  max-width: 90% !important;
+  width: 75% !important;
+  max-width: 75% !important;
   margin: 0 auto !important;
+}
+
+/* Ensure all page content fits properly */
+.page__content {
+  width: 100% !important;
 }
 
 /* Ensure sidebar stays in place properly */
