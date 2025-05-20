@@ -16,22 +16,26 @@
 }
 
 /* Page width adjustments */
-.wide .page__content .archive, 
-.wide .page__content p,
-.wide .page__content .publication-entry,
-.wide .page__content h2 {
-  width: 95%;
-  max-width: 95%;
+/* About page - moderately wider */
+body.page-/about/ .page,
+body.page-/ .page {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 
-@media (min-width: 80em) {
-  .wide .page__content .archive,
-  .wide .page__content p,
-  .wide .page__content .publication-entry,
-  .wide .page__content h2 {
-    width: 75%;
-    max-width: 75%;
-  }
+/* Publications page - super wide */
+body.page-/publications/ .page {
+  max-width: 90% !important;
+  margin: 0 auto !important;
+}
+
+/* Ensure sidebar stays in place properly */
+.sidebar {
+  opacity: 1 !important;
+}
+
+.page__inner-wrap {
+  width: 100% !important;
 }
 
 /* Custom CSS for Aman Bhatta's personal page */
