@@ -1,20 +1,18 @@
-/* Hide the navigation masthead */
+/* Navigation styling */
+.greedy-nav {
+  background-color: transparent;
+}
+
+.masthead {
+  border-bottom: 1px solid #f2f3f3;
+}
+
 .masthead__menu-item, .hidden.links-menu {
-  display: none !important;
+  display: block;
 }
 
 .greedy-nav .visible-links {
-  display: none !important;
-}
-
-.greedy-nav__toggle, .greedy-nav a.site-logo {
-  display: none;
-}
-
-.masthead__inner-wrap {
-  padding: 0.5em;
-  height: auto;
-  min-height: auto;
+  display: flex;
 }
 
 /* Custom CSS for Aman Bhatta's personal page */

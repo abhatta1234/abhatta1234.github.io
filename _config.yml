@@ -50,10 +50,17 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0" # Using remote theme
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: False # Enable search
 
-# Disable masthead (navigation at top)
-masthead_title: " " # Empty masthead title
+# Navigation
+masthead_title: "Aman Bhatta"
 header:
-  overlay_color: "#fff" # White background (effectively no overlay)
+  overlay_color: "#fff"
+
+# Site navigation
+main:
+  - title: "About"
+    url: "/"
+  - title: "Publications"
+    url: "/publications/"
 
 # Outputting
 permalink: /:categories/:title/
