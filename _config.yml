@@ -170,13 +170,6 @@ defaults:
     values:
       layout: default # A default layout, assuming you might create one later
       author_profile: true
-  # _publications
-  - scope:
-      path: "_publications"
-      type: publications
-    values:
-      layout: archive # Or a specific layout for publications
-      author_profile: true
 
 # Footer Links
 footer_links:
