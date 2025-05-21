@@ -10,8 +10,11 @@ redirect_from:
 ---
 
 I am a **Ph.D. Candidate** in Computer Science at the University of Notre Dame, advised by [Dr. Kevin Bowyer](https://www3.nd.edu/~kwb/) at the [Computer Vision Research Lab (CVRL)](https://cvrl.nd.edu/). My doctoral research explores multiple dimensions of face recognition technology, including mitigating bias, optimizing neural networks for efficiency on edge devices, ensuring biometric system security, and improving reliability of face identification search. My work has been published in top venues including CVPR, WACV, FG, IJCB, T-BIOM, and TTS.
+
 I was fortunate to intern at Comcast with the Media Analytics Framework Team under [Dr. Mahmudul Hasan](https://mhasa004.github.io/), where I built multimodal models for contextual emotion prediction in video content, leveraging multi-branch transformer architectures, cross-attention mechanisms, and multimodal text encodings.
+
 I am actively seeking opportunities as a Research Scientist, Research Engineer, Machine Learning Engineer, Applied Scientist, or Data Scientist starting July 2025 or later. My long-term goal is to develop expertise in multimodal AI systems, balancing fundamental research to advance state-of-the-art techniques with the practical skills required to deploy scalable, efficient, and production-grade models that solve real-world problems.
+
 News
 ------
 * 2025/02: 📚 3 papers accepted at IEEE FG'25. 
@@ -27,6 +30,7 @@ News
 * 2021/05: 🎓 Graduate from University of Mississippi with B.S (Hons) in Mechanical Engineering
 * 2020/01: 🎉 Continuing my Co-op (part-time) for Spring'20 Semester at ThyssenKrupp AG
 * 2019/01: 🎉 Started my full-time Engineering Co-op at ThyssenKrupp AG for a year
+
 Selected Publications
 ------
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
@@ -90,6 +94,7 @@ Learning</strong><br>
   </div>
 </div>
 ---
+
 Services  
 ------
 
