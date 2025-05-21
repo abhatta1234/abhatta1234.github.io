@@ -812,11 +812,25 @@ hr, .page__content hr {
 
 /* Page title styling */
 .page__title {
-  font-size: 1.5rem !important;
-  font-weight: 400 !important;
-  margin-bottom: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
-  border-bottom: 1px solid #eee !important;
+  font-size: 1.2rem !important;
+  font-weight: 300 !important;
+  font-family: 'Playfair Display', serif !important;
+  color: #4a90e2 !important;
+  margin-bottom: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+  border-bottom: none !important;
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.page__title:after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 1px !important;
+  background: linear-gradient(to right, #4a90e2, #6f9dc7, #4a90e2) !important;
 }
 
 .page__title + p {
