@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to my WebPage "
+title: "Welcome to my WebPage!"
 excerpt: "About me"
 author_profile: true
 classes: wide
@@ -96,6 +96,7 @@ Learning</strong><br>
 ---
 Services  
 ------
+
 | Year  | Reviewed Conferences & Journals                                  |
 |:-----:|:-----------------------------------------------------------------|
 | **2025** | WACV 2025 · CVPR 2025 · ICCV 2025 · FG 2025                   |
