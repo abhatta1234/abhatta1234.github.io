@@ -24,36 +24,6 @@
   display: flex;
 }
 
-/* Page width adjustments - Set to 75% screen width */
-/* Homepage and About page width */
-body.page-/about/ .page,
-body.page-/ .page {
-  width: 75% !important;
-  max-width: 75% !important;
-  margin: 0 auto !important;
-}
-
-/* Publications page width */
-body.page-/publications/ .page {
-  width: 75% !important;
-  max-width: 75% !important;
-  margin: 0 auto !important;
-}
-
-/* Ensure all page content fits properly */
-.page__content {
-  width: 100% !important;
-}
-
-/* Ensure sidebar stays in place properly */
-.sidebar {
-  opacity: 1 !important;
-}
-
-.page__inner-wrap {
-  width: 100% !important;
-}
-
 /* Custom CSS for Aman Bhatta's personal page */
 
 /* Publications page specific styling */
@@ -303,19 +273,5 @@ section h2 {
   white-space: pre-line !important;
   line-height: 1.5 !important;
   font-size: 0.9em !important;
-}
-
-/* FORCE WIDER LAYOUT - ABOUT PAGE */
-body.layout--single.permalink--slash .page,
-body.layout--home .page,
-body.layout--splash .page,
-.home .page,
-.page--home .page,
-.layout--home .page__inner-wrap,
-.page-/ .page__content,
-.page__inner-wrap {
-  max-width: 95% !important;
-  width: 95% !important;
-  margin: 0 auto !important;
 }
 
