@@ -285,7 +285,7 @@ section h2 {
 .author__bio {
   white-space: pre-line !important;
   line-height: 1.15 !important;
-  font-size: 1.05em !important; /* Further increased font size */
+  font-size: 1.25em !important; /* Further increased font size */
   margin: 0 !important;
   padding: 0 !important;
   display: block !important;
