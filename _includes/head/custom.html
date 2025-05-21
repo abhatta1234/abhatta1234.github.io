@@ -1,1 +1,17 @@
 <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}"> 
+
+<!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Override site title in masthead
+    var siteTitle = document.querySelector('.site-title');
+    if (siteTitle) {
+      siteTitle.textContent = "Machine learning: turning coffee into models that break in production. — Anonymous ML Engineer";
+    }
+  });
+</script> 
