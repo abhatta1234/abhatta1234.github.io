@@ -269,9 +269,21 @@ section h2 {
 }
 
 /* Author bio styling */
+.author__name {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Fix spacing in author content container */
+.author__content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Bio spacing */
 .author__bio {
   white-space: pre-line !important;
-  line-height: 1.3 !important;
+  line-height: 1.2 !important; /* Reduced further */
   font-size: 0.9em !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -281,13 +293,14 @@ section h2 {
   max-width: 100% !important;
 }
 
-.author__content {
-  margin: 0 !important;
-  padding: 0 !important;
+/* Tighten sidebar overall */
+.sidebar.sticky {
+  margin-top: -10px !important;
 }
 
+/* Fix spacing between sections */
 .sidebar.sticky .author__urls-wrapper {
-  margin-top: 5px !important;
+  margin-top: 2px !important; /* Reduced from 5px */
 }
 
 .author__urls {
@@ -297,12 +310,17 @@ section h2 {
 .sidebar .author__content {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0px; /* Reduced from 2px */
 }
 
-/* Fix spacing between sections in sidebar */
+/* Avatar image spacing */
+.author__avatar {
+  margin-bottom: 0 !important;
+}
+
+/* Fix spacing between sidebar elements */
 .sidebar p, .sidebar ul {
-  margin: 0 0 4px 0 !important;
+  margin: 0 !important;
 }
 
 /* Reduce overall spacing in the about page */
