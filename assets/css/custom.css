@@ -696,7 +696,7 @@ h3 {
   font-size: 1.4em !important;
   font-weight: 600 !important;
   margin-top: 5px !important;
-  margin-bottom: 5px !important; /* Reduced from 15px */
+  margin-bottom: 2px !important; /* Reduced from 15px -> 5px -> 2px */
   color: #1a1a1a !important;
   line-height: 1.3 !important;
   letter-spacing: -0.02em !important;
