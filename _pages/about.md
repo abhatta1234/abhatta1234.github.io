@@ -16,13 +16,15 @@ My name is Aman Bhatta and I am currently a **third year Ph.D. student** at the 
 Previously, I received a Bachelor's Degree with Honors in Mechanical Engineering from the University of Mississippi. I have broad interests in research topics related to deep learning and computer vision, specifically long-range video understanding and generation using multi-modality by harnessing features from text, videos, and audios combined.
 
 
+
 News
 ------
-* 2024/XX: 📚 [Your recent achievement/news]
-* 2024/XX: 💼 [Your recent professional update]
-* 2023/XX: 📚 [An achievement from 2023]
-* 2023/XX: 🎉 [An event from 2023]
-* [Add more news items in reverse chronological order]
+* 2025/02: 📚 3 papers accepted at IEEE FG (2 first authors, 1 co-authors). See you in Clear Water, Florida
+* 2025/01: 📚 1 paper accepted at IEEE TBIOM. 
+* 2024/12: 🎓 Defended my Oral Candidacy. Officially a PhD Candidate Now!
+* 2024/01: 📚 2 Papers accepted at WACV'24 (1 first author, 1 co-author).
+* 2023/01: 📚 1 paper accepted to DVPBA@WACV'23. My first conference travel and that too in Wonderful Hawaii!!
+* 2021/05: 🎓 Graduate from University of Mississippi with B.S (Hons) in Mechanical Engineering
 
 
 Selected Publications
