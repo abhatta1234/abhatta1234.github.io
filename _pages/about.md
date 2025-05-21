@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello There & Welcome | Hope You're Doing Well"
+title: "Hello There & Welcome! | Hope You're Doing Well"
 excerpt: "About me"
 author_profile: true
 classes: wide

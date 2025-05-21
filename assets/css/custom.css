@@ -796,3 +796,17 @@ hr, .page__content hr {
   width: 100% !important;
 }
 
+/* Style for pipe character in title */
+.page__title .separator,
+.page-title .separator {
+  color: #777 !important;
+  font-weight: 400 !important;
+  margin: 0 5px !important;
+}
+
+/* Style for title parts */
+.page__title .title-first-part,
+.page__title .title-second-part {
+  display: inline-block !important;
+}
+
