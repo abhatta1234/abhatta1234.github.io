@@ -693,13 +693,13 @@ h3 {
 /* Make page title more presentable and handle special characters */
 .page__title,
 .page-title {
-  font-size: 0.95rem !important;
+  font-size: 1.15rem !important;
   font-weight: 300 !important;
   font-family: "Brush Script MT", "Brush Script Std", "Comic Sans MS", cursive !important;
   color: #4a90e2 !important;
   margin-top: 5px !important;
   margin-bottom: 2px !important;
-  line-height: 1.3 !important;
+  line-height: 1.4 !important;
   letter-spacing: 0.02em !important;
   display: inline-block !important;
   position: relative !important;
@@ -820,7 +820,7 @@ hr, .page__content hr {
 
 /* Page title styling */
 .page__title {
-  font-size: 0.95rem !important;
+  font-size: 1.15rem !important;
   font-weight: 300 !important;
   font-family: "Brush Script MT", "Brush Script Std", "Comic Sans MS", cursive !important;
   color: #4a90e2 !important;
@@ -830,6 +830,7 @@ hr, .page__content hr {
   position: relative !important;
   display: inline-block !important;
   font-style: italic !important;
+  line-height: 1.4 !important;
 }
 
 .page__title:after {
