@@ -51,7 +51,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 search: False # Enable search
 
 # Navigation
-masthead_title: ""Machine learning: turning coffee into models that break in production." — Anonymous ML Engineer"
+masthead_title: "Machine learning: turning coffee into models that break in production. — Anonymous ML Engineer"
 header:
   overlay_color: "#fff"
 
