@@ -37,7 +37,7 @@ classes: wide
 
 [2] H. Wu, G. Bezold, **<u>A. Bhatta</u>**, and K. W. Bowyer. Logical Consistency and Greater Descriptive Power for Facial Hair Attribute Learning. In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023
 
-[1] W. Robbins, S. Zhou, **<u>A. Bhatta</u>**, C. Mello, V. Albiero, K. W. Bowyer, and T. E. Boult. CAST: Conditional Attribute Subsampling Toolkit for Fine-grained Evaluation. In IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) (Oral Presentation ), 2023
+[1] W. Robbins, S. Zhou, **<u>A. Bhatta</u>**, C. Mello, V. Albiero, K. W. Bowyer, and T. E. Boult. CAST: Conditional Attribute Subsampling Toolkit for Fine-grained Evaluation. In IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) (Oral Presentation 🏆), 2023
 
 
 
