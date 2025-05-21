@@ -285,13 +285,11 @@ section h2 {
 .author__bio {
   white-space: pre-line !important;
   line-height: 1.15 !important;
-  font-size: 0.88em !important;
+  font-size: 1.05em !important; /* Further increased font size */
   margin: 0 !important;
   padding: 0 !important;
   display: block !important;
-  word-wrap: break-word !important;
-  overflow-wrap: break-word !important;
-  max-width: 100% !important;
+  font-weight: 400 !important; /* Add slight weight for better readability */
 }
 
 /* Tighten sidebar overall */
@@ -461,10 +459,11 @@ p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure, .page__content blockquote {
 .author__bio {
   white-space: pre-line !important;
   line-height: 1.15 !important;
-  font-size: 1em !important; /* Further increased font size */
+  font-size: 1.05em !important; /* Further increased font size */
   margin: 0 !important;
   padding: 0 !important;
   display: block !important;
+  font-weight: 400 !important; /* Add slight weight for better readability */
 }
 
 .author__content, 
@@ -691,11 +690,11 @@ h3 {
   pointer-events: none !important; /* Prevents interaction with the avatar */
 }
 
-/* Make page title smaller */
+/* Make page title much smaller */
 .page__title,
 .page-title {
-  font-size: 1.8em !important;
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+  font-size: 1.5em !important; /* Reduced significantly */
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
 }
 
