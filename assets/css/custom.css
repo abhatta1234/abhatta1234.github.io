@@ -282,21 +282,26 @@ section h2 {
 }
 
 .author__content {
-  margin: 0 0 5px 0 !important;
+  margin: 0 !important;
   padding: 0 !important;
 }
 
 .sidebar.sticky .author__urls-wrapper {
-  margin-top: 0 !important;
+  margin-top: 5px !important;
 }
 
 .author__urls {
-  margin-top: 5px !important;
+  margin-top: 0 !important;
 }
 
 .sidebar .author__content {
   display: flex;
   flex-direction: column;
   gap: 2px;
+}
+
+/* Fix spacing between sections in sidebar */
+.sidebar p, .sidebar ul {
+  margin: 0 0 4px 0 !important;
 }
 
