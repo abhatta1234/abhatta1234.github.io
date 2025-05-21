@@ -30,7 +30,7 @@ Selected Publications
 ------
 
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
-  <img src="/images/your_publication_image1.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
+  <img src="/images/papers/revocable.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
     <strong>[Your Publication Title 1]</strong><br>
     <u>Aman Bhatta</u>, [Co-author 1], [Co-author 2], [Co-author 3]<br>
