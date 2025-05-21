@@ -624,6 +624,16 @@ h3 {
   font-weight: 500 !important;
 }
 
+/* Author name highlight styling */
+.publication-entry strong u {
+  font-weight: 700 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px !important;
+  text-decoration-thickness: 1.5px !important;
+  color: #000 !important;
+  padding: 0 2px !important;
+}
+
 /* ==================== */
 /* EXISTING STYLES BELOW */
 /* ==================== */
