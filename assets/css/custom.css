@@ -1,6 +1,7 @@
 /* Navigation styling */
 .greedy-nav {
   background-color: transparent;
+  z-index: 20 !important; /* Ensure navigation is above other elements */
 }
 
 /* Style for long masthead title */
@@ -432,16 +433,18 @@ p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure, .page__content blockquote {
 .sidebar {
   padding: 0 !important;
   margin-top: -20px !important; /* Pull the sidebar up even more */
+  z-index: 10 !important; /* Lower than navigation */
 }
 
 .author__avatar {
   margin: 0 !important;
   padding: 0 !important;
+  /* Remove auto margins to prevent centering */
 }
 
 .author__avatar img {
-  max-width: 100px !important; /* Return to original size */
-  margin: 0 auto 3px auto !important;
+  max-width: 100px !important; 
+  margin: 0 !important; /* Remove auto margins */
   padding: 0 !important;
   display: block !important;
 }
@@ -451,14 +454,14 @@ p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure, .page__content blockquote {
   padding: 0 !important;
   line-height: 1 !important;
   font-size: 1.25em !important;
-  text-align: center !important;
+  text-align: left !important; /* Left align text */
   margin-bottom: 3px !important;
 }
 
 .author__bio {
   white-space: pre-line !important;
   line-height: 1.15 !important;
-  font-size: 0.95em !important; /* Increased font size */
+  font-size: 1em !important; /* Further increased font size */
   margin: 0 !important;
   padding: 0 !important;
   display: block !important;
@@ -483,8 +486,8 @@ p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure, .page__content blockquote {
 .author__urls li {
   margin: 0 !important;
   padding: 0 !important;
-  line-height: 1.2 !important; /* Tighter line height */
-  font-size: 0.92em !important; /* Slightly larger text */
+  line-height: 1.2 !important;
+  font-size: 0.95em !important; /* Further increased font size */
 }
 
 /* Larger social media icons */
@@ -682,4 +685,9 @@ h3 {
 /* ==================== */
 /* EXISTING STYLES BELOW */
 /* ==================== */
+
+/* Fix hover issue with photo selection */
+.author__avatar {
+  pointer-events: none !important; /* Prevents interaction with the avatar */
+}
 
