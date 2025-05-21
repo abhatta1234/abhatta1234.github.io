@@ -10,12 +10,22 @@ redirect_from:
 ---
 
 
-My name is Aman Bhatta and I am **Ph.D. Candidate** at the University of Notre Dame in the Computer Science and Engineering department.
-My doctoral advisor is [Dr. Kevin Bowyer](https://cvrl.nd.edu/) and I am a member of Computer Vision Research Laboratory ([CVRL](https://cvrl.nd.edu/)). Previously, I received a Bachelor's Degree with Honors in Mechanical Engineering from the University of Mississippi.
+# Aman Bhatta
 
+I am a **Ph.D. Candidate** in Computer Science and Engineering at the University of Notre Dame, working under the guidance of [Dr. Kevin Bowyer](https://cvrl.nd.edu/) as a member of the Computer Vision Research Laboratory ([CVRL](https://cvrl.nd.edu/)). I hold a Bachelor's Degree with Honors in Mechanical Engineering from the University of Mississippi.
 
- My research focuses on developing new deep-learning-based **computer vision approaches** with a particular emphasis on face recognition and addressing accuracy differentials among demographic groups to promote fairness in AI systems. 
- I have broad interests in research topics related to deep learning and computer vision, specifically long-range video understanding and generation using multi-modality by harnessing features from text, videos, and audios combined.
+My doctoral research mostly focused on advancing face recognition technology through multiple dimensions:
+- Identifying and mitigating sources of bias in facial recognition systems
+- Addressing weaknesses in training adaptation techniques from general vision to face recognition
+- Enhancing the efficiency of deep face neural networks for edge device deployment
+- Ensuring cancellability in face recognition systems using Deep CNNs
+- Improving confidence in 1-to-many identification search results
+
+Recently, I've expanded my research to explore text-vision alignment for various face-related tasks. My work has been published in prestigious venues including CVPR, WACV, FG, IJCB, T-BIOM, and TTS.
+
+During a summer internship at Comcast, I developed models for contextual emotion prediction in long-form video content. This project aimed to model emotional flow for potential ad-insertion point prediction, utilizing cross-attention architectures, video transformers, and multimodal text encodings with VLMs. I also incorporated audio processing techniques including 2D spectrogram extraction and raw audio processing with wav2vec2.
+
+I am actively seeking opportunities as a Research Scientist, Research Engineer, Machine Learning Engineer, Applied Scientist, or Data Scientist starting July 2025 or later. My long-term goal is to develop expertise in multimodal AI systems while balancing fundamental research with the practical skills needed to deploy scalable, efficient, and production-grade models that solve real-world problems.
 
 
 
@@ -43,7 +53,7 @@ Selected Publications
   <img src="/images/paper/revocable.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
     <strong>Deep CNN Face Matchers Inherently Support Revocable Biometric Templates</strong><br>
-    <u>Aman Bhatta</u>, Michael C. King, Kevin W. Bowyer <br>
+    <u>***Aman Bhatta***</u>, Michael C. King, Kevin W. Bowyer <br>
     <em> IEEE Automatic Face and Gesture Recognition </em> (FG), 2025.<br>
     <a href="[Link to paper]" target="_blank">Paper Uploaded Soon</a> | <a href="https://github.com/abhatta1234/Revocable-Biometrics" target="_blank">Code</a>
   </div>
@@ -54,7 +64,7 @@ Selected Publications
   <img src="/images/paper/craft.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
     <strong>CRAFT: Contextual Re-Activation of Filters for face recognition Training</strong><br>
-    <u>Aman Bhatta</u>, Domingo Mery, Haiyu Wu, Kevin W. Bowyer<br>
+    <u>***Aman Bhatta***</u>, Domingo Mery, Haiyu Wu, Kevin W. Bowyer<br>
     <em> IEEE Automatic Face and Gesture Recognition </em> (FG), 2025.<br>
     <a href="https://arxiv.org/pdf/2312.00072" target="_blank">Paper</a> | <a href="https://github.com/abhatta1234/CRAFT" target="_blank">Code</a>
   </div>
@@ -65,7 +75,7 @@ Selected Publications
   <img src="/images/paper/tbiom.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
     <strong>What’s color got to do with it? Face recognition in grayscale</strong><br>
-     <u>Aman Bhatta</u>, Domingo Mery, Haiyu Wu, Joyce Annan, Michael C. King, Kevin W. Bowyer<br>
+     <u>***Aman Bhatta***</u>, Domingo Mery, Haiyu Wu, Joyce Annan, Michael C. King, Kevin W. Bowyer<br>
     <em>IEEE Transactions on Biometrics, Behavior, and Identity Science </em> (T-BIOM), 2025.<br>
     <a href="https://arxiv.org/pdf/2309.05180" target="_blank">Paper</a> 
   </div>
@@ -77,7 +87,7 @@ Selected Publications
   <img src="/images/paper/ijcb.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
     <strong>Revisiting Linearization of Spatial Maps in SoTA Face Recognition Backbone</strong><br>
-     <u>Aman Bhatta</u>, Haiyu Wu, Kagan Ozturk, Kevin W. Bowyer<br>
+     <u>***Aman Bhatta***</u>, Haiyu Wu, Kagan Ozturk, Kevin W. Bowyer<br>
     <em>IEEE International Joint Conference on Biometrics </em> (IJCB), 2024.<br>
     <a href="/papers/ijcb24.pdf" target="_blank">Paper</a> 
   </div>
@@ -88,7 +98,7 @@ Selected Publications
   <img src="/images/paper/tcv.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
     <strong>Our Deep CNN Face Matchers Have Developed Achromatopsia</strong><br>
-     <u>Aman Bhatta</u>, Domingo Mery, Haiyu Wu, Joyce Annan, Michael C. King, Kevin W. Bowyer<br>
+     <u>***Aman Bhatta***</u>, Domingo Mery, Haiyu Wu, Joyce Annan, Michael C. King, Kevin W. Bowyer<br>
     <em>IEEE / CVF Computer Vision and Pattern Recognition Conference </em> (TCV@CVPR), 2024.<br>
     <a href="https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/papers/Bhatta_Our_Deep_CNN_Face_Matchers_Have_Developed_Achromatopsia_CVPRW_2024_paper.pdf" target="_blank">Paper</a> 
   </div>
@@ -96,11 +106,11 @@ Selected Publications
 ---
 
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
-  <img src="/images/paper/tcv.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
+  <img src="/images/paper/logical.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
     <strong>Logical Consistency and Greater Descriptive Power for Facial Hair Attribute
 Learning</strong><br>
-     Haiyu Wu, Grace Bezold, <u>Aman Bhatta</u>, Kevin W. Bowyer<br>
+     Haiyu Wu, Grace Bezold, <u>***Aman Bhatta***</u>, Kevin W. Bowyer<br>
     <em>IEEE / CVF Computer Vision and Pattern Recognition Conference </em> (CVPR), 2023.<br>
     <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Wu_Logical_Consistency_and_Greater_Descriptive_Power_for_Facial_Hair_Attribute_CVPR_2023_paper.pdf" target="_blank">Paper</a> 
   </div>
@@ -110,15 +120,14 @@ Learning</strong><br>
 
 <!-- You can add more publication entries following the same format -->
 
-🛠️ Services  
+Services  
 ------
 
-### 📝 Reviewer Experience  
+| Year  | Reviewed Conferences & Journals                                  |
+|:-----:|:-----------------------------------------------------------------|
+| **2025** | WACV 2025 · CVPR 2025 · ICCV 2025 · FG 2025                   |
+| **2024** | WACV 2024 · CVPR 2024 · ECCV 2024                            |
+| **2023** | WACV 2023 · IEEE T-IP 2023 · IJCB 2023                       |
+| **2022** | WACV 2022 · ICPR 2022                                        |
 
-| **Year** | **Venues**                                           |
-| :------: | ---------------------------------------------------- |
-| **2025** | WACV&nbsp;2025 · CVPR&nbsp;2025 · ICCV&nbsp;2025 · FG&nbsp;2025 |
-| **2024** | WACV&nbsp;2024 · CVPR&nbsp;2024 · ECCV&nbsp;2024      |
-| **2023** | WACV&nbsp;2023 · IEEE T‑IP&nbsp;2023 · IJCB&nbsp;2023 |
-| **2022** | WACV&nbsp;2022 · ICPR&nbsp;2022                      |
 
