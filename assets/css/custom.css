@@ -530,3 +530,101 @@ hr {
 /* CLEAN UP PREVIOUS RULES */
 /* (Keeping previous styling rules here but they will be overwritten by the more aggressive ones above) */
 
+/* ==================== */
+/* TYPOGRAPHY ENHANCEMENTS */
+/* ==================== */
+
+/* Apply fonts to elements */
+body {
+  font-family: 'Source Serif Pro', Georgia, serif !important;
+  font-size: 17px !important;
+  letter-spacing: 0.01em !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.greedy-nav a,
+.page__hero-caption,
+.site-title,
+.author__name,
+.author__bio,
+.author__urls,
+.toc__menu,
+.nav__list .nav__items,
+.sidebar .nav__list li,
+.pagination--pager,
+.archive__item-title,
+.btn,
+.page__meta {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Enhanced typography */
+h1 {
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+  font-size: 2.2em !important;
+}
+
+h2 {
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  color: #2b2b2b !important;
+  font-size: 1.6em !important;
+}
+
+h3 {
+  font-weight: 500 !important;
+  letter-spacing: -0.01em !important;
+  font-size: 1.3em !important;
+}
+
+.site-title {
+  font-weight: 500 !important;
+  font-size: 0.9em !important;
+  letter-spacing: 0 !important;
+}
+
+.page__content p {
+  line-height: 1.6 !important;
+}
+
+.page__content strong {
+  font-weight: 600 !important;
+}
+
+/* Publication styling */
+.publication-entry strong {
+  font-weight: 600 !important;
+  font-size: 1.05em !important;
+  color: #2b2b2b !important;
+}
+
+.publication-entry em {
+  font-style: italic !important;
+  color: #555 !important;
+}
+
+/* Sidebar typography */
+.author__name {
+  font-weight: 600 !important;
+  font-size: 1.3em !important;
+  letter-spacing: -0.01em !important;
+  color: #2b2b2b !important;
+}
+
+.author__bio {
+  font-family: 'Source Serif Pro', Georgia, serif !important;
+  font-size: 0.9em !important;
+  line-height: 1.3 !important;
+  color: #333 !important;
+}
+
+.author__urls {
+  font-size: 0.85em !important;
+  font-weight: 500 !important;
+}
+
+/* ==================== */
+/* EXISTING STYLES BELOW */
+/* ==================== */
+
