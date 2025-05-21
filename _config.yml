@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Machine learning: turning coffee into models that break in production." — Anonymous ML Engineer
+title: My Academic Webpage
 description: >-
-  Academic webpage of Aman Bhatta.
+Academic webpage of Aman Bhatta.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://abhatta1234.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "abhatta1234/abhatta1234.github.io"
@@ -51,7 +51,7 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 search: False # Enable search
 
 # Navigation
-masthead_title: "Aman Bhatta"
+masthead_title: ""Machine learning: turning coffee into models that break in production." — Anonymous ML Engineer"
 header:
   overlay_color: "#fff"
 
