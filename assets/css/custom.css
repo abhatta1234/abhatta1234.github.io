@@ -289,3 +289,17 @@ section h2 {
   color: #17a2b8;
 }
 
+/* FORCE WIDER LAYOUT - ABOUT PAGE */
+body.layout--single.permalink--slash .page,
+body.layout--home .page,
+body.layout--splash .page,
+.home .page,
+.page--home .page,
+.layout--home .page__inner-wrap,
+.page-/ .page__content,
+.page__inner-wrap {
+  max-width: 95% !important;
+  width: 95% !important;
+  margin: 0 auto !important;
+}
+
