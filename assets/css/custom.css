@@ -696,7 +696,7 @@ h3 {
   font-size: 1.4em !important;
   font-weight: 600 !important;
   margin-top: 5px !important;
-  margin-bottom: 15px !important;
+  margin-bottom: 5px !important; /* Reduced from 15px */
   color: #1a1a1a !important;
   line-height: 1.3 !important;
   letter-spacing: -0.02em !important;
@@ -754,7 +754,19 @@ hr, .page__content hr {
   width: 100% !important;
   height: 2px !important;
   background: linear-gradient(to right, #6f9dc7, #2F5E87, #6f9dc7) !important;
-  margin-top: 10px !important;
-  margin-bottom: 20px !important;
+  margin-top: 5px !important; /* Reduced from 10px */
+  margin-bottom: 10px !important; /* Reduced from 20px */
+}
+
+/* Make sure first paragraph after title has proper spacing */
+.page__content > p:first-of-type {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure proper spacing for content directly after the title */
+.page__content > :first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
