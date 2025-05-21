@@ -416,3 +416,117 @@ body.page-/ .page__content > h2:first-of-type {
   margin-top: 0.7em !important;
 }
 
+/* ==================== */
+/* EXTREME SPACING REDUCTION */
+/* ==================== */
+
+/* GLOBAL SPACING REDUCTION */
+p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure, .page__content blockquote {
+  margin-top: 0 !important;
+  margin-bottom: 0.5em !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* SIDEBAR EXTREME COMPRESSION */
+.sidebar {
+  padding: 0 !important;
+}
+
+.author__avatar img {
+  max-width: 100px !important;
+  padding: 0 !important;
+}
+
+.author__name {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.author__bio {
+  white-space: pre-line !important;
+  line-height: 1.1 !important;
+  font-size: 0.85em !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.author__content, 
+.author__urls-wrapper {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.author__urls {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.author__urls li {
+  padding: 0.2em 0 !important;
+  margin: 0 !important;
+  font-size: 0.9em !important;
+}
+
+/* MAIN CONTENT EXTREME COMPRESSION */
+.page__content {
+  padding: 0 !important;
+}
+
+.page__content p {
+  margin-bottom: 0.5em !important;
+  line-height: 1.4 !important;
+}
+
+.page__content ul, 
+.page__content ol {
+  margin: 0 0 0.3em 0 !important;
+  padding-left: 1em !important;
+}
+
+.page__content li {
+  margin-bottom: 0.15em !important;
+}
+
+/* REDUCE SECTION SPACING */
+.page__content h2 {
+  margin-top: 0.7em !important;
+  margin-bottom: 0.3em !important;
+  padding: 0 !important;
+}
+
+hr {
+  margin: 0.5em 0 !important;
+  padding: 0 !important;
+  height: 1px !important;
+}
+
+/* PUBLICATION ENTRIES COMPRESSION */
+.publication-entry {
+  margin: 0 0 0.3em 0 !important;
+  padding: 0 !important;
+}
+
+.publication-entry img {
+  width: 250px !important;
+}
+
+.publication-entry strong, 
+.publication-entry em {
+  display: inline-block !important;
+  margin-bottom: 0.1em !important;
+}
+
+/* MASTHEAD COMPRESSION */
+.masthead {
+  padding: 0.5em 0 !important;
+  border-bottom: 1px solid #f2f3f3 !important;
+}
+
+.masthead__inner-wrap {
+  padding: 0 1em !important;
+}
+
+/* CLEAN UP PREVIOUS RULES */
+/* (Keeping previous styling rules here but they will be overwritten by the more aggressive ones above) */
+

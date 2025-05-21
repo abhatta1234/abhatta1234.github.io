@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello!"
+title: "Welcome to my WebPage "
 excerpt: "About me"
 author_profile: true
 classes: wide
@@ -8,7 +8,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 I am a **Ph.D. Candidate** in Computer Science at the University of Notre Dame, advised by [Dr. Kevin Bowyer](https://www3.nd.edu/~kwb/) at the [Computer Vision Research Lab (CVRL)](https://cvrl.nd.edu/). My doctoral research explores multiple dimensions of face recognition technology, including mitigating bias, optimizing neural networks for efficiency on edge devices, ensuring biometric system security, and improving reliability of face identification search. My work has been published in top venues including CVPR, WACV, FG, IJCB, T-BIOM, and TTS.
 
 I was fortunate to intern at Comcast with the Media Analytics Framework Team under [Dr. Mahmudul Hasan](https://mhasa004.github.io/), where I built multimodal models for contextual emotion prediction in video content, leveraging multi-branch transformer architectures, cross-attention mechanisms, and multimodal text encodings.
@@ -27,13 +26,13 @@ News
 * 2024/01: 📚 2 Papers accepted at WACV'24.
 * 2023/03: 📚 1 Papers accepted at CVPR'23.
 * 2023/01: 📚 1 paper accepted to DVPBA@WACV'23.
+* 2021/08: 🎓 Started my PhD in Computer Science and Engineering Dept. at University of Notre Dame
 * 2021/05: 🎓 Graduate from University of Mississippi with B.S (Hons) in Mechanical Engineering
 * 2020/01: 🎉 Continuing my Co-op (part-time) for Spring'20 Semester at ThyssenKrupp AG
 * 2019/01: 🎉 Started my full-time Engineering Co-op at ThyssenKrupp AG for a year
 
 Selected Publications
 ------
-<div class="tight-spacing">
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
   <img src="/images/paper/revocable.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
@@ -95,11 +94,8 @@ Learning</strong><br>
   </div>
 </div>
 ---
-</div>
-
 Services  
 ------
-
 | Year  | Reviewed Conferences & Journals                                  |
 |:-----:|:-----------------------------------------------------------------|
 | **2025** | WACV 2025 · CVPR 2025 · ICCV 2025 · FG 2025                   |
