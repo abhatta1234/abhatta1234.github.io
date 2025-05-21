@@ -19,7 +19,7 @@ classes: wide
 
 [10] K. Ozturk, **<u>A. Bhatta</u>**, H. Wu, and K. W. Bowyer. On the Effectiveness of Restricted Receptive Fields for Interpretable Face Verification. 2025. In Review
 
-[9] H. Wu, S. Tian, **<u>A. Bhatta</u>**, J. Gutierrez, G. Bezold, G. Argueta, K. Ricanek Jr., M. C. King, and K. W. Bowyer. What is Goldilocks Face Verification Test Set? 2023. In Review
+[9] H. Wu, S. Tian, **<u>A. Bhatta</u>**, J. Gutierrez, G. Bezold, G. Argueta, K. Ricanek Jr., M. C. King, and K. W. Bowyer. What is Goldilocks Face Verification Test Set? 2025. In Review
 
 ## 2024
 [8] **<u>A. Bhatta</u>**, G. Pangelinan, H. Wu, M. C. King, and K. W. Bowyer. Analyzing the Impact of Demographic and Operational Variables on 1-to-Many Facial ID Search. In IEEE Transactions of Technology and Society (TTS), volume 5, 2024.
