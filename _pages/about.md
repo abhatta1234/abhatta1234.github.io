@@ -33,8 +33,8 @@ Selected Publications
   <img src="/images/papers/revocable.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
     <strong>[Your Publication Title 1]</strong><br>
-    <u>Aman Bhatta</u>, [Co-author 1], [Co-author 2], [Co-author 3]<br>
-    <em>[Conference/Journal Name]</em> ([Abbreviation]), [Year].<br>
+    <u>Aman Bhatta</u>, Michael C. King, Kevin W. Bowyer <br>
+    <em>[IEEE Automatic Face and Gesture Recognition]</em> ([FG]), [2025].<br>
     <a href="[Link to paper]" target="_blank">Paper</a> | <a href="[Link to code]" target="_blank">Code</a>
   </div>
 </div>
