@@ -54,10 +54,12 @@ body.page-/publications/ p,
   width: 100% !important;
   margin-right: 0 !important;
   text-align: justify !important;
+  justify-content: space-evenly !important;
 }
 
 body.page-/publications/ .publication-entry {
   text-align: justify !important;
+  justify-content: space-evenly !important;
 }
 
 body.page-/publications/ h2 {
