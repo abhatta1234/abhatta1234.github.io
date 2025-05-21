@@ -693,9 +693,9 @@ h3 {
 /* Make page title more presentable and handle special characters */
 .page__title,
 .page-title {
-  font-size: 1.1rem !important;
+  font-size: 0.95rem !important;
   font-weight: 300 !important;
-  font-family: "Brush Script MT", cursive !important;
+  font-family: "Brush Script MT", "Brush Script Std", "Comic Sans MS", cursive !important;
   color: #4a90e2 !important;
   margin-top: 5px !important;
   margin-bottom: 2px !important;
@@ -706,6 +706,7 @@ h3 {
   padding-bottom: 5px !important;
   border-bottom: none !important;
   text-decoration: none !important;
+  font-style: italic !important;
 }
 
 /* Add gradient underline */
@@ -819,15 +820,16 @@ hr, .page__content hr {
 
 /* Page title styling */
 .page__title {
-  font-size: 1.2rem !important;
+  font-size: 0.95rem !important;
   font-weight: 300 !important;
-  font-family: 'Playfair Display', serif !important;
+  font-family: "Brush Script MT", "Brush Script Std", "Comic Sans MS", cursive !important;
   color: #4a90e2 !important;
   margin-bottom: 0.3rem !important;
   padding-bottom: 0.3rem !important;
   border-bottom: none !important;
   position: relative !important;
   display: inline-block !important;
+  font-style: italic !important;
 }
 
 .page__title:after {
