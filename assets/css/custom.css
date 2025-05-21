@@ -270,8 +270,29 @@ section h2 {
 
 /* Author bio styling */
 .author__bio {
-  white-space: pre-line !important;
+  white-space: normal !important;
   line-height: 1.5 !important;
   font-size: 0.9em !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.author__content {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.sidebar.sticky .author__urls-wrapper {
+  margin-top: 0 !important;
+}
+
+.author__urls {
+  margin-top: 5px !important;
+}
+
+.sidebar .author__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
