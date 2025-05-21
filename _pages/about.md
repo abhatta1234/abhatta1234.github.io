@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to my WebPage!"
+title: "Thanks for Visiting my Academic WebPage!"
 excerpt: "About me"
 author_profile: true
 classes: wide
