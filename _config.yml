@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: My Academic Webpage
 description: >-
-Academic webpage of Aman Bhatta.
+  Academic webpage of Aman Bhatta.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://abhatta1234.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "abhatta1234/abhatta1234.github.io"
@@ -24,11 +24,7 @@ repository: "abhatta1234/abhatta1234.github.io"
 author:
   name: "Aman Bhatta"
   avatar: "/images/ab.jpeg" # path to your avatar image, e.g., /assets/images/bio-photo.jpg
-  bio: |
-    CSE PhD Candidate, University of Notre Dame
-    Ex-Grad Research Intern, Comcast
-    Computer Vision Researcher, CVRL
-    Focus: Face Recognition, Fairness in AI
+  bio: CSE PhD Candidate, University of Notre Dame
   location: "South Bend, IN"
   email: "abhatta@nd.edu"
   links:
