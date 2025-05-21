@@ -660,11 +660,11 @@ h3 {
 /* Author name highlight styling */
 .publication-entry strong u {
   font-weight: 700 !important;
-  text-decoration: underline !important;
-  text-underline-offset: 2px !important;
-  text-decoration-thickness: 1.5px !important;
+  text-decoration: none !important; /* Remove default underline */
+  border-bottom: 1px solid #333 !important; /* Use border instead of text-decoration */
+  display: inline-block !important;
+  padding-bottom: 1px !important;
   color: #000 !important;
-  padding: 0 2px !important;
 }
 
 /* ==================== */
