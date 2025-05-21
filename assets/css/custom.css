@@ -305,3 +305,38 @@ section h2 {
   margin: 0 0 4px 0 !important;
 }
 
+/* Reduce overall spacing in the about page */
+body.page-/ .page__content p {
+  margin-bottom: 0.8em !important;
+}
+
+body.page-/ .page__content h2,
+body.page-/ .page__content h3 {
+  margin-top: 1em !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* Reduce spacing for news items */
+body.page-/ .page__content ul li {
+  margin-bottom: 0.3em !important;
+}
+
+/* Reduce spacing between sections */
+body.page-/ .page__content hr {
+  margin: 1em 0 !important;
+}
+
+/* Publication entries spacing */
+body.page-/ .publication-entry {
+  margin-bottom: 0.8em !important;
+  padding-bottom: 0.8em !important;
+}
+
+/* Reduce spacing after section headers */
+body.page-/ .page__content h2 + p,
+body.page-/ .page__content h3 + p,
+body.page-/ .page__content h2 + ul,
+body.page-/ .page__content h3 + ul {
+  margin-top: 0.3em !important;
+}
+
