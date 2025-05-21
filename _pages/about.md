@@ -8,7 +8,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 I am a **Ph.D. Candidate** in Computer Science and Engineering at the University of Notre Dame, advised by [Dr. Kevin Bowyer](https://www3.nd.edu/~kwb/) at the [Computer Vision Research Lab (CVRL)](https://cvrl.nd.edu/). My doctoral research explores multiple dimensions of face recognition technology, including mitigating bias, optimizing neural networks for efficiency on edge devices, ensuring biometric system security, and improving reliability of face identification search. My work has been published in top venues including CVPR, WACV, FG, IJCB, T-BIOM, and TTS.
 
 I was fortunate to intern at Comcast with the Media Analytics Framework Team under [Dr. Mahmudul Hasan](https://mhasa004.github.io/) in Summer 2024, where I built multimodal models for contextual emotion prediction in video content, leveraging multi-branch transformer architectures, cross-attention mechanisms, and multimodal text encodings.
