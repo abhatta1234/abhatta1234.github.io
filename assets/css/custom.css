@@ -285,7 +285,7 @@ section h2 {
 .author__bio {
   white-space: pre-line !important;
   line-height: 1.15 !important;
-  font-size: 5em !important; /* Further increased font size */
+  font-size: 10em !important; /* Further increased font size */
   margin: 0 !important;
   padding: 0 !important;
   display: block !important;
@@ -693,20 +693,19 @@ h3 {
 /* Make page title more presentable and handle special characters */
 .page__title,
 .page-title {
-  font-size: 1.15rem !important;
-  font-weight: 300 !important;
-  font-family: "Brush Script MT", "Brush Script Std", "Comic Sans MS", cursive !important;
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  font-family: "Dancing Script", cursive !important;
   color: #4a90e2 !important;
   margin-top: 5px !important;
   margin-bottom: 2px !important;
   line-height: 1.4 !important;
-  letter-spacing: 0.02em !important;
+  letter-spacing: 0.01em !important;
   display: inline-block !important;
   position: relative !important;
   padding-bottom: 5px !important;
   border-bottom: none !important;
   text-decoration: none !important;
-  font-style: italic !important;
 }
 
 /* Add gradient underline */
@@ -820,16 +819,15 @@ hr, .page__content hr {
 
 /* Page title styling */
 .page__title {
-  font-size: 1.15rem !important;
-  font-weight: 300 !important;
-  font-family: "Brush Script MT", "Brush Script Std", "Comic Sans MS", cursive !important;
+  font-size: 1.25rem !important;
+  font-weight: 500 !important;
+  font-family: "Dancing Script", cursive !important;
   color: #4a90e2 !important;
   margin-bottom: 0.3rem !important;
   padding-bottom: 0.3rem !important;
   border-bottom: none !important;
   position: relative !important;
   display: inline-block !important;
-  font-style: italic !important;
   line-height: 1.4 !important;
 }
 
