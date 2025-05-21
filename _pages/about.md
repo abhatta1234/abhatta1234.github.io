@@ -42,7 +42,7 @@ Selected Publications
     <a href="[Link to paper]" target="_blank">Paper Uploaded Soon</a> | <a href="https://github.com/abhatta1234/Revocable-Biometrics" target="_blank">Code</a>
   </div>
 </div>
----
+------
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
   <img src="/images/paper/craft.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
@@ -52,7 +52,7 @@ Selected Publications
     <a href="https://arxiv.org/pdf/2312.00072" target="_blank">Paper</a> | <a href="https://github.com/abhatta1234/CRAFT" target="_blank">Code</a>
   </div>
 </div>
----
+------
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
   <img src="/images/paper/tbiom.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
@@ -62,7 +62,7 @@ Selected Publications
     <a href="https://arxiv.org/pdf/2309.05180" target="_blank">Paper</a> 
   </div>
 </div>
----
+------
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
   <img src="/images/paper/ijcb.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
@@ -72,7 +72,7 @@ Selected Publications
     <a href="/papers/ijcb24.pdf" target="_blank">Paper</a> 
   </div>
 </div>
----
+------
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
   <img src="/images/paper/tcv.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
@@ -82,7 +82,7 @@ Selected Publications
     <a href="https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/papers/Bhatta_Our_Deep_CNN_Face_Matchers_Have_Developed_Achromatopsia_CVPRW_2024_paper.pdf" target="_blank">Paper</a> 
   </div>
 </div>
----
+------
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
   <img src="/images/paper/logical.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
