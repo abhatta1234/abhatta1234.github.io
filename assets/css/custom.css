@@ -705,19 +705,13 @@ h3 {
   padding-bottom: 5px !important;
   border-bottom: none !important; /* Remove default border */
   text-decoration: none !important; /* Remove any text decoration */
+  border: none !important;
 }
 
-/* Add elegant underline to title */
+/* Override the default gradient line */
 .page__title:after,
 .page-title:after {
-  content: "" !important;
-  position: absolute !important;
-  width: 100% !important;
-  height: 2px !important; /* Restore the gradient */
-  bottom: 0 !important;
-  left: 0 !important;
-  background: linear-gradient(to right, #6f9dc7, #2F5E87, #6f9dc7) !important;
-  z-index: 1 !important; /* Ensure it's above other elements */
+  display: none !important; /* Completely disable the after element */
 }
 
 /* Override any theme styling that might add borders */
@@ -736,24 +730,31 @@ h1.page__title {
   box-shadow: none !important;
 }
 
-/* Style for pipe character in title */
-.page__title span.separator,
-.page-title span.separator {
-  color: #777 !important;
-  font-weight: 400 !important;
-  margin: 0 5px !important;
-}
-
-/* Ensure no conflicts with horizontal rules */
-.page__content hr {
-  margin: 2em 0 !important;
-  height: 1px !important;
-  background: #ddd !important; /* Lighter color for horizontal rules */
+/* Remove all underlines and borders from the page header area */
+.page__lead, .page__meta, .page__excerpt, .page__content:before, .page__content:after {
   border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
 }
 
-/* Make sure content after title has proper spacing */
-.page__content > p:first-of-type {
-  margin-top: 1.5em !important;
+/* Remove any horizontal rules in the content */
+hr, .page__content hr {
+  display: none !important;
+}
+
+/* Remove any underlines that might be added by the theme */
+.page__content *:before, .page__content *:after {
+  border-bottom: none !important;
+}
+
+/* Add our custom gradient bar only */
+.custom-title-bar {
+  display: block !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(to right, #6f9dc7, #2F5E87, #6f9dc7) !important;
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
 }
 

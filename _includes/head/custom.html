@@ -2,6 +2,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- start custom head snippets -->
 
@@ -13,8 +14,8 @@
   document.addEventListener('DOMContentLoaded', function() {
     // Override site title in masthead
     var siteTitle = document.querySelector('.site-title');
-    if (siteTitle) {
-      siteTitle.textContent = "Machine learning: turning coffee into models that break in production. — Anonymous ML Engineer";
+    if (siteTitle && !siteTitle.querySelector('.site-quote')) {
+      siteTitle.innerHTML = '<span class="site-quote">Machine learning: turning coffee into models that break in production.</span> <span class="site-author">— Anonymous ML Engineer</span>';
     }
     
     // Format the page title with styled pipe character
@@ -23,6 +24,27 @@
       var titleText = pageTitle.textContent;
       var parts = titleText.split('|');
       pageTitle.innerHTML = parts[0].trim() + ' <span class="separator">|</span> ' + parts[1].trim();
+      
+      // Add our custom gradient bar
+      var customBar = document.createElement('div');
+      customBar.className = 'custom-title-bar';
+      pageTitle.after(customBar);
     }
+
+    // Fix any missing icons
+    document.querySelectorAll('.fab').forEach(function(icon) {
+      if (icon.classList.contains('fa-linkedin')) {
+        icon.classList.add('fa-linkedin-in');
+      }
+    });
+    
+    // Remove any horizontal rules directly after headers
+    var headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    headers.forEach(function(header) {
+      var nextElement = header.nextElementSibling;
+      if (nextElement && nextElement.tagName === 'HR') {
+        nextElement.style.display = 'none';
+      }
+    });
   });
 </script> 
