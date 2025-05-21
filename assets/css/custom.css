@@ -431,22 +431,31 @@ p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure, .page__content blockquote {
 /* SIDEBAR EXTREME COMPRESSION */
 .sidebar {
   padding: 0 !important;
+  margin-top: -15px !important; /* Pull the sidebar up even more */
+}
+
+.author__avatar {
+  margin: 0 0 5px 0 !important;
+  padding: 0 !important;
 }
 
 .author__avatar img {
-  max-width: 100px !important;
+  max-width: 90px !important; /* Smaller image */
+  margin: 0 !important;
   padding: 0 !important;
 }
 
 .author__name {
   margin: 0 !important;
   padding: 0 !important;
+  line-height: 1 !important;
+  font-size: 1.2em !important;
 }
 
 .author__bio {
   white-space: pre-line !important;
   line-height: 1.1 !important;
-  font-size: 0.85em !important;
+  font-size: 0.82em !important;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -463,9 +472,33 @@ p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure, .page__content blockquote {
 }
 
 .author__urls li {
-  padding: 0.2em 0 !important;
   margin: 0 !important;
-  font-size: 0.9em !important;
+  padding: 0 !important;
+  line-height: 1.3 !important;
+  font-size: 0.85em !important;
+}
+
+.author__urls .fa, 
+.author__urls .fas,
+.author__urls .fab {
+  width: 15px !important;
+}
+
+/* Remove any possible spacing from list items */
+.sidebar ul li {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.2 !important;
+}
+
+/* Fix overall layout */
+.wrapper {
+  margin-top: -10px !important;
+}
+
+.author__urls-wrapper {
+  position: relative !important;
+  top: -5px !important;
 }
 
 /* MAIN CONTENT EXTREME COMPRESSION */
