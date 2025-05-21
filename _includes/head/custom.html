@@ -16,5 +16,13 @@
     if (siteTitle) {
       siteTitle.textContent = "Machine learning: turning coffee into models that break in production. — Anonymous ML Engineer";
     }
+    
+    // Format the page title with styled pipe character
+    var pageTitle = document.querySelector('.page__title');
+    if (pageTitle && pageTitle.textContent.includes('|')) {
+      var titleText = pageTitle.textContent;
+      var parts = titleText.split('|');
+      pageTitle.innerHTML = parts[0].trim() + ' <span class="separator">|</span> ' + parts[1].trim();
+    }
   });
 </script> 
