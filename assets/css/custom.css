@@ -770,3 +770,29 @@ hr, .page__content hr {
   padding-top: 0 !important;
 }
 
+/* Remove any horizontal rules in the content ONLY near the title */
+.page__title + hr, 
+.page__content > h1 + hr,
+.page__content > h2:first-of-type + hr {
+  display: none !important;
+}
+
+/* RESTORE horizontal rules between publications */
+hr, .page__content hr {
+  display: block !important; /* Show horizontal rules */
+  margin: 1.5em 0 !important;
+  height: 1px !important;
+  background: #ddd !important; /* Lighter color for horizontal rules */
+  border: none !important;
+}
+
+/* Publication entries should have nice separation */
+.publication-entry + hr {
+  margin: 1.5em 0 !important;
+  display: block !important;
+  height: 1px !important;
+  background: linear-gradient(to right, transparent, #ddd, transparent) !important;
+  border: none !important;
+  width: 100% !important;
+}
+

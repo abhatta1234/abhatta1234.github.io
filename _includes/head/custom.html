@@ -29,21 +29,21 @@
       var customBar = document.createElement('div');
       customBar.className = 'custom-title-bar';
       pageTitle.after(customBar);
+      
+      // Only remove horizontal rules near the page title, not everywhere
+      var nextElement = pageTitle.nextElementSibling;
+      while (nextElement && (nextElement.tagName === 'HR' || nextElement.className === 'custom-title-bar')) {
+        if (nextElement.tagName === 'HR') {
+          nextElement.style.display = 'none';
+        }
+        nextElement = nextElement.nextElementSibling;
+      }
     }
 
     // Fix any missing icons
     document.querySelectorAll('.fab').forEach(function(icon) {
       if (icon.classList.contains('fa-linkedin')) {
         icon.classList.add('fa-linkedin-in');
-      }
-    });
-    
-    // Remove any horizontal rules directly after headers
-    var headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-    headers.forEach(function(header) {
-      var nextElement = header.nextElementSibling;
-      if (nextElement && nextElement.tagName === 'HR') {
-        nextElement.style.display = 'none';
       }
     });
   });
