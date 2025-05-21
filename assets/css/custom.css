@@ -283,8 +283,8 @@ section h2 {
 /* Bio spacing */
 .author__bio {
   white-space: pre-line !important;
-  line-height: 1.2 !important; /* Reduced further */
-  font-size: 0.9em !important;
+  line-height: 1.15 !important;
+  font-size: 0.88em !important;
   margin: 0 !important;
   padding: 0 !important;
   display: block !important;
@@ -454,8 +454,8 @@ p, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure, .page__content blockquote {
 
 .author__bio {
   white-space: pre-line !important;
-  line-height: 1.1 !important;
-  font-size: 0.82em !important;
+  line-height: 1.15 !important;
+  font-size: 0.88em !important;
   margin: 0 !important;
   padding: 0 !important;
 }
