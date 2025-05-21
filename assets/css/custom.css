@@ -298,6 +298,13 @@ section h2 {
   color: #17a2b8;
 }
 
+/* Author bio styling */
+.author__bio {
+  white-space: pre-line !important;
+  line-height: 1.5 !important;
+  font-size: 0.9em !important;
+}
+
 /* FORCE WIDER LAYOUT - ABOUT PAGE */
 body.layout--single.permalink--slash .page,
 body.layout--home .page,
