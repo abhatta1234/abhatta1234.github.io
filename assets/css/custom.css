@@ -270,11 +270,12 @@ section h2 {
 
 /* Author bio styling */
 .author__bio {
-  white-space: normal !important;
+  white-space: pre-line !important;
   line-height: 1.5 !important;
   font-size: 0.9em !important;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+  display: block !important;
 }
 
 .author__content {
