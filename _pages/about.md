@@ -33,6 +33,7 @@ News
 
 Selected Publications
 ------
+<div class="tight-spacing">
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
   <img src="/images/paper/revocable.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
@@ -56,7 +57,7 @@ Selected Publications
 <div style="display:flex;align-items:flex-start;" class="publication-entry">
   <img src="/images/paper/tbiom.png" alt="Publication Thumbnail" style="width:300px;height:auto;object-fit:cover;margin-right:20px;">
   <div>
-    <strong>What’s color got to do with it? Face recognition in grayscale</strong><br>
+    <strong>What's color got to do with it? Face recognition in grayscale</strong><br>
      **<u>Aman Bhatta</u>**, Domingo Mery, Haiyu Wu, Joyce Annan, Michael C. King, Kevin W. Bowyer<br>
     <em>IEEE Transactions on Biometrics, Behavior, and Identity Science </em> (T-BIOM), 2025.<br>
     <a href="https://arxiv.org/pdf/2309.05180" target="_blank">Paper</a> 
@@ -94,6 +95,7 @@ Learning</strong><br>
   </div>
 </div>
 ---
+</div>
 
 Services  
 ------

@@ -358,3 +358,61 @@ body.page-/ .page__content h3 + ul {
   margin-top: 0.3em !important;
 }
 
+/* Reduce spacing after News section */
+body.page-/ .page__content h2 {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.3em !important;
+}
+
+/* Fix markdown spacing between sections */
+body.page-/ .page__content h2 + * {
+  margin-top: 0 !important;
+}
+
+/* Make section separators smaller */
+body.page-/ .page__content hr {
+  margin: 0.7em 0 !important;
+  padding: 0 !important;
+  height: 1px !important;
+}
+
+/* Reduce spacing for news item list */
+body.page-/ .page__content h2 + ul {
+  margin-bottom: 0.5em !important;
+}
+
+/* Tighten publication entries */
+body.page-/ .publication-entry {
+  margin-bottom: 0.5em !important;
+  padding-bottom: 0.5em !important;
+}
+
+/* Custom tight spacing for sections */
+.tight-spacing {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.tight-spacing + h2 {
+  margin-top: 0.5em !important;
+}
+
+.tight-spacing ul, 
+.tight-spacing li {
+  margin-bottom: 0.2em !important;
+}
+
+/* Reduce space between paragraphs and section headings */
+body.page-/ .page__content > p {
+  margin-bottom: 0.5em !important;
+}
+
+body.page-/ .page__content > p:last-of-type {
+  margin-bottom: 0.7em !important;
+}
+
+/* Target the News section specifically */
+body.page-/ .page__content > h2:first-of-type {
+  margin-top: 0.7em !important;
+}
+
