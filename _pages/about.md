@@ -9,7 +9,6 @@ redirect_from:
   - /about.html
 ---
 
-<div style="max-width: 95%; width: 95%; margin: 0 auto;">
 
 My name is Aman Bhatta and I am currently a **third year Ph.D. student** at the University of Notre Dame in the Computer Science and Engineering department. My research focuses on developing new deep-learning-based **computer vision approaches** with a particular emphasis on face recognition and addressing accuracy differentials among demographic groups to promote fairness in AI systems. My doctoral advisor is [Dr. Kevin Bowyer](https://cvrl.nd.edu/) and I am a member of Computer Vision Research Laboratory ([CVRL](https://cvrl.nd.edu/)).
 
