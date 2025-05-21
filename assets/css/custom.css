@@ -285,7 +285,7 @@ section h2 {
 .author__bio {
   white-space: pre-line !important;
   line-height: 1.15 !important;
-  font-size: 1.5em !important; /* Further increased font size */
+  font-size: 2em !important; /* Further increased font size */
   margin: 0 !important;
   padding: 0 !important;
   display: block !important;
@@ -808,5 +808,18 @@ hr, .page__content hr {
 .page__title .title-first-part,
 .page__title .title-second-part {
   display: inline-block !important;
+}
+
+/* Page title styling */
+.page__title {
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+  margin-bottom: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+.page__title + p {
+  margin-top: 0.5rem !important;
 }
 

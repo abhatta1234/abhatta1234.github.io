@@ -4,10 +4,6 @@ title: "Hello There & Welcome! Hope You're Doing Well"
 excerpt: "About me"
 author_profile: true
 classes: wide
-header:
-  overlay_color: "#fff"
-  overlay_filter: "0"
-title_style: "font-size: 1.4rem; font-weight: 400; border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; margin-bottom: 0.8rem;"
 redirect_from: 
   - /about/
   - /about.html
