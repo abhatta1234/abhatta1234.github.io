@@ -38,8 +38,8 @@ Selected Publications
   <div>
     <strong>Deep CNN Face Matchers Inherently Support Revocable Biometric Templates</strong><br>
     <strong><u>Aman Bhatta</u></strong>, Michael C. King, Kevin W. Bowyer <br>
-    <em> IEEE Automatic Face and Gesture Recognition </em> (FG), 2025.<br>
-    <a href="[Link to paper]" target="_blank">Paper Uploaded Soon</a> | <a href="https://github.com/abhatta1234/Revocable-Biometrics" target="_blank">Code</a>
+    <em> IEEE Automatic Face and Gesture Recognition </em> (FG), 2025. (Oral Presentation 🏆)<br>
+    <a href="[Link to paper]" target="_blank">Paper Soon</a> | <a href="https://github.com/abhatta1234/Revocable-Biometrics" target="_blank">Code</a>
   </div>
 </div>
 ------
