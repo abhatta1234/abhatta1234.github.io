@@ -9,7 +9,7 @@ classes: wide
 
 [15] **<u>A. Bhatta</u>**, D. Mery, H. Wu, and K. W. Bowyer. CRAFT: Contextual Re-Activation of Filters for Face Recognition Training. In IEEE International Conference on Face and Gesture (FG), 2025
 
-[14] **<u>A. Bhatta</u>**, M. C. King, and K. W. Bowyer. Deep CNN Face Matchers Inherently Support Revocable Biometrics. In IEEE International Conference on Face and Gesture (FG) (Oral Presentation 🏆), 2025
+[14] **<u>A. Bhatta</u>**, M. C. King, and K. W. Bowyer. Deep CNN Face Matchers Inherently Support Revocable Biometrics. In IEEE International Conference on Face and Gesture (FG) (Oral 🏆), 2025
 
 [13] **<u>A. Bhatta</u>**, D. Mery, H. Wu, J. Annan, M. C. King, and K. W. Bowyer. What's Color Got to Do with It? Face Recognition in Grayscale. In IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM), 2025
 
@@ -37,7 +37,7 @@ classes: wide
 
 [2] H. Wu, G. Bezold, **<u>A. Bhatta</u>**, and K. W. Bowyer. Logical Consistency and Greater Descriptive Power for Facial Hair Attribute Learning. In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023
 
-[1] W. Robbins, S. Zhou, **<u>A. Bhatta</u>**, C. Mello, V. Albiero, K. W. Bowyer, and T. E. Boult. CAST: Conditional Attribute Subsampling Toolkit for Fine-grained Evaluation. In IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) (Oral Presentation 🏆), 2023
+[1] W. Robbins, S. Zhou, **<u>A. Bhatta</u>**, C. Mello, V. Albiero, K. W. Bowyer, and T. E. Boult. CAST: Conditional Attribute Subsampling Toolkit for Fine-grained Evaluation. In IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) (Oral 🏆), 2023
 
 
 
