@@ -875,9 +875,11 @@ hr, .page__content hr {
   padding: 1em !important;
   margin: 1em 0 !important;
   border-radius: 4px !important;
+  color: #9a3333 !important;  /* Subtle dark red for main text */
 }
 
 .notice--info strong {
-  color: #d32f2f !important;
+  color: #d32f2f !important;  /* Brighter red for bold text */
+  font-weight: 600 !important;
 }
 
