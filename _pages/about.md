@@ -12,9 +12,8 @@ I am a **Ph.D. Candidate** in Computer Science and Engineering at the University
 
 I was fortunate to intern at Comcast with the Media Analytics Framework Team under [Dr. Mahmudul Hasan](https://mhasa004.github.io/) in Summer 2024, where I built multimodal models for contextual emotion prediction in video content, leveraging multi-branch transformer architectures, cross-attention mechanisms, and multimodal text encodings.
 
-<div class="highlight-box">
+{: .notice--info}
 🔍 I am **actively seeking opportunities** as a Research Scientist, Research Engineer, Machine Learning Engineer, Applied Scientist, or Data Scientist starting July 2025 or later. My long-term goal is to develop expertise in multimodal AI systems, balancing fundamental research to advance state-of-the-art techniques with the practical skills required to deploy scalable, efficient, and production-grade models that solve real-world problems. Please reach out to me if you see a fit!
-</div>
 
 News
 ------
