@@ -875,11 +875,21 @@ hr, .page__content hr {
   padding: 1em !important;
   margin: 1em 0 !important;
   border-radius: 4px !important;
-  color: #9a3333 !important;  /* Subtle dark red for main text */
+  color: #9a3333 !important;
+  font-family: 'Source Serif Pro', Georgia, serif !important;
+  font-size: 1em !important;
+  line-height: 1.6 !important;
 }
 
 .notice--info strong {
-  color: #d32f2f !important;  /* Brighter red for bold text */
+  color: #d32f2f !important;
   font-weight: 600 !important;
+  font-family: inherit !important;
+}
+
+.notice--info p {
+  font-size: inherit !important;
+  line-height: inherit !important;
+  margin: 0 !important;
 }
 
