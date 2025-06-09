@@ -845,3 +845,25 @@ hr, .page__content hr {
   margin-top: 0.5rem !important;
 }
 
+/* Highlight box for job seeking paragraph */
+.highlight-box {
+  background-color: rgba(255, 235, 235, 0.7) !important;
+  border-left: 4px solid #ff6b6b !important;
+  padding: 1.2em 1.5em !important;
+  margin: 1.5em 0 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 4px rgba(255, 107, 107, 0.1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.highlight-box:hover {
+  background-color: rgba(255, 235, 235, 0.9) !important;
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.15) !important;
+  transform: translateY(-2px) !important;
+}
+
+.highlight-box strong {
+  color: #e74c3c !important;
+  font-weight: 600 !important;
+}
+
