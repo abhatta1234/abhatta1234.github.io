@@ -18,7 +18,7 @@ I am **actively seeking opportunities** as a Research Scientist/Engineer, Machin
 
 News
 ------
-* 2025/02: 🎉 Passed AWS Certified Machine Learning Engineer – Associate Exam. See my [badge!](https://www.credly.com/badges/14ecf3d5-c67d-4195-b2ee-e97a0229ec2f/linked_in?t=sy5x72)
+* 2025/06: 🎉 Passed AWS Certified Machine Learning Engineer – Associate Exam. See my [badge!](https://www.credly.com/badges/14ecf3d5-c67d-4195-b2ee-e97a0229ec2f/linked_in?t=sy5x72)
 * 2025/02: 📚 3 papers accepted at IEEE FG'25. 
 * 2025/01: 📚 1 paper accepted at IEEE TBIOM'25. 
 * 2024/12: 🎓 Defended my Oral Candidacy. Officially a PhD Candidate Now!
