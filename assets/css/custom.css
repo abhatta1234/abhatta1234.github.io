@@ -881,6 +881,21 @@ hr, .page__content hr {
   line-height: 1.6 !important;
 }
 
+
+/* Success notice styling */
+.notice--success {
+  background-color: #e6f4ea !important; /* Light green background */
+  border: 1px solid #c3e6cb !important; /* Green border */
+  border-left: 5px solid #28a745 !important; /* Darker green left border */
+  padding: 1em !important;
+  margin: 1em 0 !important;
+  border-radius: 4px !important;
+  color: #155724 !important; /* Dark green text */
+  font-family: 'Source Serif Pro', Georgia, serif !important;
+  font-size: 1em !important;
+  line-height: 1.6 !important;
+}
+
 .notice--info strong {
   color: #d32f2f !important;
   font-weight: 600 !important;
