@@ -15,8 +15,9 @@ I was fortunate to intern at Comcast with the Media Analytics Framework Team und
 {: .notice--info}
 ~~I am **actively seeking opportunities** as a Research Scientist/Engineer, Machine Learning Engineer, Computer Vision Engineer, Applied Scientist, or Data Scientist starting July 2025 or later. My long-term goal is to develop expertise in multimodal AI systems, balancing fundamental research to advance state-of-the-art techniques with the practical skills required to deploy scalable, efficient, and production-grade models that solve real-world problems. Please reach out to me if you see a fit!~~
 
-<> {: .notice--success}
-<> I’m thrilled to share that I’ve found a great opportunity with a wonderful team and company, and I’m looking forward to starting at the <> end of August!
+
+<!-- <> {: .notice--success}
+<> I’m thrilled to share that I’ve found a great opportunity with a wonderful team and company, and I’m looking forward to starting at the <> end of August!a -->
 
 News
 ------
