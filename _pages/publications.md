@@ -6,6 +6,7 @@ classes: wide
 ---
 
 ## 2025
+[16] **<u>A. Bhatta</u>**, M. Dhakal, M. C. King, and K. W. Bowyer. Are you In or Out (of gallery)? Wisdom from the Same-Identity Crowd. In IEEE/CVF CV4BIOM @ International Conference on Computer Vision (ICCV), 2025
 
 [15] **<u>A. Bhatta</u>**, D. Mery, H. Wu, and K. W. Bowyer. CRAFT: Contextual Re-Activation of Filters for Face Recognition Training. In IEEE International Conference on Face and Gesture (FG), 2025
 
