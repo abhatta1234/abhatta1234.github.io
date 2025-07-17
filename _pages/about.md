@@ -15,12 +15,12 @@ I was fortunate to intern at Comcast with the Media Analytics Framework Team und
 {: .notice--info}
 ~~I am **actively seeking opportunities** as a Research Scientist/Engineer, Machine Learning Engineer, Computer Vision Engineer, Applied Scientist, or Data Scientist starting July 2025 or later. My long-term goal is to develop expertise in multimodal AI systems, balancing fundamental research to advance state-of-the-art techniques with the practical skills required to deploy scalable, efficient, and production-grade models that solve real-world problems. Please reach out to me if you see a fit!~~
 
-{: .notice--success}
-I’m thrilled to share that I’ve found a great opportunity with a wonderful team and company, and I’m looking forward to starting at the end of August!
+<> {: .notice--success}
+<> I’m thrilled to share that I’ve found a great opportunity with a wonderful team and company, and I’m looking forward to starting at the <> end of August!
 
 News
 ------
-* 2025/06: 📚 One paper accepted at CV4BIOM@ICCV'25.
+* 2025/07: 📚 One paper accepted at CV4BIOM@ICCV'25.
 * 2025/06: 🎉 Passed AWS Certified Machine Learning Engineer – Associate Exam. See my [badge!](https://www.credly.com/badges/14ecf3d5-c67d-4195-b2ee-e97a0229ec2f/linked_in?t=sy5x72)
 * 2025/02: 📚 3 papers accepted at IEEE FG'25. 
 * 2025/01: 📚 1 paper accepted at IEEE TBIOM'25. 
