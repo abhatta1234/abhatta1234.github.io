@@ -18,6 +18,7 @@ I was fortunate to intern at Comcast with the Media Analytics Framework Team und
 
 News
 ------
+* 2025/07: 🎉 Joined Wayfair as ML Scientist.
 * 2025/07: 📚 One paper accepted at CV4BIOM@ICCV'25.
 * 2025/06: 🎉 Passed AWS Certified Machine Learning Engineer – Associate Exam. See my [badge!](https://www.credly.com/badges/14ecf3d5-c67d-4195-b2ee-e97a0229ec2f/linked_in?t=sy5x72)
 * 2025/02: 📚 3 papers accepted at IEEE FG'25. 
