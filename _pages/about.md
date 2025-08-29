@@ -13,9 +13,6 @@ I am a **Ph.D. Candidate** in Computer Science and Engineering at the University
 I was fortunate to intern at Comcast with the Media Analytics Framework Team under [Dr. Mahmudul Hasan](https://mhasa004.github.io/) in Summer 2024, where I built multimodal models for contextual emotion prediction in video content, leveraging multi-branch transformer architectures, cross-attention mechanisms, and multimodal text encodings.
 
 
-{: .notice--success}
-<> I’m thrilled to share that I’ve joined Wayfair as ML Scientist, working under [Yuanli Pei](https://www.linkedin.com/in/yuanli-pei-4b369b29/) in Catalog Science Team to work on multimodal foundation models to improve Wayfair catalog. 
-
 News
 ------
 * 2025/07: 🎉 Joined Wayfair as ML Scientist.
