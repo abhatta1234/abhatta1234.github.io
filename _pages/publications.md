@@ -5,20 +5,23 @@ author_profile: true
 classes: wide
 ---
 
+## 2026
+[17] H. Wu, S. Tian, **<u>A. Bhatta</u>**, J. Gutierrez, G. Bezold, G. Argueta, K. Ricanek Jr., M. C. King, and K. W. Bowyer. What is Goldilocks Face Verification Test Set? In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+
+[16] G. Pangelinan, **<u>A. Bhatta</u>**, M. C. King, and K. W. Bowyer. Rank-1 Identity Consistency: Gallery Membership Classification for Operational 1:N Contexts. In IEEE/CVF Biometrics @ Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+
+[15] K. Ozturk, **<u>A. Bhatta</u>**, H. Wu, and K. W. Bowyer. On the Effectiveness of Restricted Receptive Fields for Interpretable Face Verification. In IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM), 2026
+
 ## 2025
-[16] **<u>A. Bhatta</u>**, M. Dhakal, M. C. King, and K. W. Bowyer. Are you In or Out (of gallery)? Wisdom from the Same-Identity Crowd. In IEEE/CVF CV4BIOM @ International Conference on Computer Vision (ICCV), 2025
+[14] **<u>A. Bhatta</u>**, M. Dhakal, M. C. King, and K. W. Bowyer. Are you In or Out (of gallery)? Wisdom from the Same-Identity Crowd. In IEEE/CVF CV4BIOM @ International Conference on Computer Vision (ICCV), 2025
 
-[15] **<u>A. Bhatta</u>**, D. Mery, H. Wu, and K. W. Bowyer. CRAFT: Contextual Re-Activation of Filters for Face Recognition Training. In IEEE International Conference on Face and Gesture (FG), 2025
+[13] **<u>A. Bhatta</u>**, D. Mery, H. Wu, and K. W. Bowyer. CRAFT: Contextual Re-Activation of Filters for Face Recognition Training. In IEEE International Conference on Face and Gesture (FG), 2025
 
-[14] **<u>A. Bhatta</u>**, M. C. King, and K. W. Bowyer. Deep CNN Face Matchers Inherently Support Revocable Biometrics. In IEEE International Conference on Face and Gesture (FG) (Oral 🏆), 2025
+[12] **<u>A. Bhatta</u>**, M. C. King, and K. W. Bowyer. Deep CNN Face Matchers Inherently Support Revocable Biometrics. In IEEE International Conference on Face and Gesture (FG) (Oral 🏆), 2025
 
-[13] **<u>A. Bhatta</u>**, D. Mery, H. Wu, J. Annan, M. C. King, and K. W. Bowyer. What's Color Got to Do with It? Face Recognition in Grayscale. In IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM), 2025
+[11] **<u>A. Bhatta</u>**, D. Mery, H. Wu, J. Annan, M. C. King, and K. W. Bowyer. What's Color Got to Do with It? Face Recognition in Grayscale. In IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM), 2025
 
-[12] K. Ozturk, G. Bezold, **<u>A. Bhatta</u>**, H. Wu, and K. W. Bowyer. Beard Segmentation and Recognition Bias. In IEEE International Conference on Face and Gesture (FG), 2025
-
-[11] K. Ozturk, **<u>A. Bhatta</u>**, H. Wu, and K. W. Bowyer. On the Effectiveness of Restricted Receptive Fields for Interpretable Face Verification. 2025. In Review
-
-[10] H. Wu, S. Tian, **<u>A. Bhatta</u>**, J. Gutierrez, G. Bezold, G. Argueta, K. Ricanek Jr., M. C. King, and K. W. Bowyer. What is Goldilocks Face Verification Test Set? 2025. In Review
+[10] K. Ozturk, G. Bezold, **<u>A. Bhatta</u>**, H. Wu, and K. W. Bowyer. Beard Segmentation and Recognition Bias. In IEEE International Conference on Face and Gesture (FG), 2025
 
 [9] H. Wu, S. Tian, **<u>A. Bhatta</u>**, J. Gutierrez, K. Ozturk, and K. W. Bowyer. Optimistic Bias in Face Recognition Accuracy Measurement Caused by Train/Test Identity Overlap. In Review
 
