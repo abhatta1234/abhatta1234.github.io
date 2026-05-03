@@ -69,22 +69,21 @@ News
 }
 .exp-item.left  { left: 0; }
 .exp-item.right { right: 0; }
-.exp-item::before, .exp-item::after {
+.exp-item.current::before,
+.exp-item.current::after {
   content: '';
   position: absolute;
   width: 14px;
   height: 2px;
-  background: #6f9dc7;
-}
-.exp-item.left::before,  .exp-item.left::after  { right: -22px; }
-.exp-item.right::before, .exp-item.right::after { left:  -22px; }
-.exp-item::before { top: 14px; }
-.exp-item::after  { bottom: 14px; }
-.exp-item.current::before,
-.exp-item.current::after {
   background: #28a745;
   animation: exp-pulse 2s infinite;
 }
+.exp-item.current.left::before,
+.exp-item.current.left::after  { right: -22px; }
+.exp-item.current.right::before,
+.exp-item.current.right::after { left:  -22px; }
+.exp-item.current::before { top: 14px; }
+.exp-item.current::after  { bottom: 14px; }
 @keyframes exp-pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4); }
   50%      { box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.2); }
@@ -167,33 +166,32 @@ News
   }
 }
 
-/* ---- Year ticks: inline diagonal capsules pinned to the central line ---- */
+/* ---- Year ticks: prominent inline diagonal capsules pinned to the central line ---- */
 .year-tick {
   position: absolute;
   left: 50%;
   top: calc((var(--total-months) - var(--y)) / var(--total-months) * 100%);
   transform: translate(-50%, -50%) rotate(-22deg);
-  background: #eaf2fa;
-  border: 1px solid #cfdef0;
+  background: #dceaf5;
+  border: 1px solid #6f9dc7;
   border-radius: 999px;
-  padding: 1px 7px;
+  padding: 2px 10px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.58em;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   color: #2F5E87;
-  opacity: 0.78;
   z-index: 2;
   pointer-events: auto;
   white-space: nowrap;
-  transition: opacity 0.2s ease, background 0.2s ease,
-              border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(47, 94, 135, 0.10);
+  transition: background 0.2s ease, border-color 0.2s ease,
+              box-shadow 0.2s ease, transform 0.2s ease;
 }
 .year-tick:hover {
-  opacity: 1;
-  background: #cfe3f5;
-  border-color: #6f9dc7;
-  box-shadow: 0 2px 8px rgba(47, 94, 135, 0.18);
+  background: #b8d4ec;
+  border-color: #2F5E87;
+  box-shadow: 0 3px 10px rgba(47, 94, 135, 0.22);
   transform: translate(-50%, -50%) rotate(-22deg) scale(1.06);
 }
 .year-tick::after {
