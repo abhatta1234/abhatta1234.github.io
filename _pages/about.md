@@ -167,23 +167,34 @@ News
   }
 }
 
-/* ---- Year ticks anchored to the central timeline ---- */
+/* ---- Year ticks: side-floating labels with a small connector to the line ---- */
 .year-tick {
   position: absolute;
-  left: 50%;
   top: calc((var(--total-months) - var(--y)) / var(--total-months) * 100%);
-  transform: translate(-50%, -50%);
-  background: #ffffff;
-  padding: 0 4px;
+  transform: translateY(-50%);
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.62em;
-  font-weight: 500;
-  color: #b6bcc4;
-  z-index: 2;
+  font-size: 0.66em;
+  font-weight: 600;
+  color: #2F5E87;
+  letter-spacing: 0.09em;
+  z-index: 3;
   pointer-events: none;
-  letter-spacing: 0.04em;
-  opacity: 0.85;
+  white-space: nowrap;
 }
+.year-tick::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 1.5px;
+  background: #6f9dc7;
+  border-radius: 1px;
+  transform: translateY(-50%);
+}
+.year-tick.year-right { left: 50%;  padding-left: 14px; }
+.year-tick.year-right::before { left: 0; }
+.year-tick.year-left  { right: 50%; padding-right: 14px; }
+.year-tick.year-left::before  { right: 0; }
 @media (max-width: 720px) {
   .year-tick { display: none; }
 }
@@ -305,10 +316,10 @@ News
 Experience
 ------
 <div class="experience-timeline" style="--total-months: 117;">
-  <span class="year-tick" style="--y: 113;">2026</span>
-  <span class="year-tick" style="--y: 77;">2023</span>
-  <span class="year-tick" style="--y: 41;">2020</span>
-  <span class="year-tick" style="--y: 5;">2017</span>
+  <span class="year-tick year-right" style="--y: 113;">2026</span>
+  <span class="year-tick year-left"  style="--y: 77;">2023</span>
+  <span class="year-tick year-right" style="--y: 41;">2020</span>
+  <span class="year-tick year-left"  style="--y: 5;">2017</span>
   <div class="exp-item left current" style="--start: 108; --end: 117;">
     <div class="exp-card">
       <div class="exp-logo-region">
