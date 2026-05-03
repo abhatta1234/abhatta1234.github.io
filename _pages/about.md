@@ -167,34 +167,55 @@ News
   }
 }
 
-/* ---- Year ticks: side-floating labels with a small connector to the line ---- */
+/* ---- Year ticks: inline diagonal capsules pinned to the central line ---- */
 .year-tick {
   position: absolute;
+  left: 50%;
   top: calc((var(--total-months) - var(--y)) / var(--total-months) * 100%);
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%) rotate(-22deg);
+  background: #eaf2fa;
+  border: 1px solid #cfdef0;
+  border-radius: 999px;
+  padding: 1px 7px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.66em;
+  font-size: 0.58em;
   font-weight: 600;
+  letter-spacing: 0.04em;
   color: #2F5E87;
-  letter-spacing: 0.09em;
-  z-index: 3;
-  pointer-events: none;
+  opacity: 0.78;
+  z-index: 2;
+  pointer-events: auto;
   white-space: nowrap;
+  transition: opacity 0.2s ease, background 0.2s ease,
+              border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
-.year-tick::before {
-  content: '';
+.year-tick:hover {
+  opacity: 1;
+  background: #cfe3f5;
+  border-color: #6f9dc7;
+  box-shadow: 0 2px 8px rgba(47, 94, 135, 0.18);
+  transform: translate(-50%, -50%) rotate(-22deg) scale(1.06);
+}
+.year-tick::after {
+  content: '\2726';
   position: absolute;
-  top: 50%;
-  width: 10px;
-  height: 1.5px;
-  background: #6f9dc7;
-  border-radius: 1px;
-  transform: translateY(-50%);
+  top: -6px;
+  right: -8px;
+  font-size: 0.9em;
+  color: #6f9dc7;
+  opacity: 0;
+  transform: rotate(0deg) scale(0.6);
+  transition: opacity 0.2s ease;
+  pointer-events: none;
 }
-.year-tick.year-right { left: 50%;  padding-left: 14px; }
-.year-tick.year-right::before { left: 0; }
-.year-tick.year-left  { right: 50%; padding-right: 14px; }
-.year-tick.year-left::before  { right: 0; }
+.year-tick:hover::after {
+  opacity: 1;
+  animation: year-tick-twinkle 1.2s ease-in-out infinite;
+}
+@keyframes year-tick-twinkle {
+  0%, 100% { opacity: 0.4; transform: rotate(0deg)  scale(0.7); }
+  50%      { opacity: 1;   transform: rotate(20deg) scale(1.0); }
+}
 @media (max-width: 720px) {
   .year-tick { display: none; }
 }
@@ -313,13 +334,13 @@ News
 }
 </style>
 
-Experience
+Timeline
 ------
 <div class="experience-timeline" style="--total-months: 117;">
-  <span class="year-tick year-right" style="--y: 113;">2026</span>
-  <span class="year-tick year-left"  style="--y: 77;">2023</span>
-  <span class="year-tick year-right" style="--y: 41;">2020</span>
-  <span class="year-tick year-left"  style="--y: 5;">2017</span>
+  <span class="year-tick" style="--y: 113;">2026</span>
+  <span class="year-tick" style="--y: 77;">2023</span>
+  <span class="year-tick" style="--y: 41;">2020</span>
+  <span class="year-tick" style="--y: 5;">2017</span>
   <div class="exp-item left current" style="--start: 108; --end: 117;">
     <div class="exp-card">
       <div class="exp-logo-region">
