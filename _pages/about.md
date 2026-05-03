@@ -41,9 +41,10 @@ News
 <style>
 .experience-timeline {
   position: relative;
-  max-width: 820px;
-  margin: 1em auto 2em;
-  padding: 0.5em 0;
+  max-width: 880px;
+  height: 850px;
+  margin: 1.5em auto 2.5em;
+  padding: 0;
 }
 .experience-timeline::before {
   content: '';
@@ -57,51 +58,45 @@ News
   z-index: 0;
 }
 .exp-item {
-  position: relative;
-  width: calc(50% - 32px);
-  margin: 0 0 1.5em 0 !important;
+  position: absolute;
+  width: calc(50% - 38px);
+  top:    calc((var(--total-months) - var(--end))   / var(--total-months) * 100%);
+  height: calc((var(--end)         - var(--start)) / var(--total-months) * 100%);
+  min-height: 110px;
   box-sizing: border-box;
   z-index: 1;
 }
-.exp-item.left {
-  margin-left: 0 !important;
-  margin-right: auto !important;
-}
-.exp-item.right {
-  margin-left: auto !important;
-  margin-right: 0 !important;
-}
-.exp-item::after {
+.exp-item.left  { left: 0; }
+.exp-item.right { right: 0; }
+.exp-item::before, .exp-item::after {
   content: '';
   position: absolute;
-  top: 28px;
   width: 14px;
-  height: 14px;
-  border-radius: 50%;
+  height: 2px;
   background: #6f9dc7;
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 2px #2F5E87;
 }
-.exp-item.left::after {
-  right: -39px;
-}
-.exp-item.right::after {
-  left: -39px;
-}
+.exp-item.left::before,  .exp-item.left::after  { right: -22px; }
+.exp-item.right::before, .exp-item.right::after { left:  -22px; }
+.exp-item::before { top: 14px; }
+.exp-item::after  { bottom: 14px; }
+.exp-item.current::before,
 .exp-item.current::after {
   background: #28a745;
-  box-shadow: 0 0 0 2px #28a745;
   animation: exp-pulse 2s infinite;
 }
 @keyframes exp-pulse {
-  0%, 100% { box-shadow: 0 0 0 2px #28a745; }
-  50%      { box-shadow: 0 0 0 6px rgba(40, 167, 69, 0.25); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4); }
+  50%      { box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.2); }
 }
 .exp-card {
+  height: 100%;
   background: #ffffff;
   border: 1px solid #e6e8eb;
   border-radius: 10px;
-  padding: 14px 16px 16px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .exp-card:hover {
@@ -112,12 +107,12 @@ News
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 64px;
-  margin-bottom: 10px;
+  height: 38px;
+  margin-bottom: 8px;
 }
 .exp-logo {
   max-height: 100%;
-  max-width: 78%;
+  max-width: 60%;
   object-fit: contain;
   display: block;
 }
@@ -129,91 +124,165 @@ News
 }
 .exp-role {
   font-weight: 600;
-  font-size: 1em;
+  font-size: 0.95em;
   color: #2b2b2b;
   line-height: 1.3;
 }
 .exp-org {
   color: #2F5E87;
   font-weight: 500;
-  font-size: 0.95em;
+  font-size: 0.9em;
   line-height: 1.3;
 }
 .exp-dates {
   color: #666;
-  font-size: 0.85em;
+  font-size: 0.82em;
   margin-top: 2px;
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) {
+  .experience-timeline {
+    height: auto;
+    padding: 0.5em 0;
+  }
   .experience-timeline::before {
     left: 14px;
   }
+  .exp-item {
+    position: static;
+    width: calc(100% - 40px);
+    height: auto;
+    min-height: 0;
+    margin: 0 0 1.2em 40px !important;
+    top: auto;
+  }
   .exp-item.left,
   .exp-item.right {
-    width: calc(100% - 40px);
-    margin-left: 40px !important;
-    margin-right: 0 !important;
-  }
-  .exp-item.left::after,
-  .exp-item.right::after {
-    left: -32px;
+    left: auto;
     right: auto;
+  }
+  .exp-item::before,
+  .exp-item::after {
+    display: none;
+  }
+}
+
+/* ---- Animated section titles (Experience, News, Selected Publications, Services) ---- */
+.page__content > h2 {
+  display: inline-block !important;
+  position: relative !important;
+  font-size: 1.6em !important;
+  font-weight: 700 !important;
+  margin-top: 1.6em !important;
+  margin-bottom: 0.7em !important;
+  padding-bottom: 6px !important;
+  letter-spacing: -0.01em !important;
+  background: linear-gradient(
+    90deg,
+    #2F5E87 0%,
+    #4a90e2 25%,
+    #6f9dc7 50%,
+    #4a90e2 75%,
+    #2F5E87 100%
+  ) !important;
+  background-size: 200% auto !important;
+  -webkit-background-clip: text !important;
+          background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  animation: section-shimmer 6s linear infinite !important;
+}
+.page__content > h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #2F5E87, #6f9dc7, transparent);
+  transform-origin: left;
+  animation: section-underline 1.1s ease-out both;
+}
+@keyframes section-shimmer {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes section-underline {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+/* ---- Services list (elegant pills) ---- */
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0.8em 0 2em;
+  max-width: 880px;
+}
+.service-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 14px 10px 16px;
+  background: #fafbfc;
+  border: 1px solid #eceff3;
+  border-left: 3px solid #2F5E87;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-left-color 0.2s ease;
+}
+.service-row:hover {
+  transform: translateX(3px);
+  box-shadow: 0 2px 10px rgba(47, 94, 135, 0.10);
+  border-left-color: #4a90e2;
+}
+.service-year {
+  flex: 0 0 auto;
+  min-width: 56px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  font-size: 1.02em;
+  color: #2F5E87;
+  letter-spacing: 0.02em;
+}
+.service-venues {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.venue-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #ffffff;
+  border: 1px solid #d9dde3;
+  border-radius: 999px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.83em;
+  font-weight: 500;
+  color: #2b2b2b;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.venue-pill:hover {
+  background: #2F5E87;
+  color: #ffffff;
+  border-color: #2F5E87;
+  transform: translateY(-1px);
+}
+@media (max-width: 600px) {
+  .service-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .service-year {
+    min-width: 0;
   }
 }
 </style>
 
 Experience
 ------
-<div class="experience-timeline">
-  <div class="exp-item left">
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/thyssenkrupp.png" alt="ThyssenKrupp logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-role">Engineering Co-op</span>
-        <span class="exp-org">ThyssenKrupp AG</span>
-        <span class="exp-dates">Jan 2019 – May 2020</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item right">
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/olemiss.webp" alt="University of Mississippi logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-role">B.S. (Hons), Mechanical Engineering</span>
-        <span class="exp-org">University of Mississippi</span>
-        <span class="exp-dates">Graduated May 2021</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item right">
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/nd.jpeg" alt="University of Notre Dame logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-role">Ph.D., Computer Science &amp; Engineering</span>
-        <span class="exp-org">University of Notre Dame, CVRL</span>
-        <span class="exp-dates">Aug 2021 – 2025</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item left">
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/comcast.png" alt="Comcast logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-role">ML Research Intern</span>
-        <span class="exp-org">Comcast, Media Analytics Framework</span>
-        <span class="exp-dates">Summer 2024</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item left current">
+<div class="experience-timeline" style="--total-months: 117;">
+  <div class="exp-item left current" style="--start: 108; --end: 117;">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/wayfair.png" alt="Wayfair logo">
@@ -222,6 +291,54 @@ Experience
         <span class="exp-role">Machine Learning Scientist</span>
         <span class="exp-org">Wayfair</span>
         <span class="exp-dates">Aug 2025 – Present</span>
+      </div>
+    </div>
+  </div>
+  <div class="exp-item right" style="--start: 60; --end: 112;">
+    <div class="exp-card">
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/nd.jpeg" alt="University of Notre Dame logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">Ph.D., Computer Science &amp; Engineering</span>
+        <span class="exp-org">University of Notre Dame, CVRL</span>
+        <span class="exp-dates">Aug 2021 – Dec 2025</span>
+      </div>
+    </div>
+  </div>
+  <div class="exp-item left" style="--start: 94; --end: 97;">
+    <div class="exp-card">
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/comcast.png" alt="Comcast logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">ML Research Intern</span>
+        <span class="exp-org">Comcast, Media Analytics Framework</span>
+        <span class="exp-dates">Jun – Aug 2024</span>
+      </div>
+    </div>
+  </div>
+  <div class="exp-item right" style="--start: 0; --end: 57;">
+    <div class="exp-card">
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/olemiss.webp" alt="University of Mississippi logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">B.S. (Hons), Mechanical Engineering</span>
+        <span class="exp-org">University of Mississippi</span>
+        <span class="exp-dates">Aug 2016 – May 2021</span>
+      </div>
+    </div>
+  </div>
+  <div class="exp-item left" style="--start: 29; --end: 45;">
+    <div class="exp-card">
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/thyssenkrupp.png" alt="ThyssenKrupp logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">Engineering Co-op</span>
+        <span class="exp-org">ThyssenKrupp AG</span>
+        <span class="exp-dates">Jan 2019 – May 2020</span>
       </div>
     </div>
   </div>
@@ -301,14 +418,49 @@ Learning</strong><br>
 </div>
 ---
 
-Services  
+Services
 ------
-
-| Year  | Reviewed Conferences & Journals                                  |
-|:-----:|:-----------------------------------------------------------------|
-| **2025** | WACV 2025 · CVPR 2025 · ICCV 2025 · FG 2025                   |
-| **2024** | WACV 2024 · CVPR 2024 · ECCV 2024                            |
-| **2023** | WACV 2023 · IEEE T-IP 2023 · IJCB 2023                       |
-| **2022** | WACV 2022 · ICPR 2022                                        |
+<div class="services-list">
+  <div class="service-row">
+    <span class="service-year">2026</span>
+    <div class="service-venues">
+      <span class="venue-pill">Pattern Recognition</span>
+      <span class="venue-pill">CVPR 2026</span>
+      <span class="venue-pill">NeurIPS 2026</span>
+    </div>
+  </div>
+  <div class="service-row">
+    <span class="service-year">2025</span>
+    <div class="service-venues">
+      <span class="venue-pill">WACV 2025</span>
+      <span class="venue-pill">CVPR 2025</span>
+      <span class="venue-pill">ICCV 2025</span>
+      <span class="venue-pill">FG 2025</span>
+    </div>
+  </div>
+  <div class="service-row">
+    <span class="service-year">2024</span>
+    <div class="service-venues">
+      <span class="venue-pill">WACV 2024</span>
+      <span class="venue-pill">CVPR 2024</span>
+      <span class="venue-pill">ECCV 2024</span>
+    </div>
+  </div>
+  <div class="service-row">
+    <span class="service-year">2023</span>
+    <div class="service-venues">
+      <span class="venue-pill">WACV 2023</span>
+      <span class="venue-pill">IEEE T-IP 2023</span>
+      <span class="venue-pill">IJCB 2023</span>
+    </div>
+  </div>
+  <div class="service-row">
+    <span class="service-year">2022</span>
+    <div class="service-venues">
+      <span class="venue-pill">WACV 2022</span>
+      <span class="venue-pill">ICPR 2022</span>
+    </div>
+  </div>
+</div>
 
 
