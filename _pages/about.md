@@ -82,8 +82,8 @@ News
 .exp-item.current.left::after  { right: -22px; }
 .exp-item.current.right::before,
 .exp-item.current.right::after { left:  -22px; }
-.exp-item.current::before { top: 14px; }
-.exp-item.current::after  { bottom: 14px; }
+.exp-item.current::before { top: 4px; }
+.exp-item.current::after  { bottom: 4px; }
 @keyframes exp-pulse {
   0%, 100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4); }
   50%      { box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.2); }
@@ -166,12 +166,12 @@ News
   }
 }
 
-/* ---- Year ticks: prominent inline diagonal capsules pinned to the central line ---- */
+/* ---- Year ticks: prominent inline capsules pinned to the central line ---- */
 .year-tick {
   position: absolute;
   left: 50%;
   top: calc((var(--total-months) - var(--y)) / var(--total-months) * 100%);
-  transform: translate(-50%, -50%) rotate(-22deg);
+  transform: translate(-50%, -50%);
   background: #dceaf5;
   border: 1px solid #6f9dc7;
   border-radius: 999px;
@@ -192,7 +192,7 @@ News
   background: #b8d4ec;
   border-color: #2F5E87;
   box-shadow: 0 3px 10px rgba(47, 94, 135, 0.22);
-  transform: translate(-50%, -50%) rotate(-22deg) scale(1.06);
+  transform: translate(-50%, -50%) scale(1.06);
 }
 .year-tick::after {
   content: '\2726';
