@@ -19,6 +19,7 @@ News
 ------
 <div class="news-scroll" markdown="1">
 * 2026/03: 📚 2 papers accepted at CVPR'26 (1 main + 1 workshop).
+* 2025/12: 🎓 Successfully defended my PhD dissertation. Officially Dr. Bhatta!
 * 2025/08: 🎉 Joined Wayfair as ML Scientist.
 * 2025/07: 📚 One paper accepted at CV4BIOM@ICCV'25.
 * 2025/06: 🎉 Passed AWS Certified Machine Learning Engineer – Associate Exam. See my [badge!](https://www.credly.com/badges/14ecf3d5-c67d-4195-b2ee-e97a0229ec2f/linked_in?t=sy5x72)
@@ -62,7 +63,7 @@ News
   width: calc(50% - 38px);
   top:    calc((var(--total-months) - var(--end))   / var(--total-months) * 100%);
   height: calc((var(--end)         - var(--start)) / var(--total-months) * 100%);
-  min-height: 110px;
+  min-height: 132px;
   box-sizing: border-box;
   z-index: 1;
 }
@@ -93,7 +94,7 @@ News
   background: #ffffff;
   border: 1px solid #e6e8eb;
   border-radius: 10px;
-  padding: 12px 14px;
+  padding: 10px 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +109,7 @@ News
   align-items: center;
   justify-content: center;
   height: 52px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .exp-logo {
   max-height: 100%;
@@ -173,16 +174,15 @@ News
   top: calc((var(--total-months) - var(--y)) / var(--total-months) * 100%);
   transform: translate(-50%, -50%);
   background: #ffffff;
-  border: 1px solid #6f9dc7;
-  border-radius: 999px;
-  padding: 1px 7px;
+  padding: 0 4px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.7em;
-  font-weight: 600;
-  color: #2F5E87;
+  font-size: 0.62em;
+  font-weight: 500;
+  color: #b6bcc4;
   z-index: 2;
   pointer-events: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
 }
 @media (max-width: 720px) {
   .year-tick { display: none; }
