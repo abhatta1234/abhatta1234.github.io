@@ -43,7 +43,7 @@ News
   position: relative;
   max-width: 880px;
   height: 850px;
-  margin: 1.5em auto 2.5em;
+  margin: 0.8em auto 1.5em;
   padding: 0;
 }
 .experience-timeline::before {
@@ -107,12 +107,12 @@ News
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 38px;
-  margin-bottom: 8px;
+  height: 52px;
+  margin-bottom: 10px;
 }
 .exp-logo {
   max-height: 100%;
-  max-width: 60%;
+  max-width: 72%;
   object-fit: contain;
   display: block;
 }
@@ -166,14 +166,37 @@ News
   }
 }
 
+/* ---- Year ticks anchored to the central timeline ---- */
+.year-tick {
+  position: absolute;
+  left: 50%;
+  top: calc((var(--total-months) - var(--y)) / var(--total-months) * 100%);
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: 1px solid #6f9dc7;
+  border-radius: 999px;
+  padding: 1px 7px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: #2F5E87;
+  z-index: 2;
+  pointer-events: none;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 720px) {
+  .year-tick { display: none; }
+}
+
 /* ---- Animated section titles (Experience, News, Selected Publications, Services) ---- */
 .page__content > h2 {
-  display: inline-block !important;
+  display: block !important;
+  width: 100% !important;
   position: relative !important;
   font-size: 1.6em !important;
   font-weight: 700 !important;
-  margin-top: 1.6em !important;
-  margin-bottom: 0.7em !important;
+  margin-top: 1.0em !important;
+  margin-bottom: 0.4em !important;
   padding-bottom: 6px !important;
   letter-spacing: -0.01em !important;
   background: linear-gradient(
@@ -216,7 +239,7 @@ News
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 0.8em 0 2em;
+  margin: 0.4em 0 1.2em;
   max-width: 880px;
 }
 .service-row {
@@ -282,6 +305,10 @@ News
 Experience
 ------
 <div class="experience-timeline" style="--total-months: 117;">
+  <span class="year-tick" style="--y: 113;">2026</span>
+  <span class="year-tick" style="--y: 77;">2023</span>
+  <span class="year-tick" style="--y: 41;">2020</span>
+  <span class="year-tick" style="--y: 5;">2017</span>
   <div class="exp-item left current" style="--start: 108; --end: 117;">
     <div class="exp-card">
       <div class="exp-logo-region">
