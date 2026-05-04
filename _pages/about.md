@@ -458,7 +458,7 @@ Selected Publications
   <div>
     <strong>Our Deep CNN Face Matchers Have Developed Achromatopsia</strong><br>
      <strong><u>Aman Bhatta</u></strong>, Domingo Mery, Haiyu Wu, Joyce Annan, Michael C. King, Kevin W. Bowyer<br>
-    <em>IEEE / CVF Computer Vision and Pattern Recognition Conference </em> (TCV@CVPR), 2024.<br>
+    <em>IEEE / CVF TCV @ Conference on Computer Vision and Pattern Recognition </em> (CVPR), 2024.<br>
     <!-- <a href="https://openaccess.thecvf.com/content/CVPR2024W/TCV2024/papers/Bhatta_Our_Deep_CNN_Face_Matchers_Have_Developed_Achromatopsia_CVPRW_2024_paper.pdf" target="_blank">Paper</a> -->
   </div>
 </div>
