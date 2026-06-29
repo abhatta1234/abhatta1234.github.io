@@ -237,28 +237,34 @@ section h2 {
 
 .news-scroll ul { margin: 0 !important; padding-left: 1.2em !important; }
 
-/* Featured "award" pill for standout news items — Wayfair brand style */
+/* Featured "award" pill for standout news items — frosted glass, Wayfair purple */
 .news-award-pill {
   display: inline-block;
-  padding: 2px 12px;
+  padding: 1px 11px;
   border-radius: 999px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.85em;
-  letter-spacing: 0.02em;
-  line-height: 1.3;
-  color: #ffffff !important;
-  background-color: #7B189F;
-  border: 1px solid #7B189F;
-  box-shadow: 0 1px 3px rgba(123, 24, 159, 0.18);
-  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  letter-spacing: 0.015em;
+  line-height: 1.35;
+  color: #7B189F;
+  background-color: rgba(123, 24, 159, 0.09);
+  border: 1px solid rgba(123, 24, 159, 0.22);
+  -webkit-backdrop-filter: saturate(160%) blur(8px);
+          backdrop-filter: saturate(160%) blur(8px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    0 1px 2px rgba(123, 24, 159, 0.08);
+  transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
 }
 
 .news-award-pill:hover {
-  background-color: #5C0F75;
-  border-color: #5C0F75;
+  background-color: rgba(123, 24, 159, 0.14);
+  border-color: rgba(123, 24, 159, 0.35);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(123, 24, 159, 0.28);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    0 3px 10px rgba(123, 24, 159, 0.16);
 }
 
 /* News Carousel Styles */
