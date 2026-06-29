@@ -18,6 +18,7 @@ I was fortunate to intern at Comcast with the Media Analytics Framework Team und
 News
 ------
 <div class="news-scroll" markdown="1">
+* 2026/06: 🏆 Received Wayfair Technology Rookie of the Year Award.
 * 2026/03: 📚 2 papers accepted at CVPR'26 (1 main + 1 workshop).
 * 2025/12: 🎓 Successfully defended my PhD dissertation. Officially Dr. Bhatta!
 * 2025/08: 🎉 Joined Wayfair as ML Scientist.
