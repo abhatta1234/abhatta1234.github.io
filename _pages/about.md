@@ -21,7 +21,7 @@ News
 * 2026/06: 🏆 Received the <a class="news-award-pill" href="https://www.linkedin.com/feed/update/urn:li:activity:7473018582461906944/" target="_blank" rel="noopener noreferrer" title="See what my manager shared about this recognition — grateful for the support">Wayfair Technology Rookie of the Year</a> award.  
   For contributions to **CaMmo 2.0** (multimodal encoder service) and **Option Grouping** (product grouping service).
 * 2026/06: 🏆 Our team received the <span class="news-award-pill">Wayfair Technology Outstanding Technology Team</span> award.  
-  Proud to have been part of the Option Grouping team — recognized for launching Option Grouping V1 (product grouping service) within Wayfair's Product Addition 2.0 platform.
+  Proud to have been part of the wonderful Option Grouping team and to have contributed to the product grouping service.
 * 2026/03: 📚 2 papers accepted at CVPR'26 (1 main + 1 workshop).
 * 2025/12: 🎓 Successfully defended my PhD dissertation. Officially Dr. Bhatta!
 * 2025/08: 🎉 Joined Wayfair as ML Scientist.
