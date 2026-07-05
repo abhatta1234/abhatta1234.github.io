@@ -270,20 +270,6 @@ a.news-award-pill {
   cursor: pointer;
 }
 
-a.news-award-pill::after {
-  content: "↗";
-  display: inline-block;
-  margin-left: 6px;
-  font-size: 0.9em;
-  line-height: 1;
-  opacity: 0.75;
-}
-
-a.news-award-pill:hover::after,
-a.news-award-pill:focus-visible::after {
-  opacity: 1;
-}
-
 a.news-award-pill:focus-visible {
   outline: 2px solid rgba(123, 24, 159, 0.35);
   outline-offset: 2px;
