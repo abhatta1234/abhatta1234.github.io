@@ -254,7 +254,19 @@ section h2 {
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
+a.news-award-pill,
+a.news-award-pill:hover,
+a.news-award-pill:focus,
+a.news-award-pill:visited {
+  text-decoration: none;
+}
+
+a.news-award-pill:visited {
+  color: #7B189F;
+}
+
 .news-award-pill:hover {
+  color: #7B189F;
   background-color: rgba(123, 24, 159, 0.12);
   border-color: rgba(123, 24, 159, 0.28);
 }

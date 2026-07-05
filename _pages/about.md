@@ -18,7 +18,8 @@ I was fortunate to intern at Comcast with the Media Analytics Framework Team und
 News
 ------
 <div class="news-scroll" markdown="1">
-* 2026/06: 🏆 Received the <span class="news-award-pill">Wayfair Technology Rookie of the Year</span> award.
+* 2026/06: 🏆 Received the <a class="news-award-pill" href="https://www.linkedin.com/feed/update/urn:li:activity:7473018582461906944/" target="_blank" rel="noopener noreferrer">Wayfair Technology Rookie of the Year</a> award for contributions to CaMmo 2.0 (multimodal encoder service) and Option Grouping (product grouping service).
+* 2026/06: 🏆 Our Option Grouping team received the <span class="news-award-pill">Wayfair Technology Outstanding Technology Team (Option Grouping)</span> award — proud to have been part of the product grouping service team.
 * 2026/03: 📚 2 papers accepted at CVPR'26 (1 main + 1 workshop).
 * 2025/12: 🎓 Successfully defended my PhD dissertation. Officially Dr. Bhatta!
 * 2025/08: 🎉 Joined Wayfair as ML Scientist.
