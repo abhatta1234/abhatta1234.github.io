@@ -285,6 +285,48 @@ a.news-award-pill:active {
     0 6px 14px rgba(0, 0, 0, 0.06);
 }
 
+.news-award-detail {
+  display: block;
+  margin-top: 2px;
+}
+
+.news-award-note {
+  display: block;
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: max-height 160ms ease, opacity 160ms ease, transform 160ms ease, margin-top 160ms ease;
+
+  color: #4b5563;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  font-size: 0.82em;
+  line-height: 1.25;
+  white-space: normal;
+}
+
+@supports selector(:has(*)) {
+  .news-scroll li:has(a.news-award-link:hover) .news-award-note,
+  .news-scroll li:has(a.news-award-link:focus-visible) .news-award-note {
+    margin-top: 4px;
+    max-height: 4.5em;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@supports not selector(:has(*)) {
+  .news-scroll li:hover .news-award-note,
+  .news-scroll li:focus-within .news-award-note {
+    margin-top: 4px;
+    max-height: 4.5em;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 a.news-award-pill:focus-visible {
   outline: 2px solid rgba(123, 24, 159, 0.35);
   outline-offset: 2px;
