@@ -23,7 +23,7 @@ News
   <span class="news-award-note">See my manager's view on this — humbled and honored by this recognition.</span>
 * 2026/06: 🏆 Our team received the <span class="news-award-pill">Wayfair Technology Outstanding Technology Team</span> award.  
   Proud to have contributed to the Option Grouping (product grouping) service with this team.
-* 2026/03: 📚 2 papers accepted at CVPR'26 (1 main + 1 workshop).
+* 2026/03: 📚 2 papers accepted at CVPR'26.
 * 2025/12: 🎓 Successfully defended my PhD dissertation. Officially Dr. Bhatta!
 * 2025/08: 🎉 Joined Wayfair as ML Scientist.
 * 2025/07: 📚 One paper accepted at CV4BIOM@ICCV'25.
