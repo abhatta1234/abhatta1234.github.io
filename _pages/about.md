@@ -18,9 +18,8 @@ I was fortunate to intern at Comcast with the Media Analytics Framework Team und
 News
 ------
 <div class="news-scroll" markdown="1">
-* 2026/06: 🏆 Received the <a class="news-award-pill news-award-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7473018582461906944/">Wayfair Technology Rookie of the Year</a> award.
+* 2026/06: 🏆 Received the <span class="news-award-pill">Wayfair Technology Rookie of the Year</span> award.
   <span class="news-award-detail">For contributions to <strong>CaMmo 2.0</strong> (multimodal encoder service) and <strong>Option Grouping</strong> (product grouping service).</span>
-  <span class="news-award-note">See my manager's view on this — humbled and honored by this recognition.</span>
 * 2026/06: 🏆 Our team received the <span class="news-award-pill">Wayfair Technology Outstanding Technology Team</span> award.  
   Proud to have contributed to the Option Grouping (product grouping) service with this team.
 * 2026/03: 📚 2 papers accepted at CVPR'26 (1 main + 1 workshop).
