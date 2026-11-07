@@ -5,14 +5,12 @@ author_profile: true
 classes: wide
 ---
 
-## 2026
 [17] H. Wu, S. Tian, **<u>A. Bhatta</u>**, J. Gutierrez, G. Bezold, G. Argueta, K. Ricanek Jr., M. C. King, and K. W. Bowyer. What is Goldilocks Face Verification Test Set? In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
 
 [16] G. Pangelinan, **<u>A. Bhatta</u>**, M. C. King, and K. W. Bowyer. Rank-1 Identity Consistency: Gallery Membership Classification for Operational 1:N Contexts. In IEEE/CVF Biometrics @ Conference on Computer Vision and Pattern Recognition (CVPR), 2026
 
 [15] K. Ozturk, **<u>A. Bhatta</u>**, H. Wu, and K. W. Bowyer. On the Effectiveness of Restricted Receptive Fields for Interpretable Face Verification. In IEEE Transactions on Biometrics, Behavior, and Identity Science (T-BIOM), 2026
 
-## 2025
 [14] **<u>A. Bhatta</u>**, M. Dhakal, M. C. King, and K. W. Bowyer. Are you In or Out (of gallery)? Wisdom from the Same-Identity Crowd. In IEEE/CVF CV4BIOM @ International Conference on Computer Vision (ICCV), 2025
 
 [13] **<u>A. Bhatta</u>**, D. Mery, H. Wu, and K. W. Bowyer. CRAFT: Contextual Re-Activation of Filters for Face Recognition Training. In IEEE International Conference on Face and Gesture (FG), 2025
@@ -25,7 +23,6 @@ classes: wide
 
 [9] H. Wu, S. Tian, **<u>A. Bhatta</u>**, J. Gutierrez, K. Ozturk, and K. W. Bowyer. Optimistic Bias in Face Recognition Accuracy Measurement Caused by Train/Test Identity Overlap. In Review
 
-## 2024
 [8] **<u>A. Bhatta</u>**, G. Pangelinan, H. Wu, M. C. King, and K. W. Bowyer. Analyzing the Impact of Demographic and Operational Variables on 1-to-Many Facial ID Search. In IEEE Transactions of Technology and Society (TTS), volume 5, 2024.
 
 [7] **<u>A. Bhatta</u>**, H. Wu, K. Öztürk, and K. W. Bowyer. Revisiting Linearization of Spatial Maps in SoTA Face Recognition Backbone. In IEEE International Joint Conference on Biometrics (IJCB), 2024
@@ -36,7 +33,6 @@ classes: wide
 
 [4] H. Wu, S. Tian, **<u>A. Bhatta</u>**, K. Öztürk, K. Ricanek Jr., and K. W. Bowyer. Facial Hair Area in Face Recognition: Small Size, Big Effect. In IEEE/CVF DVPBA @ Winter Conference on Applications of Computer Vision (WACV), 2024
 
-## 2023
 [3] **<u>A. Bhatta</u>**, V. Albiero, K. W. Bowyer, and M. C. King. The Gender Gap in Face Recognition Accuracy Is a Hairy Problem. In IEEE/CVF DVPBA @ Winter Conference on Applications of Computer Vision (WACV), 2023
 
 [2] H. Wu, G. Bezold, **<u>A. Bhatta</u>**, and K. W. Bowyer. Logical Consistency and Greater Descriptive Power for Facial Hair Attribute Learning. In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023
