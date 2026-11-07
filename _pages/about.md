@@ -46,9 +46,7 @@ News
 </div>
 
 <style>
-.career-caption { margin: 0.7em 0 18px; color: #666; font-size: 0.72em; }
-.career-mobile-caption { display: none; }
-.career-lanes { display: grid; grid-template-columns: minmax(0, 1fr) 80px minmax(0, 1fr); color: #2F5E87; font-size: 0.78em; font-weight: 600; }
+.career-lanes { display: grid; grid-template-columns: minmax(0, 1fr) 80px minmax(0, 1fr); margin-bottom: 18px; color: #2F5E87; font-size: 0.78em; font-weight: 600; }
 .career-lanes span:last-child { grid-column: 3; }
 .career-grid {
   position: relative;
@@ -78,18 +76,32 @@ News
   text-align: center;
 }
 .career-axis::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: #dce5ed; }
-.career-axis span { position: relative; align-self: start; justify-self: center; padding: 3px; background: #fff; color: #667a89; font-size: 0.59em; line-height: 1.3; transform: translateY(-50%); }
+.career-axis span { position: relative; grid-column: 1; align-self: start; justify-self: center; padding: 3px; background: #fff; color: #667a89; font-size: 0.72em; font-weight: 500; line-height: 1.3; transform: translateY(-50%); }
 .career-axis .career-axis-end { position: absolute; bottom: 0; left: 0; width: 100%; transform: translateY(50%); }
-.career-axon { grid-column: 3; grid-row: present / aug2026; }
-.career-wayfair { grid-column: 3; grid-row: aug2026 / aug2025; }
+.career-current-segment { position: relative; grid-column: 1; grid-row: present / aug2026; justify-self: center; width: 3px; margin-block: 14px; background: #66a67b; border-radius: 2px; }
+.career-current-segment::before, .career-current-segment::after { content: ''; position: absolute; left: 50%; width: 6px; height: 6px; border-radius: 50%; background: #66a67b; box-shadow: 0 0 0 3px rgba(102, 166, 123, 0.12); transform: translate(-50%, -50%); }
+.career-current-segment::before { top: 0; }
+.career-current-segment::after { top: 100%; }
+.career-current-segment i { position: absolute; inset: 0; overflow: hidden; }
+.career-current-segment i::before { content: ''; position: absolute; top: -36px; width: 100%; height: 36px; background: radial-gradient(circle at center, rgba(255, 255, 255, 0.6) 1px, transparent 2px), linear-gradient(transparent, rgba(255, 255, 255, 0.25), transparent); animation: career-sheen 4s ease-in-out infinite; }
+@keyframes career-sheen {
+  0%, 20% { top: -36px; }
+  80%, 100% { top: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .career-current-segment i { display: none; }
+  .career-current-segment i::before { animation: none; }
+}
+.career-axon { grid-column: 1; grid-row: present / aug2026; }
+.career-wayfair { grid-column: 1; grid-row: aug2026 / aug2025; }
 .career-chapter { display: grid; grid-template-columns: subgrid; grid-template-rows: subgrid; grid-column: 1 / -1; min-width: 0; margin: 0 !important; padding: 0 !important; }
 .career-phd { grid-row: dec2025 / aug2021; }
 .career-bachelors { grid-row: may2021 / aug2016; }
-.career-education { grid-column: 1; grid-row: 1 / -1; min-width: 0; }
-.career-placement { position: relative; grid-column: 3; min-width: 0; }
+.career-education { grid-column: 3; grid-row: 1 / -1; min-width: 0; }
+.career-placement { position: relative; grid-column: 1; min-width: 0; }
 .career-phd .career-placement { grid-row: 3 / 4; }
 .career-bachelors .career-placement { grid-row: 2 / 3; }
-.career-placement::before { content: ''; position: absolute; left: -40px; top: 24px; width: 40px; height: 1px; background: #9cb5cb; }
+.career-placement::before { content: ''; position: absolute; right: -40px; top: 24px; width: 40px; height: 1px; background: #9cb5cb; }
 .career-overlap { grid-column: 1 / -1; grid-row: dec2025 / aug2025; background: #f0f6fb; z-index: -1; }
 .career-grid article { min-width: 0; }
 .exp-card {
@@ -97,7 +109,7 @@ News
   isolation: isolate;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 48px minmax(0, 1fr);
+  grid-template-columns: 96px minmax(0, 1fr);
   gap: 10px;
   align-content: start;
   box-sizing: border-box;
@@ -107,7 +119,11 @@ News
   border: 1px solid #e0e7ee;
   border-radius: 9px;
 }
-.career-education .exp-card { background: #f8fafc; border-color: #c9d9e7; }
+.career-placement .exp-card { grid-template-columns: 72px minmax(0, 1fr); }
+.career-education .exp-card { grid-template-columns: minmax(0, 1fr); align-content: center; justify-items: center; text-align: center; background: #f8fafc; border-color: #c9d9e7; }
+.career-education .exp-logo-region { width: 200px; max-width: 100%; height: auto; }
+.career-bachelors .career-education .exp-logo-region { width: 180px; }
+.career-education .exp-logo { width: 100%; height: auto; }
 .career-axon .exp-card { border-color: #88bb9b; }
 .exp-current { color: #267541; font-size: 0.7em; }
 .career-context { color: #667a89; font-size: 0.68em; line-height: 1.4; margin-top: 3px; }
@@ -115,22 +131,27 @@ News
 .exp-watermark { position: absolute; z-index: -1; inset: auto 8px 6px auto; width: 65%; opacity: 0.04; text-align: center; pointer-events: none; }
 .exp-watermark img { display: block; width: 100%; }
 .exp-watermark span { display: block; margin-top: 3px; font-size: 1.1em; font-weight: 700; white-space: nowrap; }
-.exp-logo-region { display: flex; align-items: center; justify-content: center; height: 36px; }
+.exp-logo-region { display: flex; align-items: center; justify-content: center; height: 64px; }
 .exp-logo { display: block; max-height: 100%; max-width: 100%; object-fit: contain; }
-.exp-text { display: flex; flex-direction: column; gap: 5px; }
+.exp-text { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
 .career-grid h3.exp-role { margin: 0 !important; font-size: 0.9em !important; font-weight: 600; color: #2b2b2b; line-height: 1.35 !important; }
 .career-grid .header-link { display: none; }
 .exp-org { color: #2F5E87; font-size: 0.8em; line-height: 1.4; }
-.exp-dates { color: #666; font-size: 0.72em; line-height: 1.4; margin-top: 3px; }
+.exp-dates { color: #666; font-size: 0.82em; line-height: 1.4; margin-top: 3px; white-space: normal; }
 @media (max-width: 759px) {
-  .career-lanes, .career-axis, .career-overlap, .career-desktop-caption { display: none; }
-  .career-mobile-caption { display: inline; }
+  .career-lanes, .career-axis, .career-overlap { display: none; }
   .career-grid { display: flex; flex-direction: column; gap: 16px; }
   .career-chapter { display: flex; flex-direction: column; gap: 12px; margin: 0 !important; padding: 12px !important; background: #f8fafc; border: 1px solid #c9d9e7; border-radius: 10px; }
   .career-education .exp-card { border: 0; background: transparent; padding: 0; }
   .career-placement { margin-left: 16px; border-left: 2px solid #c9d9e7; padding-left: 10px; }
   .career-placement::before { display: none; }
+  .career-axon .exp-card { border-left: 3px solid #66a67b; }
   .exp-card { height: auto; }
+}
+@media (max-width: 399px) {
+  .exp-card, .career-placement .exp-card { grid-template-columns: minmax(0, 1fr); }
+  .exp-logo-region { width: 96px; }
+  .career-placement .exp-logo-region { width: 72px; }
 }
 
 /* ---- Animated section titles (Experience, News, Selected Publications, Services) ---- */
@@ -249,10 +270,10 @@ News
 
 Timeline
 ------
-<div class="career-lanes" aria-hidden="true"><span>Education</span><span>Industry</span></div>
-<p class="career-caption"><span class="career-desktop-caption">Selected dates; spacing compressed.</span><span class="career-mobile-caption">Education chapters include concurrent industry roles.</span></p>
+<div class="career-lanes" aria-hidden="true"><span>Industry</span><span>Education</span></div>
 <div class="career-grid" id="career-timeline" role="group" aria-label="Education and industry timeline, most recent first">
   <div class="career-axis" aria-hidden="true">
+    <div class="career-current-segment"><i></i></div>
     <span style="grid-row: present;">Present</span>
     <span style="grid-row: aug2026;">Aug 2026</span>
     <span style="grid-row: dec2025;">Dec 2025</span>
