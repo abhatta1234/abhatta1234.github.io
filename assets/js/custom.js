@@ -1,4 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const timeline = document.getElementById('career-timeline');
+  if (timeline) {
+    const controls = document.querySelector('.timeline-controls');
+    const buttons = [...controls.querySelectorAll('button')];
+    const updateControls = () => {
+      buttons[0].disabled = timeline.scrollLeft <= 1;
+      buttons[1].disabled = timeline.scrollLeft >= timeline.scrollWidth - timeline.clientWidth - 1;
+    };
+    controls.hidden = false;
+    timeline.scrollLeft = timeline.scrollWidth;
+    updateControls();
+    buttons.forEach(button => button.addEventListener('click', () => {
+      const track = timeline.querySelector('.experience-timeline');
+      const step = timeline.querySelector('.exp-item').offsetWidth + parseFloat(getComputedStyle(track).columnGap);
+      timeline.scrollBy({
+        left: Number(button.dataset.timelineStep) * step,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+      });
+    }));
+    timeline.addEventListener('scroll', updateControls, { passive: true });
+    window.addEventListener('resize', updateControls);
+  }
+
   const publicationsContainer = document.getElementById('publications-container');
 
   if (publicationsContainer) {
@@ -60,4 +83,4 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
     console.log('Publications container not found on this page.');
   }
-}); 
+});

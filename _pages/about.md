@@ -46,116 +46,161 @@ News
 </div>
 
 <style>
+.timeline-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0.8em 0 12px;
+  color: #666;
+  font-size: 0.8em;
+}
+.timeline-controls { display: flex; gap: 8px; }
+.timeline-controls[hidden] { display: none; }
+.timeline-controls button {
+  margin: 0;
+  padding: 7px 12px;
+  border: 1px solid #dce5ed;
+  border-radius: 7px;
+  background: #fff;
+  color: #2F5E87;
+  font: inherit;
+  cursor: pointer;
+}
+.timeline-controls button:disabled { opacity: 0.4; cursor: default; }
+.timeline-controls button:focus-visible,
+.timeline-viewport:focus-visible { outline: 2px solid #2F5E87; outline-offset: 3px; }
+.timeline-viewport {
+  overflow-x: auto;
+  max-width: 100%;
+  scroll-snap-type: x proximity;
+  scroll-padding-inline: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: #9cb5cb #f2f5f8;
+  padding: 4px 0 12px;
+}
 .experience-timeline {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr);
-  gap: 16px 0;
-  max-width: 880px;
-  margin: 0.8em auto 1.5em;
+  grid-template-columns: repeat(5, 240px);
+  grid-template-rows: minmax(190px, auto) 42px minmax(190px, auto);
+  column-gap: 24px;
+  width: max-content;
+  padding: 0 8px;
 }
-.experience-timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 24px;
-  bottom: 24px;
-  width: 2px;
-  margin-left: -1px;
+.timeline-rail {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  align-self: center;
+  height: 2px;
   background: #dce5ed;
 }
 .exp-item {
   position: relative;
   min-width: 0;
-  grid-row: var(--row);
+  grid-column: var(--column);
+  scroll-snap-align: end;
 }
-.exp-item.left { grid-column: 1; }
-.exp-item.right { grid-column: 3; }
+.exp-item.education { grid-row: 1; align-self: end; }
+.exp-item.work { grid-row: 3; align-self: start; }
 .exp-item::before {
   content: '';
   position: absolute;
-  top: 32px;
-  width: 32px;
-  height: 1px;
-  background: #dce5ed;
+  left: 24px;
+  width: 1px;
+  height: 21px;
+  background: #9cb5cb;
 }
-.exp-item.left::before { right: -32px; }
-.exp-item.right::before { left: -32px; }
-.exp-item::after {
-  content: '';
+.exp-item.education::before { bottom: -21px; }
+.exp-item.work::before { top: -21px; }
+.exp-year {
   position: absolute;
-  top: 28px;
-  width: 10px;
-  height: 10px;
-  box-sizing: border-box;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  background: #6f9dc7;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  height: 42px;
+  padding: 0 7px;
+  background: #fff;
+  color: #2F5E87;
+  font-size: 0.76em;
+  font-weight: 600;
 }
-.exp-item.left::after { right: -37px; }
-.exp-item.right::after { left: -37px; }
-.exp-item.current::after { background: #28a745; }
+.education .exp-year { bottom: -42px; }
+.work .exp-year { top: -42px; }
+.shared-year { display: none; }
+.exp-type, .timeline-mobile-label { display: none; }
 .exp-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #e6e8eb;
   border-radius: 10px;
-  padding: 14px;
-  transition: box-shadow 0.2s ease;
+  padding: 16px;
+  transition: box-shadow 0.18s ease;
 }
-.exp-card:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
+.exp-card:hover { box-shadow: 0 4px 12px rgba(47, 94, 135, 0.08); }
 .exp-item.current .exp-card { border-color: #8dc8a4; }
+.exp-item.current .exp-year { color: #267541; }
+.exp-watermark {
+  position: absolute;
+  z-index: -1;
+  inset: 32px -12px auto;
+  opacity: 0.04;
+  text-align: center;
+  pointer-events: none;
+}
+.exp-watermark img { display: block; width: 100%; }
+.exp-watermark span {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.6em;
+  font-weight: 700;
+  white-space: nowrap;
+}
 .exp-logo-region {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 36px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .exp-logo {
   max-height: 100%;
-  max-width: 72%;
+  max-width: 80%;
   object-fit: contain;
   display: block;
 }
-.exp-text {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  text-align: center;
-}
-.exp-role {
-  font-weight: 600;
-  font-size: 0.95em;
-  color: #2b2b2b;
-  line-height: 1.3;
-}
-.exp-org {
-  color: #2F5E87;
-  font-weight: 500;
-  font-size: 0.9em;
-  line-height: 1.3;
-}
-.exp-dates {
-  color: #666;
-  font-size: 0.82em;
-  margin-top: 2px;
-}
-@media (max-width: 720px) {
+.exp-text { display: flex; flex-direction: column; gap: 4px; text-align: center; }
+.exp-role { font-weight: 600; font-size: 0.9em; color: #2b2b2b; line-height: 1.3; }
+.exp-org { color: #2F5E87; font-size: 0.85em; line-height: 1.3; }
+.exp-dates { color: #666; font-size: 0.76em; line-height: 1.4; margin-top: 3px; }
+@media (max-width: 600px) {
   .experience-timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    padding-left: 32px;
+    grid-template-columns: repeat(6, 220px);
+    grid-template-rows: 42px auto;
+    column-gap: 16px;
   }
-  .experience-timeline::before { left: 8px; }
-  .exp-item.left::before,
-  .exp-item.right::before {
-    left: -24px;
-    width: 24px;
-  }
-  .exp-item.left::after,
-  .exp-item.right::after { left: -29px; }
+  .timeline-rail { grid-row: 1; }
+  .exp-item.education, .exp-item.work { grid-row: 2; align-self: start; }
+  .exp-item:nth-of-type(2) { grid-column: 1; }
+  .exp-item:nth-of-type(3) { grid-column: 2; }
+  .exp-item:nth-of-type(4) { grid-column: 3; }
+  .exp-item:nth-of-type(5) { grid-column: 4; }
+  .exp-item:nth-of-type(6) { grid-column: 5; }
+  .exp-item:nth-of-type(7) { grid-column: 6; }
+  .education .exp-year { top: -42px; bottom: auto; }
+  .shared-year { display: flex; }
+  .exp-item.education::before { top: -21px; bottom: auto; }
+  .exp-type { display: block; color: #666; font-size: 0.7em; margin-bottom: 3px; }
+  .timeline-mobile-label { display: inline; }
+  .timeline-desktop-label { display: none; }
+  .timeline-toolbar { align-items: flex-start; font-size: 0.72em; }
+  .timeline-controls button { padding: 7px 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .exp-card { transition: none; }
 }
 
 /* ---- Animated section titles (Experience, News, Selected Publications, Services) ---- */
@@ -274,79 +319,102 @@ News
 
 Timeline
 ------
+<div class="timeline-toolbar">
+  <span><span class="timeline-desktop-label">Education above · Experience below</span><span class="timeline-mobile-label">Education &amp; experience</span></span>
+  <div class="timeline-controls" hidden>
+    <button type="button" data-timeline-step="-1" aria-controls="career-timeline">Previous</button>
+    <button type="button" data-timeline-step="1" aria-controls="career-timeline">Next</button>
+  </div>
+</div>
+<div class="timeline-viewport" id="career-timeline" role="region" aria-label="Career timeline, scroll horizontally for earlier milestones" tabindex="0">
 <div class="experience-timeline">
-  <div class="exp-item left current" style="--row: 1;">
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/axon.svg" alt="Axon Enterprise Inc. logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-role">AI Research Scientist</span>
-        <span class="exp-org">Axon Enterprise Inc.</span>
-        <span class="exp-dates">Aug 2026 – Present</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item left" style="--row: 2;">
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/wayfair.png" alt="Wayfair logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-role">Machine Learning Scientist</span>
-        <span class="exp-org">Wayfair</span>
-        <span class="exp-dates">Aug 2025 – Aug 2026</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item right" style="--row: 2;">
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/nd.jpeg" alt="University of Notre Dame logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-role">Ph.D., Computer Science &amp; Engineering</span>
-        <span class="exp-org">University of Notre Dame, CVRL</span>
-        <span class="exp-dates">Aug 2021 – Dec 2025</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item left" style="--row: 3;">
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/comcast.png" alt="Comcast logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-role">ML Research Intern</span>
-        <span class="exp-org">Comcast, Media Analytics Framework</span>
-        <span class="exp-dates">Jun – Aug 2024</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item right" style="--row: 4;">
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/olemiss.webp" alt="University of Mississippi logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-role">B.S. (Hons), Mechanical Engineering</span>
-        <span class="exp-org">University of Mississippi</span>
-        <span class="exp-dates">Aug 2016 – May 2021</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item left" style="--row: 4;">
+  <div class="timeline-rail" aria-hidden="true"></div>
+  <div class="exp-item work" style="--column: 1;">
+    <span class="exp-year">2019</span>
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/thyssenkrupp.png" alt="ThyssenKrupp logo">
       </div>
       <div class="exp-text">
+        <span class="exp-type">Experience</span>
         <span class="exp-role">Engineering Co-op</span>
         <span class="exp-org">ThyssenKrupp AG</span>
         <span class="exp-dates">Jan 2019 – May 2020</span>
       </div>
     </div>
   </div>
+  <div class="exp-item education" style="--column: 2;">
+    <span class="exp-year">2021</span>
+    <div class="exp-card">
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/olemiss.webp" alt="University of Mississippi logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-type">Education</span>
+        <span class="exp-role">B.S. (Hons), Mechanical Engineering</span>
+        <span class="exp-org">University of Mississippi</span>
+        <span class="exp-dates">Aug 2016 – May 2021</span>
+      </div>
+    </div>
+  </div>
+  <div class="exp-item work" style="--column: 3;">
+    <span class="exp-year">2024</span>
+    <div class="exp-card">
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/comcast.png" alt="Comcast logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-type">Experience</span>
+        <span class="exp-role">ML Research Intern</span>
+        <span class="exp-org">Comcast, Media Analytics Framework</span>
+        <span class="exp-dates">Jun – Aug 2024</span>
+      </div>
+    </div>
+  </div>
+  <div class="exp-item education" style="--column: 4;">
+    <span class="exp-year shared-year">2025</span>
+    <div class="exp-card">
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/nd.jpeg" alt="University of Notre Dame logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-type">Education</span>
+        <span class="exp-role">Ph.D., Computer Science &amp; Engineering</span>
+        <span class="exp-org">University of Notre Dame, CVRL</span>
+        <span class="exp-dates">Aug 2021 – Dec 2025</span>
+      </div>
+    </div>
+  </div>
+  <div class="exp-item work" style="--column: 4;">
+    <span class="exp-year">2025</span>
+    <div class="exp-card">
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/wayfair.png" alt="Wayfair logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-type">Experience</span>
+        <span class="exp-role">Machine Learning Scientist</span>
+        <span class="exp-org">Wayfair</span>
+        <span class="exp-dates">Aug 2025 – Aug 2026</span>
+      </div>
+    </div>
+  </div>
+  <div class="exp-item work current" style="--column: 5;">
+    <span class="exp-year">2026</span>
+    <div class="exp-card">
+      <div class="exp-watermark" aria-hidden="true"><img src="/images/axon.svg" alt=""><span>Protect Life</span></div>
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/axon.svg" alt="Axon Enterprise Inc. logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-type">Experience</span>
+        <span class="exp-role">AI Research Scientist</span>
+        <span class="exp-org">Axon Enterprise Inc.</span>
+        <span class="exp-dates">Aug 2026 – Present</span>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 Selected Publications
