@@ -128,7 +128,7 @@ News
 .exp-current { color: #267541; font-size: 0.7em; }
 .career-context { color: #667a89; font-size: 0.68em; line-height: 1.4; margin-top: 3px; }
 .career-overlap-note { padding: 5px 7px; border-left: 2px solid #6f9dc7; background: #f0f6fb; color: #2F5E87; font-size: 0.66em; line-height: 1.4; }
-.exp-watermark { position: absolute; z-index: -1; inset: auto 8px 6px auto; width: 65%; opacity: 0.04; text-align: center; pointer-events: none; }
+.exp-watermark { position: absolute; z-index: -1; inset: 50% auto auto 50%; transform: translate(-50%, -50%); width: 65%; opacity: 0.12; text-align: center; pointer-events: none; }
 .exp-watermark img { display: block; width: 100%; }
 .exp-watermark span { display: block; margin-top: 3px; font-size: 1.1em; font-weight: 700; white-space: nowrap; }
 .exp-logo-region { display: flex; align-items: center; justify-content: center; height: 64px; }
@@ -138,6 +138,10 @@ News
 .career-grid .header-link { display: none; }
 .exp-org { color: #2F5E87; font-size: 0.8em; line-height: 1.4; }
 .exp-dates { color: #666; font-size: 0.82em; line-height: 1.4; margin-top: 3px; white-space: normal; }
+@media (min-width: 760px) {
+  .career-axon .exp-card { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+  .career-wayfair .exp-card { border-top-left-radius: 0; border-top-right-radius: 0; }
+}
 @media (max-width: 759px) {
   .career-lanes, .career-axis, .career-overlap { display: none; }
   .career-grid { display: flex; flex-direction: column; gap: 16px; }
