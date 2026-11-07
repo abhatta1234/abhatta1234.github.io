@@ -46,91 +46,99 @@ News
 </div>
 
 <style>
-.timeline-caption { margin: 0.8em 0 16px; color: #666; font-size: 0.8em; }
+.page__content .experience-timeline,
 .experience-timeline {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 44px 36px;
-  margin: 0 0 1.5em !important;
+  grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr);
+  gap: 20px 0;
+  margin: 0.8em 0 1.5em !important;
   padding: 0 !important;
   list-style: none;
 }
-.exp-item {
-  position: relative;
-  min-width: 0;
-  margin: 0 !important;
-}
-.exp-item:nth-child(4) { grid-column: 3; grid-row: 2; }
-.exp-item:nth-child(5) { grid-column: 2; grid-row: 2; }
-.exp-item:nth-child(6) { grid-column: 1; grid-row: 2; }
-.exp-item:not(:last-child)::after {
-  content: '→';
+.experience-timeline::before {
+  content: '';
   position: absolute;
-  top: 50%;
-  right: -29px;
-  color: #7c9bb6;
-  font-size: 24px;
-  line-height: 1;
-  transform: translateY(-50%);
-}
-.exp-item:nth-child(3)::after {
-  content: '↓';
-  top: calc(100% + 10px);
   left: 50%;
-  right: auto;
-  transform: translateX(-50%);
+  top: 12px;
+  bottom: 24px;
+  width: 2px;
+  margin-left: -1px;
+  background: #dce5ed;
 }
-.exp-item:nth-child(4)::after,
-.exp-item:nth-child(5)::after {
-  content: '←';
-  left: -29px;
-  right: auto;
+.exp-item { position: relative; min-width: 0; margin: 0 !important; align-self: start; }
+.exp-item.work { grid-column: 1; }
+.exp-item.education { grid-column: 3; margin-top: 32px !important; }
+.exp-item:nth-child(1) { grid-row: 1; }
+.exp-item:nth-child(2), .exp-item:nth-child(3) { grid-row: 2; }
+.exp-item:nth-child(4), .exp-item:nth-child(5) { grid-row: 3; }
+.exp-item:nth-child(6) { grid-row: 4; }
+.exp-item::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  right: -36px;
+  width: 36px;
+  height: 1px;
+  background: #9cb5cb;
+  transform: rotate(-26.565deg);
+  transform-origin: left center;
 }
+.exp-item.education::before { top: 12px; left: -32px; right: auto; transform: rotate(26.565deg); }
+.exp-item::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: -37px;
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #6f9dc7;
+}
+.exp-item.education::after { left: -37px; right: auto; }
+.exp-item.current::after { background: #267541; }
 .exp-card {
   position: relative;
   isolation: isolate;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
   box-sizing: border-box;
-  height: 100%;
-  padding: 18px;
+  padding: 14px;
   background: #fff;
   border: 1px solid #e0e7ee;
-  border-radius: 12px;
+  border-radius: 10px;
 }
-.exp-item.current .exp-card {
-  border-color: #88bb9b;
-  box-shadow: 0 3px 14px rgba(38, 117, 65, 0.06);
-}
-.exp-meta { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 16px; color: #687b8a; font-size: 0.66em; }
-.exp-step { font-variant-numeric: tabular-nums; }
-.exp-item.current .exp-meta { color: #267541; }
+.exp-item.current .exp-card { border-color: #88bb9b; }
+.exp-current { color: #267541; font-size: 0.7em; }
 .exp-watermark {
   position: absolute;
   z-index: -1;
-  inset: 70px -12px auto;
+  inset: auto 8px 6px auto;
+  width: 70%;
   opacity: 0.04;
   text-align: center;
   pointer-events: none;
 }
 .exp-watermark img { display: block; width: 100%; }
-.exp-watermark span { display: block; margin-top: 8px; font-size: 1.6em; font-weight: 700; white-space: nowrap; }
-.exp-logo-region { display: flex; align-items: center; height: 36px; margin-bottom: 14px; }
-.exp-logo { display: block; max-height: 100%; max-width: 80%; object-fit: contain; }
-.exp-text { display: flex; flex-direction: column; gap: 6px; }
+.exp-watermark span { display: block; margin-top: 3px; font-size: 1.1em; font-weight: 700; white-space: nowrap; }
+.exp-logo-region { display: flex; align-items: center; justify-content: center; height: 36px; }
+.exp-logo { display: block; max-height: 100%; max-width: 100%; object-fit: contain; }
+.exp-text { display: flex; flex-direction: column; gap: 5px; }
 .exp-role { font-weight: 600; font-size: 0.9em; color: #2b2b2b; line-height: 1.35; }
 .exp-org { color: #2F5E87; font-size: 0.8em; line-height: 1.4; }
-.exp-dates { color: #666; font-size: 0.72em; line-height: 1.4; margin-top: 5px; }
-@media (max-width: 760px) {
-  .experience-timeline { grid-template-columns: minmax(0, 1fr); gap: 30px; }
-  .exp-item:nth-child(n) { grid-column: 1; grid-row: auto; }
-  .exp-item:not(:last-child)::after {
-    content: '↓';
-    top: calc(100% + 3px);
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-  }
-  .exp-logo { max-width: 160px; }
+.exp-dates { color: #666; font-size: 0.72em; line-height: 1.4; margin-top: 3px; }
+@media (max-width: 759px) {
+  .page__content .experience-timeline,
+  .experience-timeline { grid-template-columns: minmax(0, 1fr); gap: 16px; padding-left: 32px !important; }
+  .experience-timeline::before { left: 10px; }
+  .exp-item:nth-child(n) { grid-column: 1; grid-row: auto; margin-top: 0 !important; }
+  .exp-item:nth-child(n)::before { top: 12px; left: -22px; right: auto; width: 22px; transform: none; }
+  .exp-item:nth-child(n)::after { left: -27px; right: auto; }
 }
 
 /* ---- Animated section titles (Experience, News, Selected Publications, Services) ---- */
@@ -249,16 +257,15 @@ News
 
 Timeline
 ------
-<p class="timeline-caption">A journey through research, education, and industry. Most recent first.</p>
-<ol class="experience-timeline" id="career-timeline" aria-label="Career journey, most recent first">
+<ol class="experience-timeline" id="career-timeline" aria-label="Career timeline, most recent first">
   <li class="exp-item work current">
     <div class="exp-card">
       <div class="exp-watermark" aria-hidden="true"><img src="/images/axon.svg" alt=""><span>Protect Life</span></div>
-      <div class="exp-meta"><span class="exp-step" aria-hidden="true">01</span><span>Current role</span></div>
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/axon.svg" alt="Axon Enterprise Inc. logo">
       </div>
       <div class="exp-text">
+        <span class="exp-current">Current</span>
         <span class="exp-role">AI Research Scientist</span>
         <span class="exp-org">Axon Enterprise Inc.</span>
         <span class="exp-dates">Aug 2026 – Present</span>
@@ -267,7 +274,6 @@ Timeline
   </li>
   <li class="exp-item work">
     <div class="exp-card">
-      <div class="exp-meta"><span class="exp-step" aria-hidden="true">02</span><span>Experience</span></div>
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/wayfair.png" alt="Wayfair logo">
       </div>
@@ -280,7 +286,6 @@ Timeline
   </li>
   <li class="exp-item education">
     <div class="exp-card">
-      <div class="exp-meta"><span class="exp-step" aria-hidden="true">03</span><span>Education</span></div>
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/nd.jpeg" alt="University of Notre Dame logo">
       </div>
@@ -293,7 +298,6 @@ Timeline
   </li>
   <li class="exp-item work">
     <div class="exp-card">
-      <div class="exp-meta"><span class="exp-step" aria-hidden="true">04</span><span>Experience</span></div>
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/comcast.png" alt="Comcast logo">
       </div>
@@ -306,7 +310,6 @@ Timeline
   </li>
   <li class="exp-item education">
     <div class="exp-card">
-      <div class="exp-meta"><span class="exp-step" aria-hidden="true">05</span><span>Education</span></div>
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/olemiss.webp" alt="University of Mississippi logo">
       </div>
@@ -319,7 +322,6 @@ Timeline
   </li>
   <li class="exp-item work">
     <div class="exp-card">
-      <div class="exp-meta"><span class="exp-step" aria-hidden="true">06</span><span>Experience</span></div>
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/thyssenkrupp.png" alt="ThyssenKrupp logo">
       </div>
