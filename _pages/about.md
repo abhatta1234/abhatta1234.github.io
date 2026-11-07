@@ -10,7 +10,7 @@ redirect_from:
 ---
 I am an **AI Research Scientist** at [Axon Enterprise Inc.](https://www.axon.com/) in Seattle, WA.
 
-I am a **Machine Learning Scientist** at [Wayfair](https://www.wayfair.com/) in Boston, MA, where I post-train multimodal LLMs for fine-grained retrieval, develop cross-encoder rerankers for catalog deduplication, and design LLM-as-judge pipelines for relevance evaluation — together powering product discovery and catalog automation at scale.
+Previously, I was a **Machine Learning Scientist** at [Wayfair](https://www.wayfair.com/) in Boston, MA, where I post-trained multimodal LLMs for fine-grained retrieval, developed cross-encoder rerankers for catalog deduplication, and designed LLM-as-judge pipelines for relevance evaluation — efforts that together powered product discovery and catalog automation at scale.
 
 I completed my **Ph.D. in Computer Science and Engineering** at the University of Notre Dame, advised by [Dr. Kevin Bowyer](https://academicweb.nd.edu/~kwb/) at the [Computer Vision Research Lab (CVRL)](https://cvrl.nd.edu/). My doctoral research explored multiple dimensions of face recognition technology, including mitigating bias, optimizing neural networks for efficiency on edge devices, ensuring biometric system security, and improving reliability of face identification search. I also worked on face foundation models with strong text–vision alignment for granular facial attributes. My work has been published at CVPR, ICCV, WACV, FG, IJCB, T-BIOM, and TTS, resulting in 3 patent applications.
 
