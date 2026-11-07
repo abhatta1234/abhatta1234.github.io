@@ -46,161 +46,91 @@ News
 </div>
 
 <style>
-.timeline-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin: 0.8em 0 12px;
-  color: #666;
-  font-size: 0.8em;
-}
-.timeline-controls { display: flex; gap: 8px; }
-.timeline-controls[hidden] { display: none; }
-.timeline-controls button {
-  margin: 0;
-  padding: 7px 12px;
-  border: 1px solid #dce5ed;
-  border-radius: 7px;
-  background: #fff;
-  color: #2F5E87;
-  font: inherit;
-  cursor: pointer;
-}
-.timeline-controls button:disabled { opacity: 0.4; cursor: default; }
-.timeline-controls button:focus-visible,
-.timeline-viewport:focus-visible { outline: 2px solid #2F5E87; outline-offset: 3px; }
-.timeline-viewport {
-  overflow-x: auto;
-  max-width: 100%;
-  scroll-snap-type: x proximity;
-  scroll-padding-inline: 8px;
-  scrollbar-width: thin;
-  scrollbar-color: #9cb5cb #f2f5f8;
-  padding: 4px 0 12px;
-}
+.timeline-caption { margin: 0.8em 0 16px; color: #666; font-size: 0.8em; }
 .experience-timeline {
-  position: relative;
   display: grid;
-  grid-template-columns: repeat(5, 240px);
-  grid-template-rows: minmax(190px, auto) 42px minmax(190px, auto);
-  column-gap: 24px;
-  width: max-content;
-  padding: 0 8px;
-}
-.timeline-rail {
-  grid-column: 1 / -1;
-  grid-row: 2;
-  align-self: center;
-  height: 2px;
-  background: #dce5ed;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 44px 36px;
+  margin: 0 0 1.5em !important;
+  padding: 0 !important;
+  list-style: none;
 }
 .exp-item {
   position: relative;
   min-width: 0;
-  grid-column: var(--column);
-  scroll-snap-align: end;
+  margin: 0 !important;
 }
-.exp-item.education { grid-row: 1; align-self: end; }
-.exp-item.work { grid-row: 3; align-self: start; }
-.exp-item::before {
-  content: '';
+.exp-item:nth-child(4) { grid-column: 3; grid-row: 2; }
+.exp-item:nth-child(5) { grid-column: 2; grid-row: 2; }
+.exp-item:nth-child(6) { grid-column: 1; grid-row: 2; }
+.exp-item:not(:last-child)::after {
+  content: '→';
   position: absolute;
-  left: 24px;
-  width: 1px;
-  height: 21px;
-  background: #9cb5cb;
+  top: 50%;
+  right: -29px;
+  color: #7c9bb6;
+  font-size: 24px;
+  line-height: 1;
+  transform: translateY(-50%);
 }
-.exp-item.education::before { bottom: -21px; }
-.exp-item.work::before { top: -21px; }
-.exp-year {
-  position: absolute;
-  left: 12px;
-  display: flex;
-  align-items: center;
-  height: 42px;
-  padding: 0 7px;
-  background: #fff;
-  color: #2F5E87;
-  font-size: 0.76em;
-  font-weight: 600;
+.exp-item:nth-child(3)::after {
+  content: '↓';
+  top: calc(100% + 10px);
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
 }
-.education .exp-year { bottom: -42px; }
-.work .exp-year { top: -42px; }
-.shared-year { display: none; }
-.exp-type, .timeline-mobile-label { display: none; }
+.exp-item:nth-child(4)::after,
+.exp-item:nth-child(5)::after {
+  content: '←';
+  left: -29px;
+  right: auto;
+}
 .exp-card {
   position: relative;
   isolation: isolate;
   overflow: hidden;
   box-sizing: border-box;
+  height: 100%;
+  padding: 18px;
   background: #fff;
-  border: 1px solid #e6e8eb;
-  border-radius: 10px;
-  padding: 16px;
-  transition: box-shadow 0.18s ease;
+  border: 1px solid #e0e7ee;
+  border-radius: 12px;
 }
-.exp-card:hover { box-shadow: 0 4px 12px rgba(47, 94, 135, 0.08); }
-.exp-item.current .exp-card { border-color: #8dc8a4; }
-.exp-item.current .exp-year { color: #267541; }
+.exp-item.current .exp-card {
+  border-color: #88bb9b;
+  box-shadow: 0 3px 14px rgba(38, 117, 65, 0.06);
+}
+.exp-meta { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 16px; color: #687b8a; font-size: 0.66em; }
+.exp-step { font-variant-numeric: tabular-nums; }
+.exp-item.current .exp-meta { color: #267541; }
 .exp-watermark {
   position: absolute;
   z-index: -1;
-  inset: 32px -12px auto;
+  inset: 70px -12px auto;
   opacity: 0.04;
   text-align: center;
   pointer-events: none;
 }
 .exp-watermark img { display: block; width: 100%; }
-.exp-watermark span {
-  display: block;
-  margin-top: 8px;
-  font-size: 1.6em;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.exp-logo-region {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  margin-bottom: 10px;
-}
-.exp-logo {
-  max-height: 100%;
-  max-width: 80%;
-  object-fit: contain;
-  display: block;
-}
-.exp-text { display: flex; flex-direction: column; gap: 4px; text-align: center; }
-.exp-role { font-weight: 600; font-size: 0.9em; color: #2b2b2b; line-height: 1.3; }
-.exp-org { color: #2F5E87; font-size: 0.85em; line-height: 1.3; }
-.exp-dates { color: #666; font-size: 0.76em; line-height: 1.4; margin-top: 3px; }
-@media (max-width: 600px) {
-  .experience-timeline {
-    grid-template-columns: repeat(6, 220px);
-    grid-template-rows: 42px auto;
-    column-gap: 16px;
+.exp-watermark span { display: block; margin-top: 8px; font-size: 1.6em; font-weight: 700; white-space: nowrap; }
+.exp-logo-region { display: flex; align-items: center; height: 36px; margin-bottom: 14px; }
+.exp-logo { display: block; max-height: 100%; max-width: 80%; object-fit: contain; }
+.exp-text { display: flex; flex-direction: column; gap: 6px; }
+.exp-role { font-weight: 600; font-size: 0.9em; color: #2b2b2b; line-height: 1.35; }
+.exp-org { color: #2F5E87; font-size: 0.8em; line-height: 1.4; }
+.exp-dates { color: #666; font-size: 0.72em; line-height: 1.4; margin-top: 5px; }
+@media (max-width: 760px) {
+  .experience-timeline { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .exp-item:nth-child(n) { grid-column: 1; grid-row: auto; }
+  .exp-item:not(:last-child)::after {
+    content: '↓';
+    top: calc(100% + 3px);
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
   }
-  .timeline-rail { grid-row: 1; }
-  .exp-item.education, .exp-item.work { grid-row: 2; align-self: start; }
-  .exp-item:nth-of-type(2) { grid-column: 1; }
-  .exp-item:nth-of-type(3) { grid-column: 2; }
-  .exp-item:nth-of-type(4) { grid-column: 3; }
-  .exp-item:nth-of-type(5) { grid-column: 4; }
-  .exp-item:nth-of-type(6) { grid-column: 5; }
-  .exp-item:nth-of-type(7) { grid-column: 6; }
-  .education .exp-year { top: -42px; bottom: auto; }
-  .shared-year { display: flex; }
-  .exp-item.education::before { top: -21px; bottom: auto; }
-  .exp-type { display: block; color: #666; font-size: 0.7em; margin-bottom: 3px; }
-  .timeline-mobile-label { display: inline; }
-  .timeline-desktop-label { display: none; }
-  .timeline-toolbar { align-items: flex-start; font-size: 0.72em; }
-  .timeline-controls button { padding: 7px 9px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .exp-card { transition: none; }
+  .exp-logo { max-width: 160px; }
 }
 
 /* ---- Animated section titles (Experience, News, Selected Publications, Services) ---- */
@@ -319,103 +249,88 @@ News
 
 Timeline
 ------
-<div class="timeline-toolbar">
-  <span><span class="timeline-desktop-label">Education above · Experience below</span><span class="timeline-mobile-label">Education &amp; experience</span></span>
-  <div class="timeline-controls" hidden>
-    <button type="button" data-timeline-step="-1" aria-controls="career-timeline">Previous</button>
-    <button type="button" data-timeline-step="1" aria-controls="career-timeline">Next</button>
-  </div>
-</div>
-<div class="timeline-viewport" id="career-timeline" role="region" aria-label="Career timeline, scroll horizontally for earlier milestones" tabindex="0">
-<div class="experience-timeline">
-  <div class="timeline-rail" aria-hidden="true"></div>
-  <div class="exp-item work" style="--column: 1;">
-    <span class="exp-year">2019</span>
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/thyssenkrupp.png" alt="ThyssenKrupp logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-type">Experience</span>
-        <span class="exp-role">Engineering Co-op</span>
-        <span class="exp-org">ThyssenKrupp AG</span>
-        <span class="exp-dates">Jan 2019 – May 2020</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item education" style="--column: 2;">
-    <span class="exp-year">2021</span>
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/olemiss.webp" alt="University of Mississippi logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-type">Education</span>
-        <span class="exp-role">B.S. (Hons), Mechanical Engineering</span>
-        <span class="exp-org">University of Mississippi</span>
-        <span class="exp-dates">Aug 2016 – May 2021</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item work" style="--column: 3;">
-    <span class="exp-year">2024</span>
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/comcast.png" alt="Comcast logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-type">Experience</span>
-        <span class="exp-role">ML Research Intern</span>
-        <span class="exp-org">Comcast, Media Analytics Framework</span>
-        <span class="exp-dates">Jun – Aug 2024</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item education" style="--column: 4;">
-    <span class="exp-year shared-year">2025</span>
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/nd.jpeg" alt="University of Notre Dame logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-type">Education</span>
-        <span class="exp-role">Ph.D., Computer Science &amp; Engineering</span>
-        <span class="exp-org">University of Notre Dame, CVRL</span>
-        <span class="exp-dates">Aug 2021 – Dec 2025</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item work" style="--column: 4;">
-    <span class="exp-year">2025</span>
-    <div class="exp-card">
-      <div class="exp-logo-region">
-        <img class="exp-logo" src="/images/wayfair.png" alt="Wayfair logo">
-      </div>
-      <div class="exp-text">
-        <span class="exp-type">Experience</span>
-        <span class="exp-role">Machine Learning Scientist</span>
-        <span class="exp-org">Wayfair</span>
-        <span class="exp-dates">Aug 2025 – Aug 2026</span>
-      </div>
-    </div>
-  </div>
-  <div class="exp-item work current" style="--column: 5;">
-    <span class="exp-year">2026</span>
+<p class="timeline-caption">A journey through research, education, and industry. Most recent first.</p>
+<ol class="experience-timeline" id="career-timeline" aria-label="Career journey, most recent first">
+  <li class="exp-item work current">
     <div class="exp-card">
       <div class="exp-watermark" aria-hidden="true"><img src="/images/axon.svg" alt=""><span>Protect Life</span></div>
+      <div class="exp-meta"><span class="exp-step" aria-hidden="true">01</span><span>Current role</span></div>
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/axon.svg" alt="Axon Enterprise Inc. logo">
       </div>
       <div class="exp-text">
-        <span class="exp-type">Experience</span>
         <span class="exp-role">AI Research Scientist</span>
         <span class="exp-org">Axon Enterprise Inc.</span>
         <span class="exp-dates">Aug 2026 – Present</span>
       </div>
     </div>
-  </div>
-</div>
-</div>
+  </li>
+  <li class="exp-item work">
+    <div class="exp-card">
+      <div class="exp-meta"><span class="exp-step" aria-hidden="true">02</span><span>Experience</span></div>
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/wayfair.png" alt="Wayfair logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">Machine Learning Scientist</span>
+        <span class="exp-org">Wayfair</span>
+        <span class="exp-dates">Aug 2025 – Aug 2026</span>
+      </div>
+    </div>
+  </li>
+  <li class="exp-item education">
+    <div class="exp-card">
+      <div class="exp-meta"><span class="exp-step" aria-hidden="true">03</span><span>Education</span></div>
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/nd.jpeg" alt="University of Notre Dame logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">Ph.D., Computer Science &amp; Engineering</span>
+        <span class="exp-org">University of Notre Dame, CVRL</span>
+        <span class="exp-dates">Aug 2021 – Dec 2025</span>
+      </div>
+    </div>
+  </li>
+  <li class="exp-item work">
+    <div class="exp-card">
+      <div class="exp-meta"><span class="exp-step" aria-hidden="true">04</span><span>Experience</span></div>
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/comcast.png" alt="Comcast logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">ML Research Intern</span>
+        <span class="exp-org">Comcast, Media Analytics Framework</span>
+        <span class="exp-dates">Jun – Aug 2024</span>
+      </div>
+    </div>
+  </li>
+  <li class="exp-item education">
+    <div class="exp-card">
+      <div class="exp-meta"><span class="exp-step" aria-hidden="true">05</span><span>Education</span></div>
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/olemiss.webp" alt="University of Mississippi logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">B.S. (Hons), Mechanical Engineering</span>
+        <span class="exp-org">University of Mississippi</span>
+        <span class="exp-dates">Aug 2016 – May 2021</span>
+      </div>
+    </div>
+  </li>
+  <li class="exp-item work">
+    <div class="exp-card">
+      <div class="exp-meta"><span class="exp-step" aria-hidden="true">06</span><span>Experience</span></div>
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/thyssenkrupp.png" alt="ThyssenKrupp logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">Engineering Co-op</span>
+        <span class="exp-org">ThyssenKrupp AG</span>
+        <span class="exp-dates">Jan 2019 – May 2020</span>
+      </div>
+    </div>
+  </li>
+</ol>
 
 Selected Publications
 ------
