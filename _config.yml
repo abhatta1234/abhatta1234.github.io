@@ -25,12 +25,12 @@ author:
   name: "Aman Bhatta"
   avatar: "/images/ab.jpeg" # path to your avatar image, e.g., /assets/images/bio-photo.jpg
   bio: |
-    ML Scientist, Wayfair
+    AI Research Scientist, Axon Enterprise Inc.
     Ph.D., Notre Dame
     AWS ML Engineer–Associate
     Ex-Intern, Comcast
     Ex-Co-op, Thyssenkrupp AG
-  location: "Boston, MA"
+  location: "Seattle, WA"
   email: "abhatta@nd.edu"
   links:
     - label: "LinkedIn"
