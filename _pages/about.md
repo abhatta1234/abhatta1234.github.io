@@ -46,99 +46,91 @@ News
 </div>
 
 <style>
-.page__content .experience-timeline,
-.experience-timeline {
+.career-caption { margin: 0.7em 0 18px; color: #666; font-size: 0.72em; }
+.career-mobile-caption { display: none; }
+.career-lanes { display: grid; grid-template-columns: minmax(0, 1fr) 80px minmax(0, 1fr); color: #2F5E87; font-size: 0.78em; font-weight: 600; }
+.career-lanes span:last-child { grid-column: 3; }
+.career-grid {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 80px minmax(0, 1fr);
+  grid-template-rows:
+    [present] minmax(96px, auto)
+    [aug2026] minmax(40px, auto)
+    [dec2025] minmax(40px, auto)
+    [aug2025] minmax(40px, auto)
+    [aug2024] minmax(96px, auto)
+    [jun2024] minmax(40px, auto)
+    [aug2021] 32px
+    [may2021] minmax(40px, auto)
+    [may2020] minmax(96px, auto)
+    [jan2019] minmax(40px, auto)
+    [aug2016];
+  margin: 0 0 2em;
+}
+.career-axis {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr);
-  gap: 20px 0;
-  margin: 0.8em 0 1.5em !important;
-  padding: 0 !important;
-  list-style: none;
+  grid-template-rows: subgrid;
+  grid-column: 2;
+  grid-row: present / aug2016;
+  text-align: center;
 }
-.experience-timeline::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 12px;
-  bottom: 24px;
-  width: 2px;
-  margin-left: -1px;
-  background: #dce5ed;
-}
-.exp-item { position: relative; min-width: 0; margin: 0 !important; align-self: start; }
-.exp-item.work { grid-column: 1; }
-.exp-item.education { grid-column: 3; margin-top: 32px !important; }
-.exp-item:nth-child(1) { grid-row: 1; }
-.exp-item:nth-child(2), .exp-item:nth-child(3) { grid-row: 2; }
-.exp-item:nth-child(4), .exp-item:nth-child(5) { grid-row: 3; }
-.exp-item:nth-child(6) { grid-row: 4; }
-.exp-item::before {
-  content: '';
-  position: absolute;
-  top: 28px;
-  right: -36px;
-  width: 36px;
-  height: 1px;
-  background: #9cb5cb;
-  transform: rotate(-26.565deg);
-  transform-origin: left center;
-}
-.exp-item.education::before { top: 12px; left: -32px; right: auto; transform: rotate(26.565deg); }
-.exp-item::after {
-  content: '';
-  position: absolute;
-  top: 7px;
-  right: -37px;
-  width: 10px;
-  height: 10px;
-  box-sizing: border-box;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  background: #6f9dc7;
-}
-.exp-item.education::after { left: -37px; right: auto; }
-.exp-item.current::after { background: #267541; }
+.career-axis::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: #dce5ed; }
+.career-axis span { position: relative; align-self: start; justify-self: center; padding: 3px; background: #fff; color: #667a89; font-size: 0.59em; line-height: 1.3; transform: translateY(-50%); }
+.career-axis .career-axis-end { position: absolute; bottom: 0; left: 0; width: 100%; transform: translateY(50%); }
+.career-axon { grid-column: 3; grid-row: present / aug2026; }
+.career-wayfair { grid-column: 3; grid-row: aug2026 / aug2025; }
+.career-chapter { display: grid; grid-template-columns: subgrid; grid-template-rows: subgrid; grid-column: 1 / -1; min-width: 0; margin: 0 !important; padding: 0 !important; }
+.career-phd { grid-row: dec2025 / aug2021; }
+.career-bachelors { grid-row: may2021 / aug2016; }
+.career-education { grid-column: 1; grid-row: 1 / -1; min-width: 0; }
+.career-placement { position: relative; grid-column: 3; min-width: 0; }
+.career-phd .career-placement { grid-row: 3 / 4; }
+.career-bachelors .career-placement { grid-row: 2 / 3; }
+.career-placement::before { content: ''; position: absolute; left: -40px; top: 24px; width: 40px; height: 1px; background: #9cb5cb; }
+.career-overlap { grid-column: 1 / -1; grid-row: dec2025 / aug2025; background: #f0f6fb; z-index: -1; }
+.career-grid article { min-width: 0; }
 .exp-card {
   position: relative;
   isolation: isolate;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
-  gap: 12px;
-  align-items: start;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 10px;
+  align-content: start;
   box-sizing: border-box;
-  padding: 14px;
+  height: 100%;
+  padding: 12px;
   background: #fff;
   border: 1px solid #e0e7ee;
-  border-radius: 10px;
+  border-radius: 9px;
 }
-.exp-item.current .exp-card { border-color: #88bb9b; }
+.career-education .exp-card { background: #f8fafc; border-color: #c9d9e7; }
+.career-axon .exp-card { border-color: #88bb9b; }
 .exp-current { color: #267541; font-size: 0.7em; }
-.exp-watermark {
-  position: absolute;
-  z-index: -1;
-  inset: auto 8px 6px auto;
-  width: 70%;
-  opacity: 0.04;
-  text-align: center;
-  pointer-events: none;
-}
+.career-context { color: #667a89; font-size: 0.68em; line-height: 1.4; margin-top: 3px; }
+.career-overlap-note { padding: 5px 7px; border-left: 2px solid #6f9dc7; background: #f0f6fb; color: #2F5E87; font-size: 0.66em; line-height: 1.4; }
+.exp-watermark { position: absolute; z-index: -1; inset: auto 8px 6px auto; width: 65%; opacity: 0.04; text-align: center; pointer-events: none; }
 .exp-watermark img { display: block; width: 100%; }
 .exp-watermark span { display: block; margin-top: 3px; font-size: 1.1em; font-weight: 700; white-space: nowrap; }
 .exp-logo-region { display: flex; align-items: center; justify-content: center; height: 36px; }
 .exp-logo { display: block; max-height: 100%; max-width: 100%; object-fit: contain; }
 .exp-text { display: flex; flex-direction: column; gap: 5px; }
-.exp-role { font-weight: 600; font-size: 0.9em; color: #2b2b2b; line-height: 1.35; }
+.career-grid h3.exp-role { margin: 0 !important; font-size: 0.9em !important; font-weight: 600; color: #2b2b2b; line-height: 1.35 !important; }
+.career-grid .header-link { display: none; }
 .exp-org { color: #2F5E87; font-size: 0.8em; line-height: 1.4; }
 .exp-dates { color: #666; font-size: 0.72em; line-height: 1.4; margin-top: 3px; }
 @media (max-width: 759px) {
-  .page__content .experience-timeline,
-  .experience-timeline { grid-template-columns: minmax(0, 1fr); gap: 16px; padding-left: 32px !important; }
-  .experience-timeline::before { left: 10px; }
-  .exp-item:nth-child(n) { grid-column: 1; grid-row: auto; margin-top: 0 !important; }
-  .exp-item:nth-child(n)::before { top: 12px; left: -22px; right: auto; width: 22px; transform: none; }
-  .exp-item:nth-child(n)::after { left: -27px; right: auto; }
+  .career-lanes, .career-axis, .career-overlap, .career-desktop-caption { display: none; }
+  .career-mobile-caption { display: inline; }
+  .career-grid { display: flex; flex-direction: column; gap: 16px; }
+  .career-chapter { display: flex; flex-direction: column; gap: 12px; margin: 0 !important; padding: 12px !important; background: #f8fafc; border: 1px solid #c9d9e7; border-radius: 10px; }
+  .career-education .exp-card { border: 0; background: transparent; padding: 0; }
+  .career-placement { margin-left: 16px; border-left: 2px solid #c9d9e7; padding-left: 10px; }
+  .career-placement::before { display: none; }
+  .exp-card { height: auto; }
 }
 
 /* ---- Animated section titles (Experience, News, Selected Publications, Services) ---- */
@@ -257,8 +249,24 @@ News
 
 Timeline
 ------
-<ol class="experience-timeline" id="career-timeline" aria-label="Career timeline, most recent first">
-  <li class="exp-item work current">
+<div class="career-lanes" aria-hidden="true"><span>Education</span><span>Industry</span></div>
+<p class="career-caption"><span class="career-desktop-caption">Selected dates; spacing compressed.</span><span class="career-mobile-caption">Education chapters include concurrent industry roles.</span></p>
+<div class="career-grid" id="career-timeline" role="group" aria-label="Education and industry timeline, most recent first">
+  <div class="career-axis" aria-hidden="true">
+    <span style="grid-row: present;">Present</span>
+    <span style="grid-row: aug2026;">Aug 2026</span>
+    <span style="grid-row: dec2025;">Dec 2025</span>
+    <span style="grid-row: aug2025;">Aug 2025</span>
+    <span style="grid-row: aug2024;">Aug 2024</span>
+    <span style="grid-row: jun2024;">Jun 2024</span>
+    <span style="grid-row: aug2021;">Aug 2021</span>
+    <span style="grid-row: may2021;">May 2021</span>
+    <span style="grid-row: may2020;">May 2020</span>
+    <span style="grid-row: jan2019;">Jan 2019</span>
+    <span class="career-axis-end">Aug 2016</span>
+  </div>
+  <div class="career-overlap" aria-hidden="true"></div>
+  <article class="career-axon" aria-labelledby="axon-title">
     <div class="exp-card">
       <div class="exp-watermark" aria-hidden="true"><img src="/images/axon.svg" alt=""><span>Protect Life</span></div>
       <div class="exp-logo-region">
@@ -266,73 +274,80 @@ Timeline
       </div>
       <div class="exp-text">
         <span class="exp-current">Current</span>
-        <span class="exp-role">AI Research Scientist</span>
+        <h3 class="exp-role" id="axon-title">AI Research Scientist</h3>
         <span class="exp-org">Axon Enterprise Inc.</span>
         <span class="exp-dates">Aug 2026 – Present</span>
       </div>
     </div>
-  </li>
-  <li class="exp-item work">
+  </article>
+  <article class="career-wayfair" aria-labelledby="wayfair-title">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/wayfair.png" alt="Wayfair logo">
       </div>
       <div class="exp-text">
-        <span class="exp-role">Machine Learning Scientist</span>
+        <h3 class="exp-role" id="wayfair-title">Machine Learning Scientist</h3>
         <span class="exp-org">Wayfair</span>
         <span class="exp-dates">Aug 2025 – Aug 2026</span>
+        <span class="career-overlap-note">Concurrent with Ph.D., Aug–Dec 2025</span>
       </div>
     </div>
-  </li>
-  <li class="exp-item education">
+  </article>
+  <section class="career-chapter career-phd" aria-labelledby="notre-dame-title">
+    <div class="career-education">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/nd.jpeg" alt="University of Notre Dame logo">
       </div>
       <div class="exp-text">
-        <span class="exp-role">Ph.D., Computer Science &amp; Engineering</span>
+        <h3 class="exp-role" id="notre-dame-title">Ph.D., Computer Science &amp; Engineering</h3>
         <span class="exp-org">University of Notre Dame, CVRL</span>
         <span class="exp-dates">Aug 2021 – Dec 2025</span>
       </div>
     </div>
-  </li>
-  <li class="exp-item work">
+    </div>
+    <article class="career-placement" aria-labelledby="comcast-title">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/comcast.png" alt="Comcast logo">
       </div>
       <div class="exp-text">
-        <span class="exp-role">ML Research Intern</span>
+        <h3 class="exp-role" id="comcast-title">ML Research Intern</h3>
         <span class="exp-org">Comcast, Media Analytics Framework</span>
         <span class="exp-dates">Jun – Aug 2024</span>
+      <span class="career-context">Internship during Ph.D.</span>
       </div>
     </div>
-  </li>
-  <li class="exp-item education">
+    </article>
+  </section>
+  <section class="career-chapter career-bachelors" aria-labelledby="mississippi-title">
+    <div class="career-education">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/olemiss.webp" alt="University of Mississippi logo">
       </div>
       <div class="exp-text">
-        <span class="exp-role">B.S. (Hons), Mechanical Engineering</span>
+        <h3 class="exp-role" id="mississippi-title">B.S. (Hons), Mechanical Engineering</h3>
         <span class="exp-org">University of Mississippi</span>
         <span class="exp-dates">Aug 2016 – May 2021</span>
       </div>
     </div>
-  </li>
-  <li class="exp-item work">
+    </div>
+    <article class="career-placement" aria-labelledby="thyssenkrupp-title">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/thyssenkrupp.png" alt="ThyssenKrupp logo">
       </div>
       <div class="exp-text">
-        <span class="exp-role">Engineering Co-op</span>
+        <h3 class="exp-role" id="thyssenkrupp-title">Engineering Co-op</h3>
         <span class="exp-org">ThyssenKrupp AG</span>
         <span class="exp-dates">Jan 2019 – May 2020</span>
+      <span class="career-context">Co-op during undergraduate studies</span>
       </div>
     </div>
-  </li>
-</ol>
+    </article>
+  </section>
+</div>
 
 Selected Publications
 ------
