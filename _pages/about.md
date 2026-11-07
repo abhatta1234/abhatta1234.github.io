@@ -48,77 +48,69 @@ News
 <style>
 .experience-timeline {
   position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 64px minmax(0, 1fr);
+  gap: 16px 0;
   max-width: 880px;
-  height: 1600px;
   margin: 0.8em auto 1.5em;
-  padding: 0;
 }
 .experience-timeline::before {
   content: '';
   position: absolute;
   left: 50%;
-  top: 0;
-  bottom: 0;
+  top: 24px;
+  bottom: 24px;
   width: 2px;
   margin-left: -1px;
-  background: linear-gradient(to bottom, #2F5E87, #6f9dc7, #2F5E87);
-  z-index: 0;
+  background: #dce5ed;
 }
 .exp-item {
-  position: absolute;
-  width: calc(50% - 38px);
-  top:    calc((var(--total-months) - var(--end))   / var(--total-months) * 100%);
-  height: calc((var(--end)         - var(--start)) / var(--total-months) * 100%);
-  min-height: 132px;
-  box-sizing: border-box;
-  z-index: 1;
+  position: relative;
+  min-width: 0;
+  grid-row: var(--row);
 }
-.exp-item.left  { left: 0; }
-.exp-item.right { right: 0; }
-.exp-item.current::before,
-.exp-item.current::after {
+.exp-item.left { grid-column: 1; }
+.exp-item.right { grid-column: 3; }
+.exp-item::before {
   content: '';
   position: absolute;
-  width: 14px;
-  height: 2px;
-  background: #28a745;
-  animation: exp-pulse 2s infinite;
+  top: 32px;
+  width: 32px;
+  height: 1px;
+  background: #dce5ed;
 }
-.exp-item.current.left::before,
-.exp-item.current.left::after  { right: -22px; }
-.exp-item.current.right::before,
-.exp-item.current.right::after { left:  -22px; }
-.exp-item.current::before { top: 4px; }
-.exp-item.current::after  { bottom: 4px; }
-@keyframes exp-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4); }
-  50%      { box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.2); }
+.exp-item.left::before { right: -32px; }
+.exp-item.right::before { left: -32px; }
+.exp-item::after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #6f9dc7;
 }
+.exp-item.left::after { right: -37px; }
+.exp-item.right::after { left: -37px; }
+.exp-item.current::after { background: #28a745; }
 .exp-card {
   box-sizing: border-box;
-  height: 100%;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e6e8eb;
   border-radius: 10px;
-  padding: 10px 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 14px;
+  transition: box-shadow 0.2s ease;
 }
-.exp-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
+.exp-card:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
+.exp-item.current .exp-card { border-color: #8dc8a4; }
 .exp-logo-region {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 52px;
-  margin-bottom: 6px;
-}
-.exp-item.current .exp-logo-region {
-  height: 32px;
+  height: 36px;
+  margin-bottom: 8px;
 }
 .exp-logo {
   max-height: 100%;
@@ -129,7 +121,7 @@ News
 .exp-text {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
   text-align: center;
 }
 .exp-role {
@@ -151,81 +143,19 @@ News
 }
 @media (max-width: 720px) {
   .experience-timeline {
-    height: auto;
-    padding: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 32px;
   }
-  .experience-timeline::before {
-    left: 14px;
+  .experience-timeline::before { left: 8px; }
+  .exp-item.left::before,
+  .exp-item.right::before {
+    left: -24px;
+    width: 24px;
   }
-  .exp-item {
-    position: static;
-    width: calc(100% - 40px);
-    height: auto;
-    min-height: 0;
-    margin: 0 0 1.2em 40px !important;
-    top: auto;
-  }
-  .exp-item.left,
-  .exp-item.right {
-    left: auto;
-    right: auto;
-  }
-  .exp-item::before,
-  .exp-item::after {
-    display: none;
-  }
-}
-
-/* ---- Year ticks: prominent inline capsules pinned to the central line ---- */
-.year-tick {
-  position: absolute;
-  left: 50%;
-  top: calc((var(--total-months) - var(--y)) / var(--total-months) * 100%);
-  transform: translate(-50%, -50%);
-  background: #dceaf5;
-  border: 1px solid #6f9dc7;
-  border-radius: 999px;
-  padding: 2px 10px;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 0.72em;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #2F5E87;
-  z-index: 2;
-  pointer-events: auto;
-  white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(47, 94, 135, 0.10);
-  transition: background 0.2s ease, border-color 0.2s ease,
-              box-shadow 0.2s ease, transform 0.2s ease;
-}
-.year-tick:hover {
-  background: #b8d4ec;
-  border-color: #2F5E87;
-  box-shadow: 0 3px 10px rgba(47, 94, 135, 0.22);
-  transform: translate(-50%, -50%) scale(1.06);
-}
-.year-tick::after {
-  content: '\2726';
-  position: absolute;
-  top: -6px;
-  right: -8px;
-  font-size: 0.9em;
-  color: #6f9dc7;
-  opacity: 0;
-  transform: rotate(0deg) scale(0.6);
-  transition: opacity 0.2s ease;
-  pointer-events: none;
-}
-.year-tick:hover::after {
-  opacity: 1;
-  animation: year-tick-twinkle 1.2s ease-in-out infinite;
-}
-@keyframes year-tick-twinkle {
-  0%, 100% { opacity: 0.4; transform: rotate(0deg)  scale(0.7); }
-  50%      { opacity: 1;   transform: rotate(20deg) scale(1.0); }
-}
-@media (max-width: 720px) {
-  .year-tick { display: none; }
+  .exp-item.left::after,
+  .exp-item.right::after { left: -29px; }
 }
 
 /* ---- Animated section titles (Experience, News, Selected Publications, Services) ---- */
@@ -344,12 +274,8 @@ News
 
 Timeline
 ------
-<div class="experience-timeline" style="--total-months: 123;">
-  <span class="year-tick" style="--y: 113;">2026</span>
-  <span class="year-tick" style="--y: 77;">2023</span>
-  <span class="year-tick" style="--y: 41;">2020</span>
-  <span class="year-tick" style="--y: 5;">2017</span>
-  <div class="exp-item right current" style="--start: 120; --end: 123;">
+<div class="experience-timeline">
+  <div class="exp-item left current" style="--row: 1;">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/axon.svg" alt="Axon Enterprise Inc. logo">
@@ -361,7 +287,7 @@ Timeline
       </div>
     </div>
   </div>
-  <div class="exp-item left" style="--start: 108; --end: 120;">
+  <div class="exp-item left" style="--row: 2;">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/wayfair.png" alt="Wayfair logo">
@@ -373,7 +299,7 @@ Timeline
       </div>
     </div>
   </div>
-  <div class="exp-item right" style="--start: 60; --end: 112;">
+  <div class="exp-item right" style="--row: 2;">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/nd.jpeg" alt="University of Notre Dame logo">
@@ -385,7 +311,7 @@ Timeline
       </div>
     </div>
   </div>
-  <div class="exp-item left" style="--start: 94; --end: 97;">
+  <div class="exp-item left" style="--row: 3;">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/comcast.png" alt="Comcast logo">
@@ -397,7 +323,7 @@ Timeline
       </div>
     </div>
   </div>
-  <div class="exp-item right" style="--start: 0; --end: 57;">
+  <div class="exp-item right" style="--row: 4;">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/olemiss.webp" alt="University of Mississippi logo">
@@ -409,7 +335,7 @@ Timeline
       </div>
     </div>
   </div>
-  <div class="exp-item left" style="--start: 29; --end: 45;">
+  <div class="exp-item left" style="--row: 4;">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/thyssenkrupp.png" alt="ThyssenKrupp logo">
