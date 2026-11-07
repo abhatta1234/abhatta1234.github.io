@@ -49,7 +49,7 @@ News
 .experience-timeline {
   position: relative;
   max-width: 880px;
-  height: 850px;
+  height: 1600px;
   margin: 0.8em auto 1.5em;
   padding: 0;
 }
@@ -95,6 +95,7 @@ News
   50%      { box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.2); }
 }
 .exp-card {
+  box-sizing: border-box;
   height: 100%;
   background: #ffffff;
   border: 1px solid #e6e8eb;
@@ -115,6 +116,9 @@ News
   justify-content: center;
   height: 52px;
   margin-bottom: 6px;
+}
+.exp-item.current .exp-logo-region {
+  height: 32px;
 }
 .exp-logo {
   max-height: 100%;
@@ -340,12 +344,24 @@ News
 
 Timeline
 ------
-<div class="experience-timeline" style="--total-months: 117;">
+<div class="experience-timeline" style="--total-months: 123;">
   <span class="year-tick" style="--y: 113;">2026</span>
   <span class="year-tick" style="--y: 77;">2023</span>
   <span class="year-tick" style="--y: 41;">2020</span>
   <span class="year-tick" style="--y: 5;">2017</span>
-  <div class="exp-item left current" style="--start: 108; --end: 117;">
+  <div class="exp-item right current" style="--start: 120; --end: 123;">
+    <div class="exp-card">
+      <div class="exp-logo-region">
+        <img class="exp-logo" src="/images/axon.svg" alt="Axon Enterprise Inc. logo">
+      </div>
+      <div class="exp-text">
+        <span class="exp-role">AI Research Scientist</span>
+        <span class="exp-org">Axon Enterprise Inc.</span>
+        <span class="exp-dates">Aug 2026 – Present</span>
+      </div>
+    </div>
+  </div>
+  <div class="exp-item left" style="--start: 108; --end: 120;">
     <div class="exp-card">
       <div class="exp-logo-region">
         <img class="exp-logo" src="/images/wayfair.png" alt="Wayfair logo">
@@ -353,7 +369,7 @@ Timeline
       <div class="exp-text">
         <span class="exp-role">Machine Learning Scientist</span>
         <span class="exp-org">Wayfair</span>
-        <span class="exp-dates">Aug 2025 – Present</span>
+        <span class="exp-dates">Aug 2025 – Aug 2026</span>
       </div>
     </div>
   </div>
