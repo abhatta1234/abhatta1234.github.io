@@ -8,7 +8,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a **Machine Learning Scientist** at [Wayfair](https://www.wayfair.com/) in Boston, MA, where I post-train multimodal LLMs for fine-grained retrieval, develop cross-encoder rerankers for catalog deduplication, and design LLM-as-judge pipelines for relevance evaluation — together powering product discovery and catalog automation at scale.
+I am an **AI Research Scientist** at [Axon Enterprise Inc.](https://www.axon.com/) in Seattle, WA.
 
 I completed my **Ph.D. in Computer Science and Engineering** at the University of Notre Dame, advised by [Dr. Kevin Bowyer](https://academicweb.nd.edu/~kwb/) at the [Computer Vision Research Lab (CVRL)](https://cvrl.nd.edu/). My doctoral research explored multiple dimensions of face recognition technology, including mitigating bias, optimizing neural networks for efficiency on edge devices, ensuring biometric system security, and improving reliability of face identification search. I also worked on face foundation models with strong text–vision alignment for granular facial attributes. My work has been published at CVPR, ICCV, WACV, FG, IJCB, T-BIOM, and TTS, resulting in 3 patent applications.
 
@@ -18,6 +18,7 @@ I was fortunate to intern at Comcast with the Media Analytics Framework Team in 
 News
 ------
 <div class="news-scroll" markdown="1">
+* 2026/08: 🎉 Joined Axon Enterprise Inc. as an AI Research Scientist.
 * 2026/06: 🏆 Received the <a class="news-award-pill news-award-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7473018582461906944/">Wayfair Technology Rookie of the Year</a> award.
   <span class="news-award-detail">For contributions to <strong>CaMmo 2.0</strong> (multimodal encoder service) and <strong>Option Grouping</strong> (product grouping service).</span>
   <span class="news-award-note">See my manager's view on this — humbled and honored by this recognition.</span>
